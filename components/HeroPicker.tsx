@@ -228,11 +228,18 @@ export function HeroPicker({
     if (hoverIntentTimer.current) clearTimeout(hoverIntentTimer.current);
     setHoveredHero(null);
     setActiveVideoHeroId(null);
+    setFocusedHeroId(null);
   }, []);
 
   // Click action depending on mode
   const handleTileClick = useCallback(
     (hero: Hero) => {
+      setHoveredHero(null);
+      setActiveVideoHeroId(null);
+      setFocusedHeroId(null);
+      if (typeof document !== "undefined" && document.activeElement instanceof HTMLElement) {
+        document.activeElement.blur();
+      }
       if (mode === "pool") {
         onTogglePoolHero?.(hero.id);
       } else {
@@ -254,7 +261,23 @@ export function HeroPicker({
     [rolePool, onSetComfort]
   );
 
-  const previewHero = hoveredHero || (focusedHeroId ? ALL_HEROES.find((h) => h.id === focusedHeroId) : null);
+  // Global dismiss when scrolling or window blur so popup never gets stuck
+  useEffect(() => {
+    const handleDismiss = () => {
+      setHoveredHero(null);
+      setActiveVideoHeroId(null);
+      setFocusedHeroId(null);
+    };
+    window.addEventListener("scroll", handleDismiss, { passive: true });
+    window.addEventListener("blur", handleDismiss);
+    return () => {
+      window.removeEventListener("scroll", handleDismiss);
+      window.removeEventListener("blur", handleDismiss);
+    };
+  }, []);
+
+  // Only show inspect popup on active hover
+  const previewHero = hoveredHero;
   const previewTraits = previewHero ? traitsMap[String(previewHero.id)] : null;
   const previewFit = previewHero ? getHeroRoleFit(previewHero.id) : null;
   const previewAbilities = previewHero ? abilitiesMap[String(previewHero.id)] || [] : [];
@@ -342,6 +365,7 @@ export function HeroPicker({
   return (
     <div
       onMouseMove={(e) => setMousePos({ x: e.clientX, y: e.clientY })}
+      onMouseLeave={handleMouseLeave}
       className={`space-y-3.5 select-none relative ${className}`}
     >
       {/* 1. Sticky Dota-style Filter Toolbar */}
@@ -594,16 +618,12 @@ export function HeroPicker({
                 alt={previewHero.localized_name}
                 fill
                 sizes="420px"
-                className={`object-cover object-center transition-all duration-300 ${
-                  activeVideoHeroId === previewHero.id
-                    ? "blur-2xl opacity-30 scale-125"
-                    : "scale-105 opacity-100"
-                }`}
+                className="object-cover object-center scale-105"
                 priority
               />
-              {/* Darkening & Atmospheric Gradient Overlay so text and badges pop */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0c0f14] via-[#0c0f14]/40 to-black/50" />
-              <div className="absolute inset-0 bg-black/20 backdrop-brightness-95" />
+              {/* Atmospheric Darkening & Vignette Overlay so text, badges, and skills pop cleanly */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0c0f14] via-[#0c0f14]/25 to-black/35 pointer-events-none" />
+              <div className="absolute inset-0 bg-black/15 pointer-events-none" />
             </div>
 
             {/* High-res WebM Animated Render - 1440x1440 fitted cleanly in foreground without clipping head/feet */}
