@@ -1,0 +1,544 @@
+[
+  {
+    "id": "bkb-cc",
+    "if": {
+      "countTag": {
+        "hard_cc": ">=2"
+      }
+    },
+    "item": "black_king_bar",
+    "tier": "rush",
+    "reason": "{n} hard CC heroes on enemy team"
+  },
+  {
+    "id": "bkb-magic",
+    "if": {
+      "magicShare": ">=0.5"
+    },
+    "item": "black_king_bar",
+    "tier": "rush",
+    "reason": "heavy enemy magic burst damage"
+  },
+  {
+    "id": "linkens-lockdown",
+    "if": {
+      "countTag": {
+        "hard_cc": ">=1"
+      },
+      "heroRole": "core"
+    },
+    "item": "sphere",
+    "tier": "situational",
+    "reason": "single-target spell lockdown defense"
+  },
+  {
+    "id": "lotus-silence",
+    "if": {
+      "countTag": {
+        "silence": ">=1"
+      }
+    },
+    "item": "lotus_orb",
+    "tier": "core",
+    "reason": "dispel against enemy silences and target spells"
+  },
+  {
+    "id": "lotus-cc",
+    "if": {
+      "countTag": {
+        "hard_cc": ">=2"
+      }
+    },
+    "item": "lotus_orb",
+    "tier": "situational",
+    "reason": "reflects enemy targeted disables back at caster"
+  },
+  {
+    "id": "euls-silence",
+    "if": {
+      "hasTag": "silence"
+    },
+    "item": "cyclone",
+    "tier": "mid",
+    "reason": "self-cyclone basic dispel vs silence and projectile dodge"
+  },
+  {
+    "id": "euls-roamer",
+    "if": {
+      "hasTag": "mid_roamer"
+    },
+    "item": "cyclone",
+    "tier": "situational",
+    "reason": "setup and disrupt mobile enemy momentum"
+  },
+  {
+    "id": "ghost-phys",
+    "if": {
+      "physShare": ">=0.6"
+    },
+    "item": "ghost",
+    "tier": "situational",
+    "reason": "physical immune active against heavy right-click carries"
+  },
+  {
+    "id": "blade-mail-burst",
+    "if": {
+      "hasTag": "burst_magic"
+    },
+    "item": "blade_mail",
+    "tier": "core",
+    "reason": "reflects burst damage back to fragile attackers"
+  },
+  {
+    "id": "blade-mail-phys",
+    "if": {
+      "countTag": {
+        "phys_carry": ">=2"
+      }
+    },
+    "item": "blade_mail",
+    "tier": "situational",
+    "reason": "punishes enemy multi-core physical assault"
+  },
+  {
+    "id": "hood-magic",
+    "if": {
+      "magicShare": ">=0.5"
+    },
+    "item": "hood_of_defiance",
+    "tier": "core",
+    "reason": "magic barrier against spell damage heavy lineup"
+  },
+  {
+    "id": "pipe-magic",
+    "if": {
+      "magicShare": ">=0.5"
+    },
+    "item": "pipe",
+    "tier": "core",
+    "reason": "team-wide magic resistance aura and magic barrier"
+  },
+  {
+    "id": "pipe-aoe",
+    "if": {
+      "countTag": {
+        "aoe_disable": ">=2"
+      }
+    },
+    "item": "pipe",
+    "tier": "mid",
+    "reason": "protects team against magic combo initiations"
+  },
+  {
+    "id": "crimson-summons",
+    "if": {
+      "hasTag": "summons"
+    },
+    "item": "crimson_guard",
+    "tier": "core",
+    "reason": "blocks multi-unit summons physical chip damage"
+  },
+  {
+    "id": "crimson-illusions",
+    "if": {
+      "hasTag": "illusions"
+    },
+    "item": "crimson_guard",
+    "tier": "rush",
+    "reason": "shields allies against overwhelming illusion swarm right-clicks"
+  },
+  {
+    "id": "crimson-phys",
+    "if": {
+      "physShare": ">=0.7"
+    },
+    "item": "crimson_guard",
+    "tier": "core",
+    "reason": "team physical damage block barrier against pure physical lineup"
+  },
+  {
+    "id": "shivas-heal",
+    "if": {
+      "hasTag": "heal"
+    },
+    "item": "shivas_guard",
+    "tier": "core",
+    "reason": "anti-heal active and attack slow against enemy healing"
+  },
+  {
+    "id": "shivas-illusions",
+    "if": {
+      "hasTag": "illusions"
+    },
+    "item": "shivas_guard",
+    "tier": "rush",
+    "reason": "Arctic Blast AOE reveals and clears illusion armies"
+  },
+  {
+    "id": "shivas-sustain",
+    "if": {
+      "hasTag": "sustain"
+    },
+    "item": "shivas_guard",
+    "tier": "core",
+    "reason": "reduces enemy HP regeneration and life-drain sustain"
+  },
+  {
+    "id": "mek-sustain",
+    "if": {
+      "countTag": {
+        "mid_tempo": ">=1"
+      }
+    },
+    "item": "mekansm",
+    "tier": "core",
+    "reason": "early group heal and armor for 5-man objective deathball"
+  },
+  {
+    "id": "greaves-silence",
+    "if": {
+      "countTag": {
+        "silence": ">=1"
+      }
+    },
+    "item": "guardian_greaves",
+    "tier": "core",
+    "reason": "dispel on self and low-HP armor surge for the team"
+  },
+  {
+    "id": "glimmer-magic",
+    "if": {
+      "magicShare": ">=0.5"
+    },
+    "item": "glimmer_cape",
+    "tier": "core",
+    "reason": "invis and 300 magic damage absorption shield for allies"
+  },
+  {
+    "id": "glimmer-save",
+    "if": {
+      "hasTag": "burst_magic"
+    },
+    "item": "glimmer_cape",
+    "tier": "situational",
+    "reason": "emergency repositioning and fade shield save"
+  },
+  {
+    "id": "force-staff-initiator",
+    "if": {
+      "countTag": {
+        "blink_initiator": ">=1"
+      }
+    },
+    "item": "force_staff",
+    "tier": "core",
+    "reason": "repositions teammates out of enemy jump zones and AoE cages"
+  },
+  {
+    "id": "force-staff-cc",
+    "if": {
+      "countTag": {
+        "hard_cc": ">=2"
+      }
+    },
+    "item": "force_staff",
+    "tier": "situational",
+    "reason": "kites melee lockdown and breaks immobilizing spells"
+  },
+  {
+    "id": "silver-edge-passive",
+    "if": {
+      "countTag": {
+        "passive_heavy": ">=1"
+      }
+    },
+    "item": "silver_edge",
+    "tier": "core",
+    "reason": "applies Break to disable enemy passives (Bristleback, PA, Specter, Huskar)"
+  },
+  {
+    "id": "nullifier-saves",
+    "if": {
+      "countTag": {
+        "save": ">=1"
+      }
+    },
+    "item": "nullifier",
+    "tier": "rush",
+    "reason": "continuous dispel dispels Ghost Scepter, Eul's, Force Staff, and buffs"
+  },
+  {
+    "id": "nullifier-sustain",
+    "if": {
+      "hasTag": "sustain"
+    },
+    "item": "nullifier",
+    "tier": "situational",
+    "reason": "purges protective shields and self-buffs every second"
+  },
+  {
+    "id": "orchid-escape",
+    "if": {
+      "countTag": {
+        "mid_roamer": ">=1"
+      }
+    },
+    "item": "orchid",
+    "tier": "rush",
+    "reason": "5s silence prevents mobile spirit and escape heroes from blinking"
+  },
+  {
+    "id": "orchid-burst",
+    "if": {
+      "hasTag": "burst_magic"
+    },
+    "item": "orchid",
+    "tier": "core",
+    "reason": "amplifies damage and locks down squishy spell nukers"
+  },
+  {
+    "id": "mkb-evasion",
+    "if": {
+      "hasTag": "evasion"
+    },
+    "item": "monkey_king_bar",
+    "tier": "mid",
+    "reason": "80% True Strike pierces innate evasion (PA, Windranger, Butterfly)"
+  },
+  {
+    "id": "halberd-carry",
+    "if": {
+      "countTag": {
+        "phys_carry": ">=1"
+      }
+    },
+    "item": "heavens_halberd",
+    "tier": "core",
+    "reason": "3-5s undispellable disarm neutralizes enemy right-click threat"
+  },
+  {
+    "id": "aeon-burst",
+    "if": {
+      "hasTag": "burst_magic"
+    },
+    "item": "aeon_disk",
+    "tier": "situational",
+    "reason": "emergency invulnerability trigger prevents instant 100-to-0 death"
+  },
+  {
+    "id": "satanic-sustain",
+    "if": {
+      "countTag": {
+        "hard_cc": ">=1"
+      },
+      "heroDmg": "physical"
+    },
+    "item": "satanic",
+    "tier": "situational",
+    "reason": "basic dispel and 175% lifesteal turns around losing teamfights"
+  },
+  {
+    "id": "gem-invis",
+    "if": {
+      "hasTag": "invis"
+    },
+    "item": "gem",
+    "tier": "situational",
+    "reason": "reveals permanent invis heroes and enemy smoke wards"
+  },
+  {
+    "id": "spirit-vessel-heal",
+    "if": {
+      "hasTag": "heal"
+    },
+    "item": "spirit_vessel",
+    "tier": "core",
+    "reason": "soul release cuts enemy healing by 45% and burns max HP"
+  },
+  {
+    "id": "spirit-vessel-sustain",
+    "if": {
+      "hasTag": "sustain"
+    },
+    "item": "spirit_vessel",
+    "tier": "core",
+    "reason": "melts high-health durable tanks and reduces health regeneration"
+  },
+  {
+    "id": "mage-slayer-magic",
+    "if": {
+      "magicShare": ">=0.5"
+    },
+    "item": "mage_slayer",
+    "tier": "core",
+    "reason": "inflicts 40% spell damage debuff on spell-heavy enemies"
+  },
+  {
+    "id": "diffusal-mana",
+    "if": {
+      "countTag": {
+        "mid_late_scaler": ">=1"
+      }
+    },
+    "item": "diffusal_blade",
+    "tier": "mid",
+    "reason": "mana combustion drains mana pools and slows mobile targets"
+  },
+  {
+    "id": "manta-silence",
+    "if": {
+      "countTag": {
+        "silence": ">=1"
+      },
+      "heroDmg": "physical"
+    },
+    "item": "manta",
+    "tier": "rush",
+    "reason": "instant self-dispel for agility carries against Orchid and silences"
+  },
+  {
+    "id": "bkb-carry",
+    "roles": [1],
+    "if": {
+      "countTag": {
+        "hard_cc": ">=2"
+      }
+    },
+    "item": "black_king_bar",
+    "tier": "rush",
+    "reason": "uninterrupted physical damage uptime for safe lane carry"
+  },
+  {
+    "id": "butterfly-carry",
+    "roles": [1],
+    "if": {
+      "physShare": ">=0.5"
+    },
+    "item": "butterfly",
+    "tier": "mid",
+    "reason": "flutter evasion and agility DPS against heavy physical lineups"
+  },
+  {
+    "id": "satanic-carry",
+    "roles": [1],
+    "if": {
+      "physShare": ">=0.5"
+    },
+    "item": "satanic",
+    "tier": "core",
+    "reason": "burst lifesteal turnaround and basic dispel for carry survival"
+  },
+  {
+    "id": "blink-mid",
+    "roles": [2],
+    "if": {
+      "hasTag": "burst_magic"
+    },
+    "item": "blink",
+    "tier": "situational",
+    "reason": "instant gap-close and repositioning for mid initiation and spell evasion"
+  },
+  {
+    "id": "orchid-mid",
+    "roles": [2],
+    "if": {
+      "hasTag": "mid_tempo"
+    },
+    "item": "orchid",
+    "tier": "rush",
+    "reason": "early silence lockdown and mana regen for mid pickoff tempo"
+  },
+  {
+    "id": "hood-mid",
+    "roles": [2],
+    "if": {
+      "magicShare": ">=0.6"
+    },
+    "item": "hood_of_defiance",
+    "tier": "core",
+    "reason": "early magic barrier against heavy spell harass mid matchups"
+  },
+  {
+    "id": "blink-offlane",
+    "roles": [3],
+    "if": {
+      "countTag": {
+        "hard_cc": ">=1"
+      }
+    },
+    "item": "blink",
+    "tier": "rush",
+    "reason": "guaranteed initiator engagement for offlane teamfight controller"
+  },
+  {
+    "id": "pipe-offlane",
+    "roles": [3],
+    "if": {
+      "magicShare": ">=0.5"
+    },
+    "item": "pipe",
+    "tier": "rush",
+    "reason": "team-wide magic barrier aura against spell burst compositions"
+  },
+  {
+    "id": "crimson-offlane",
+    "roles": [3],
+    "if": {
+      "hasTag": "summons"
+    },
+    "item": "crimson_guard",
+    "tier": "rush",
+    "reason": "team-wide damage block against summon pushes and physical swarms"
+  },
+  {
+    "id": "halberd-offlane",
+    "roles": [3],
+    "if": {
+      "hasTag": "phys_carry"
+    },
+    "item": "heavens_halberd",
+    "tier": "core",
+    "reason": "disarms enemy carry and provides status resistance"
+  },
+  {
+    "id": "glimmer-support",
+    "roles": [4, 5],
+    "if": {
+      "magicShare": ">=0.5"
+    },
+    "item": "glimmer_cape",
+    "tier": "core",
+    "reason": "invisibility and magic shield active save for focused teammates"
+  },
+  {
+    "id": "force-support",
+    "roles": [4, 5],
+    "if": {
+      "countTag": {
+        "hard_cc": ">=1"
+      }
+    },
+    "item": "force_staff",
+    "tier": "core",
+    "reason": "repositions cores out of enemy initiation and dangerous ground"
+  },
+  {
+    "id": "silver-edge-break",
+    "if": {
+      "hasTag": "passive_heavy",
+      "heroDmg": "physical"
+    },
+    "item": "silver_edge",
+    "tier": "rush",
+    "reason": "Shadow Walk break attack disables Bristleback / PA / passive damage reduction and evasion"
+  },
+  {
+    "id": "khanda-break",
+    "if": {
+      "hasTag": "passive_heavy"
+    },
+    "item": "angels_demise",
+    "tier": "core",
+    "reason": "Empower Spell bonus crit + Break on unit-target spell to neutralize passives"
+  }
+]

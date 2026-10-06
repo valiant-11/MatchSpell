@@ -1,0 +1,1653 @@
+{
+  "1": {
+    "heroId": 1,
+    "name": "npc_dota_hero_antimage",
+    "localized_name": "Anti-Mage",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "2": {
+    "heroId": 2,
+    "name": "npc_dota_hero_axe",
+    "localized_name": "Axe",
+    "roles": {
+      "1": 0.1,
+      "2": 0.35,
+      "3": 0.95,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 3
+  },
+  "3": {
+    "heroId": 3,
+    "name": "npc_dota_hero_bane",
+    "localized_name": "Bane",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.5,
+      "4": 0.85,
+      "5": 0.99
+    },
+    "primaryRole": 5
+  },
+  "4": {
+    "heroId": 4,
+    "name": "npc_dota_hero_bloodseeker",
+    "localized_name": "Bloodseeker",
+    "roles": {
+      "1": 0.95,
+      "2": 0.75,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "5": {
+    "heroId": 5,
+    "name": "npc_dota_hero_crystal_maiden",
+    "localized_name": "Crystal Maiden",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.6,
+      "5": 0.95
+    },
+    "primaryRole": 5
+  },
+  "6": {
+    "heroId": 6,
+    "name": "npc_dota_hero_drow_ranger",
+    "localized_name": "Drow Ranger",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "7": {
+    "heroId": 7,
+    "name": "npc_dota_hero_earthshaker",
+    "localized_name": "Earthshaker",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.4,
+      "4": 0.99,
+      "5": 0.65
+    },
+    "primaryRole": 4
+  },
+  "8": {
+    "heroId": 8,
+    "name": "npc_dota_hero_juggernaut",
+    "localized_name": "Juggernaut",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "9": {
+    "heroId": 9,
+    "name": "npc_dota_hero_mirana",
+    "localized_name": "Mirana",
+    "roles": {
+      "1": 0.05,
+      "2": 0.75,
+      "3": 0.05,
+      "4": 0.9,
+      "5": 0.65
+    },
+    "primaryRole": 4
+  },
+  "10": {
+    "heroId": 10,
+    "name": "npc_dota_hero_morphling",
+    "localized_name": "Morphling",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "11": {
+    "heroId": 11,
+    "name": "npc_dota_hero_nevermore",
+    "localized_name": "Shadow Fiend",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "12": {
+    "heroId": 12,
+    "name": "npc_dota_hero_phantom_lancer",
+    "localized_name": "Phantom Lancer",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "13": {
+    "heroId": 13,
+    "name": "npc_dota_hero_puck",
+    "localized_name": "Puck",
+    "roles": {
+      "1": 0.05,
+      "2": 0.95,
+      "3": 0.4,
+      "4": 0.6,
+      "5": 0.05
+    },
+    "primaryRole": 2
+  },
+  "14": {
+    "heroId": 14,
+    "name": "npc_dota_hero_pudge",
+    "localized_name": "Pudge",
+    "roles": {
+      "1": 0.05,
+      "2": 0.45,
+      "3": 0.85,
+      "4": 0.9,
+      "5": 0.05
+    },
+    "primaryRole": 4
+  },
+  "15": {
+    "heroId": 15,
+    "name": "npc_dota_hero_razor",
+    "localized_name": "Razor",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "16": {
+    "heroId": 16,
+    "name": "npc_dota_hero_sand_king",
+    "localized_name": "Sand King",
+    "roles": {
+      "1": 0.02,
+      "2": 0.45,
+      "3": 0.95,
+      "4": 0.99,
+      "5": 0.65
+    },
+    "primaryRole": 4
+  },
+  "17": {
+    "heroId": 17,
+    "name": "npc_dota_hero_storm_spirit",
+    "localized_name": "Storm Spirit",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "18": {
+    "heroId": 18,
+    "name": "npc_dota_hero_sven",
+    "localized_name": "Sven",
+    "roles": {
+      "1": 0.95,
+      "2": 0.75,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "19": {
+    "heroId": 19,
+    "name": "npc_dota_hero_tiny",
+    "localized_name": "Tiny",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "20": {
+    "heroId": 20,
+    "name": "npc_dota_hero_vengefulspirit",
+    "localized_name": "Vengeful Spirit",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.4,
+      "4": 0.99,
+      "5": 0.99
+    },
+    "primaryRole": 4
+  },
+  "21": {
+    "heroId": 21,
+    "name": "npc_dota_hero_windrunner",
+    "localized_name": "Windranger",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.05,
+      "4": 0.6,
+      "5": 0.65
+    },
+    "primaryRole": 2
+  },
+  "22": {
+    "heroId": 22,
+    "name": "npc_dota_hero_zuus",
+    "localized_name": "Zeus",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "23": {
+    "heroId": 23,
+    "name": "npc_dota_hero_kunkka",
+    "localized_name": "Kunkka",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.85,
+      "4": 0.6,
+      "5": 0.65
+    },
+    "primaryRole": 2
+  },
+  "25": {
+    "heroId": 25,
+    "name": "npc_dota_hero_lina",
+    "localized_name": "Lina",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.05,
+      "4": 0.6,
+      "5": 0.65
+    },
+    "primaryRole": 2
+  },
+  "26": {
+    "heroId": 26,
+    "name": "npc_dota_hero_lion",
+    "localized_name": "Lion",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.4,
+      "4": 0.99,
+      "5": 0.65
+    },
+    "primaryRole": 4
+  },
+  "27": {
+    "heroId": 27,
+    "name": "npc_dota_hero_shadow_shaman",
+    "localized_name": "Shadow Shaman",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.4,
+      "4": 0.99,
+      "5": 0.65
+    },
+    "primaryRole": 4
+  },
+  "28": {
+    "heroId": 28,
+    "name": "npc_dota_hero_slardar",
+    "localized_name": "Slardar",
+    "roles": {
+      "1": 0.1,
+      "2": 0.35,
+      "3": 0.95,
+      "4": 0.35,
+      "5": 0.03
+    },
+    "primaryRole": 3
+  },
+  "29": {
+    "heroId": 29,
+    "name": "npc_dota_hero_tidehunter",
+    "localized_name": "Tidehunter",
+    "roles": {
+      "1": 0.1,
+      "2": 0.35,
+      "3": 0.95,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 3
+  },
+  "30": {
+    "heroId": 30,
+    "name": "npc_dota_hero_witch_doctor",
+    "localized_name": "Witch Doctor",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.85,
+      "5": 0.99
+    },
+    "primaryRole": 5
+  },
+  "31": {
+    "heroId": 31,
+    "name": "npc_dota_hero_lich",
+    "localized_name": "Lich",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.85,
+      "5": 0.99
+    },
+    "primaryRole": 5
+  },
+  "32": {
+    "heroId": 32,
+    "name": "npc_dota_hero_riki",
+    "localized_name": "Riki",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "33": {
+    "heroId": 33,
+    "name": "npc_dota_hero_enigma",
+    "localized_name": "Enigma",
+    "roles": {
+      "1": 0.05,
+      "2": 0.05,
+      "3": 0.95,
+      "4": 0.6,
+      "5": 0.05
+    },
+    "primaryRole": 3
+  },
+  "34": {
+    "heroId": 34,
+    "name": "npc_dota_hero_tinker",
+    "localized_name": "Tinker",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "35": {
+    "heroId": 35,
+    "name": "npc_dota_hero_sniper",
+    "localized_name": "Sniper",
+    "roles": {
+      "1": 0.95,
+      "2": 0.75,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "36": {
+    "heroId": 36,
+    "name": "npc_dota_hero_necrolyte",
+    "localized_name": "Necrophos",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.85,
+      "4": 0.3,
+      "5": 0.38
+    },
+    "primaryRole": 2
+  },
+  "37": {
+    "heroId": 37,
+    "name": "npc_dota_hero_warlock",
+    "localized_name": "Warlock",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.4,
+      "4": 0.99,
+      "5": 0.99
+    },
+    "primaryRole": 4
+  },
+  "38": {
+    "heroId": 38,
+    "name": "npc_dota_hero_beastmaster",
+    "localized_name": "Beastmaster",
+    "roles": {
+      "1": 0.05,
+      "2": 0.05,
+      "3": 0.95,
+      "4": 0.6,
+      "5": 0.05
+    },
+    "primaryRole": 3
+  },
+  "39": {
+    "heroId": 39,
+    "name": "npc_dota_hero_queenofpain",
+    "localized_name": "Queen of Pain",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "40": {
+    "heroId": 40,
+    "name": "npc_dota_hero_venomancer",
+    "localized_name": "Venomancer",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.4,
+      "4": 0.99,
+      "5": 0.65
+    },
+    "primaryRole": 4
+  },
+  "41": {
+    "heroId": 41,
+    "name": "npc_dota_hero_faceless_void",
+    "localized_name": "Faceless Void",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "42": {
+    "heroId": 42,
+    "name": "npc_dota_hero_skeleton_king",
+    "localized_name": "Wraith King",
+    "roles": {
+      "1": 0.9,
+      "2": 0.35,
+      "3": 0.85,
+      "4": 0.6,
+      "5": 0.65
+    },
+    "primaryRole": 1
+  },
+  "43": {
+    "heroId": 43,
+    "name": "npc_dota_hero_death_prophet",
+    "localized_name": "Death Prophet",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "44": {
+    "heroId": 44,
+    "name": "npc_dota_hero_phantom_assassin",
+    "localized_name": "Phantom Assassin",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "45": {
+    "heroId": 45,
+    "name": "npc_dota_hero_pugna",
+    "localized_name": "Pugna",
+    "roles": {
+      "1": 0.02,
+      "2": 0.45,
+      "3": 0.05,
+      "4": 0.3,
+      "5": 0.95
+    },
+    "primaryRole": 5
+  },
+  "46": {
+    "heroId": 46,
+    "name": "npc_dota_hero_templar_assassin",
+    "localized_name": "Templar Assassin",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "47": {
+    "heroId": 47,
+    "name": "npc_dota_hero_viper",
+    "localized_name": "Viper",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "48": {
+    "heroId": 48,
+    "name": "npc_dota_hero_luna",
+    "localized_name": "Luna",
+    "roles": {
+      "1": 0.95,
+      "2": 0.75,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "49": {
+    "heroId": 49,
+    "name": "npc_dota_hero_dragon_knight",
+    "localized_name": "Dragon Knight",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "50": {
+    "heroId": 50,
+    "name": "npc_dota_hero_dazzle",
+    "localized_name": "Dazzle",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.85,
+      "5": 0.99
+    },
+    "primaryRole": 5
+  },
+  "51": {
+    "heroId": 51,
+    "name": "npc_dota_hero_rattletrap",
+    "localized_name": "Clockwerk",
+    "roles": {
+      "1": 0.05,
+      "2": 0.05,
+      "3": 0.85,
+      "4": 0.9,
+      "5": 0.05
+    },
+    "primaryRole": 4
+  },
+  "52": {
+    "heroId": 52,
+    "name": "npc_dota_hero_leshrac",
+    "localized_name": "Leshrac",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.05,
+      "4": 0.6,
+      "5": 0.65
+    },
+    "primaryRole": 2
+  },
+  "53": {
+    "heroId": 53,
+    "name": "npc_dota_hero_furion",
+    "localized_name": "Nature's Prophet",
+    "roles": {
+      "1": 0.9,
+      "2": 0.75,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 1
+  },
+  "54": {
+    "heroId": 54,
+    "name": "npc_dota_hero_life_stealer",
+    "localized_name": "Lifestealer",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "55": {
+    "heroId": 55,
+    "name": "npc_dota_hero_dark_seer",
+    "localized_name": "Dark Seer",
+    "roles": {
+      "1": 0.05,
+      "2": 0.45,
+      "3": 0.95,
+      "4": 0.6,
+      "5": 0.05
+    },
+    "primaryRole": 3
+  },
+  "56": {
+    "heroId": 56,
+    "name": "npc_dota_hero_clinkz",
+    "localized_name": "Clinkz",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "57": {
+    "heroId": 57,
+    "name": "npc_dota_hero_omniknight",
+    "localized_name": "Omniknight",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.95,
+      "4": 0.85,
+      "5": 0.99
+    },
+    "primaryRole": 5
+  },
+  "58": {
+    "heroId": 58,
+    "name": "npc_dota_hero_enchantress",
+    "localized_name": "Enchantress",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.5,
+      "4": 0.9,
+      "5": 0.99
+    },
+    "primaryRole": 5
+  },
+  "59": {
+    "heroId": 59,
+    "name": "npc_dota_hero_huskar",
+    "localized_name": "Huskar",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "60": {
+    "heroId": 60,
+    "name": "npc_dota_hero_night_stalker",
+    "localized_name": "Night Stalker",
+    "roles": {
+      "1": 0.1,
+      "2": 0.75,
+      "3": 0.95,
+      "4": 0.35,
+      "5": 0.03
+    },
+    "primaryRole": 3
+  },
+  "61": {
+    "heroId": 61,
+    "name": "npc_dota_hero_broodmother",
+    "localized_name": "Broodmother",
+    "roles": {
+      "1": 0.1,
+      "2": 0.75,
+      "3": 0.95,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 3
+  },
+  "62": {
+    "heroId": 62,
+    "name": "npc_dota_hero_bounty_hunter",
+    "localized_name": "Bounty Hunter",
+    "roles": {
+      "1": 0.05,
+      "2": 0.45,
+      "3": 0.05,
+      "4": 0.9,
+      "5": 0.05
+    },
+    "primaryRole": 4
+  },
+  "63": {
+    "heroId": 63,
+    "name": "npc_dota_hero_weaver",
+    "localized_name": "Weaver",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "64": {
+    "heroId": 64,
+    "name": "npc_dota_hero_jakiro",
+    "localized_name": "Jakiro",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.6,
+      "5": 0.95
+    },
+    "primaryRole": 5
+  },
+  "65": {
+    "heroId": 65,
+    "name": "npc_dota_hero_batrider",
+    "localized_name": "Batrider",
+    "roles": {
+      "1": 0.05,
+      "2": 0.95,
+      "3": 0.4,
+      "4": 0.6,
+      "5": 0.05
+    },
+    "primaryRole": 2
+  },
+  "66": {
+    "heroId": 66,
+    "name": "npc_dota_hero_chen",
+    "localized_name": "Chen",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.85,
+      "5": 0.99
+    },
+    "primaryRole": 5
+  },
+  "67": {
+    "heroId": 67,
+    "name": "npc_dota_hero_spectre",
+    "localized_name": "Spectre",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "68": {
+    "heroId": 68,
+    "name": "npc_dota_hero_ancient_apparition",
+    "localized_name": "Ancient Apparition",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.6,
+      "5": 0.95
+    },
+    "primaryRole": 5
+  },
+  "69": {
+    "heroId": 69,
+    "name": "npc_dota_hero_doom_bringer",
+    "localized_name": "Doom",
+    "roles": {
+      "1": 0.1,
+      "2": 0.75,
+      "3": 0.95,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 3
+  },
+  "70": {
+    "heroId": 70,
+    "name": "npc_dota_hero_ursa",
+    "localized_name": "Ursa",
+    "roles": {
+      "1": 0.95,
+      "2": 0.75,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "71": {
+    "heroId": 71,
+    "name": "npc_dota_hero_spirit_breaker",
+    "localized_name": "Spirit Breaker",
+    "roles": {
+      "1": 0.05,
+      "2": 0.75,
+      "3": 0.85,
+      "4": 0.9,
+      "5": 0.03
+    },
+    "primaryRole": 4
+  },
+  "72": {
+    "heroId": 72,
+    "name": "npc_dota_hero_gyrocopter",
+    "localized_name": "Gyrocopter",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "73": {
+    "heroId": 73,
+    "name": "npc_dota_hero_alchemist",
+    "localized_name": "Alchemist",
+    "roles": {
+      "1": 0.9,
+      "2": 0.35,
+      "3": 0.85,
+      "4": 0.6,
+      "5": 0.65
+    },
+    "primaryRole": 1
+  },
+  "74": {
+    "heroId": 74,
+    "name": "npc_dota_hero_invoker",
+    "localized_name": "Invoker",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "75": {
+    "heroId": 75,
+    "name": "npc_dota_hero_silencer",
+    "localized_name": "Silencer",
+    "roles": {
+      "1": 0.02,
+      "2": 0.35,
+      "3": 0.05,
+      "4": 0.6,
+      "5": 0.95
+    },
+    "primaryRole": 5
+  },
+  "76": {
+    "heroId": 76,
+    "name": "npc_dota_hero_obsidian_destroyer",
+    "localized_name": "Outworld Devourer",
+    "roles": {
+      "1": 0.9,
+      "2": 0.75,
+      "3": 0.05,
+      "4": 0.3,
+      "5": 0.38
+    },
+    "primaryRole": 1
+  },
+  "77": {
+    "heroId": 77,
+    "name": "npc_dota_hero_lycan",
+    "localized_name": "Lycan",
+    "roles": {
+      "1": 0.1,
+      "2": 0.35,
+      "3": 0.95,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 3
+  },
+  "78": {
+    "heroId": 78,
+    "name": "npc_dota_hero_brewmaster",
+    "localized_name": "Brewmaster",
+    "roles": {
+      "1": 0.1,
+      "2": 0.35,
+      "3": 0.95,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 3
+  },
+  "79": {
+    "heroId": 79,
+    "name": "npc_dota_hero_shadow_demon",
+    "localized_name": "Shadow Demon",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.4,
+      "4": 0.99,
+      "5": 0.99
+    },
+    "primaryRole": 4
+  },
+  "80": {
+    "heroId": 80,
+    "name": "npc_dota_hero_lone_druid",
+    "localized_name": "Lone Druid",
+    "roles": {
+      "1": 0.9,
+      "2": 0.75,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 1
+  },
+  "81": {
+    "heroId": 81,
+    "name": "npc_dota_hero_chaos_knight",
+    "localized_name": "Chaos Knight",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "82": {
+    "heroId": 82,
+    "name": "npc_dota_hero_meepo",
+    "localized_name": "Meepo",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "83": {
+    "heroId": 83,
+    "name": "npc_dota_hero_treant",
+    "localized_name": "Treant Protector",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.85,
+      "4": 0.99,
+      "5": 0.95
+    },
+    "primaryRole": 4
+  },
+  "84": {
+    "heroId": 84,
+    "name": "npc_dota_hero_ogre_magi",
+    "localized_name": "Ogre Magi",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.85,
+      "4": 0.99,
+      "5": 0.95
+    },
+    "primaryRole": 4
+  },
+  "85": {
+    "heroId": 85,
+    "name": "npc_dota_hero_undying",
+    "localized_name": "Undying",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.5,
+      "4": 0.85,
+      "5": 0.99
+    },
+    "primaryRole": 5
+  },
+  "86": {
+    "heroId": 86,
+    "name": "npc_dota_hero_rubick",
+    "localized_name": "Rubick",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.9,
+      "5": 0.65
+    },
+    "primaryRole": 4
+  },
+  "87": {
+    "heroId": 87,
+    "name": "npc_dota_hero_disruptor",
+    "localized_name": "Disruptor",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.4,
+      "4": 0.99,
+      "5": 0.95
+    },
+    "primaryRole": 4
+  },
+  "88": {
+    "heroId": 88,
+    "name": "npc_dota_hero_nyx_assassin",
+    "localized_name": "Nyx Assassin",
+    "roles": {
+      "1": 0.05,
+      "2": 0.05,
+      "3": 0.4,
+      "4": 0.9,
+      "5": 0.05
+    },
+    "primaryRole": 4
+  },
+  "89": {
+    "heroId": 89,
+    "name": "npc_dota_hero_naga_siren",
+    "localized_name": "Naga Siren",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "90": {
+    "heroId": 90,
+    "name": "npc_dota_hero_keeper_of_the_light",
+    "localized_name": "Keeper of the Light",
+    "roles": {
+      "1": 0.02,
+      "2": 0.95,
+      "3": 0.05,
+      "4": 0.85,
+      "5": 0.99
+    },
+    "primaryRole": 5
+  },
+  "91": {
+    "heroId": 91,
+    "name": "npc_dota_hero_wisp",
+    "localized_name": "Io",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.6,
+      "5": 0.65
+    },
+    "primaryRole": 5
+  },
+  "92": {
+    "heroId": 92,
+    "name": "npc_dota_hero_visage",
+    "localized_name": "Visage",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.5,
+      "4": 0.6,
+      "5": 0.65
+    },
+    "primaryRole": 5
+  },
+  "93": {
+    "heroId": 93,
+    "name": "npc_dota_hero_slark",
+    "localized_name": "Slark",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "94": {
+    "heroId": 94,
+    "name": "npc_dota_hero_medusa",
+    "localized_name": "Medusa",
+    "roles": {
+      "1": 0.95,
+      "2": 0.75,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "95": {
+    "heroId": 95,
+    "name": "npc_dota_hero_troll_warlord",
+    "localized_name": "Troll Warlord",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "96": {
+    "heroId": 96,
+    "name": "npc_dota_hero_centaur",
+    "localized_name": "Centaur Warrunner",
+    "roles": {
+      "1": 0.05,
+      "2": 0.05,
+      "3": 0.95,
+      "4": 0.6,
+      "5": 0.05
+    },
+    "primaryRole": 3
+  },
+  "97": {
+    "heroId": 97,
+    "name": "npc_dota_hero_magnataur",
+    "localized_name": "Magnus",
+    "roles": {
+      "1": 0.05,
+      "2": 0.45,
+      "3": 0.95,
+      "4": 0.6,
+      "5": 0.05
+    },
+    "primaryRole": 3
+  },
+  "98": {
+    "heroId": 98,
+    "name": "npc_dota_hero_shredder",
+    "localized_name": "Timbersaw",
+    "roles": {
+      "1": 0.05,
+      "2": 0.05,
+      "3": 0.95,
+      "4": 0.05,
+      "5": 0.05
+    },
+    "primaryRole": 3
+  },
+  "99": {
+    "heroId": 99,
+    "name": "npc_dota_hero_bristleback",
+    "localized_name": "Bristleback",
+    "roles": {
+      "1": 0.1,
+      "2": 0.35,
+      "3": 0.95,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 3
+  },
+  "100": {
+    "heroId": 100,
+    "name": "npc_dota_hero_tusk",
+    "localized_name": "Tusk",
+    "roles": {
+      "1": 0.05,
+      "2": 0.45,
+      "3": 0.4,
+      "4": 0.9,
+      "5": 0.4
+    },
+    "primaryRole": 4
+  },
+  "101": {
+    "heroId": 101,
+    "name": "npc_dota_hero_skywrath_mage",
+    "localized_name": "Skywrath Mage",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.6,
+      "5": 0.65
+    },
+    "primaryRole": 5
+  },
+  "102": {
+    "heroId": 102,
+    "name": "npc_dota_hero_abaddon",
+    "localized_name": "Abaddon",
+    "roles": {
+      "1": 0.02,
+      "2": 0.35,
+      "3": 0.95,
+      "4": 0.6,
+      "5": 0.95
+    },
+    "primaryRole": 3
+  },
+  "103": {
+    "heroId": 103,
+    "name": "npc_dota_hero_elder_titan",
+    "localized_name": "Elder Titan",
+    "roles": {
+      "1": 0.05,
+      "2": 0.05,
+      "3": 0.85,
+      "4": 0.6,
+      "5": 0.05
+    },
+    "primaryRole": 3
+  },
+  "104": {
+    "heroId": 104,
+    "name": "npc_dota_hero_legion_commander",
+    "localized_name": "Legion Commander",
+    "roles": {
+      "1": 0.1,
+      "2": 0.35,
+      "3": 0.95,
+      "4": 0.3,
+      "5": 0.38
+    },
+    "primaryRole": 3
+  },
+  "105": {
+    "heroId": 105,
+    "name": "npc_dota_hero_techies",
+    "localized_name": "Techies",
+    "roles": {
+      "1": 0.05,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.05
+    },
+    "primaryRole": 1
+  },
+  "106": {
+    "heroId": 106,
+    "name": "npc_dota_hero_ember_spirit",
+    "localized_name": "Ember Spirit",
+    "roles": {
+      "1": 0.45,
+      "2": 0.55,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "107": {
+    "heroId": 107,
+    "name": "npc_dota_hero_earth_spirit",
+    "localized_name": "Earth Spirit",
+    "roles": {
+      "1": 0.05,
+      "2": 0.45,
+      "3": 0.85,
+      "4": 0.9,
+      "5": 0.05
+    },
+    "primaryRole": 4
+  },
+  "108": {
+    "heroId": 108,
+    "name": "npc_dota_hero_abyssal_underlord",
+    "localized_name": "Underlord",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.5,
+      "4": 0.6,
+      "5": 0.65
+    },
+    "primaryRole": 5
+  },
+  "109": {
+    "heroId": 109,
+    "name": "npc_dota_hero_terrorblade",
+    "localized_name": "Terrorblade",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "110": {
+    "heroId": 110,
+    "name": "npc_dota_hero_phoenix",
+    "localized_name": "Phoenix",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.4,
+      "4": 0.99,
+      "5": 0.99
+    },
+    "primaryRole": 4
+  },
+  "111": {
+    "heroId": 111,
+    "name": "npc_dota_hero_oracle",
+    "localized_name": "Oracle",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.85,
+      "5": 0.99
+    },
+    "primaryRole": 5
+  },
+  "112": {
+    "heroId": 112,
+    "name": "npc_dota_hero_winter_wyvern",
+    "localized_name": "Winter Wyvern",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.85,
+      "5": 0.99
+    },
+    "primaryRole": 5
+  },
+  "113": {
+    "heroId": 113,
+    "name": "npc_dota_hero_arc_warden",
+    "localized_name": "Arc Warden",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "114": {
+    "heroId": 114,
+    "name": "npc_dota_hero_monkey_king",
+    "localized_name": "Monkey King",
+    "roles": {
+      "1": 0.95,
+      "2": 0.75,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "119": {
+    "heroId": 119,
+    "name": "npc_dota_hero_dark_willow",
+    "localized_name": "Dark Willow",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.6,
+      "5": 0.65
+    },
+    "primaryRole": 5
+  },
+  "120": {
+    "heroId": 120,
+    "name": "npc_dota_hero_pangolier",
+    "localized_name": "Pangolier",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "121": {
+    "heroId": 121,
+    "name": "npc_dota_hero_grimstroke",
+    "localized_name": "Grimstroke",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.6,
+      "5": 0.95
+    },
+    "primaryRole": 5
+  },
+  "123": {
+    "heroId": 123,
+    "name": "npc_dota_hero_hoodwink",
+    "localized_name": "Hoodwink",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.9,
+      "5": 0.65
+    },
+    "primaryRole": 4
+  },
+  "126": {
+    "heroId": 126,
+    "name": "npc_dota_hero_void_spirit",
+    "localized_name": "Void Spirit",
+    "roles": {
+      "1": 0.9,
+      "2": 0.95,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 2
+  },
+  "128": {
+    "heroId": 128,
+    "name": "npc_dota_hero_snapfire",
+    "localized_name": "Snapfire",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.6,
+      "5": 0.65
+    },
+    "primaryRole": 5
+  },
+  "129": {
+    "heroId": 129,
+    "name": "npc_dota_hero_mars",
+    "localized_name": "Mars",
+    "roles": {
+      "1": 0.1,
+      "2": 0.35,
+      "3": 0.95,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 3
+  },
+  "131": {
+    "heroId": 131,
+    "name": "npc_dota_hero_ringmaster",
+    "localized_name": "Ring Master",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.9,
+      "5": 0.65
+    },
+    "primaryRole": 4
+  },
+  "135": {
+    "heroId": 135,
+    "name": "npc_dota_hero_dawnbreaker",
+    "localized_name": "Dawnbreaker",
+    "roles": {
+      "1": 0.9,
+      "2": 0.35,
+      "3": 0.85,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 1
+  },
+  "136": {
+    "heroId": 136,
+    "name": "npc_dota_hero_marci",
+    "localized_name": "Marci",
+    "roles": {
+      "1": 0.05,
+      "2": 0.35,
+      "3": 0.05,
+      "4": 0.9,
+      "5": 0.02
+    },
+    "primaryRole": 4
+  },
+  "137": {
+    "heroId": 137,
+    "name": "npc_dota_hero_primal_beast",
+    "localized_name": "Primal Beast",
+    "roles": {
+      "1": 0.05,
+      "2": 0.95,
+      "3": 0.85,
+      "4": 0.6,
+      "5": 0.05
+    },
+    "primaryRole": 2
+  },
+  "138": {
+    "heroId": 138,
+    "name": "npc_dota_hero_muerta",
+    "localized_name": "Muerta",
+    "roles": {
+      "1": 0.95,
+      "2": 0.35,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.02
+    },
+    "primaryRole": 1
+  },
+  "145": {
+    "heroId": 145,
+    "name": "npc_dota_hero_kez",
+    "localized_name": "Kez",
+    "roles": {
+      "1": 0.9,
+      "2": 0.35,
+      "3": 0.05,
+      "4": 0.05,
+      "5": 0.03
+    },
+    "primaryRole": 1
+  },
+  "155": {
+    "heroId": 155,
+    "name": "npc_dota_hero_largo",
+    "localized_name": "Largo",
+    "roles": {
+      "1": 0.02,
+      "2": 0.05,
+      "3": 0.5,
+      "4": 0.6,
+      "5": 0.65
+    },
+    "primaryRole": 5
+  }
+}

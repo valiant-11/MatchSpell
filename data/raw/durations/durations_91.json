@@ -1,0 +1,97 @@
+[
+  {
+    "duration_bin": 5700,
+    "games_played": 1,
+    "wins": 0
+  },
+  {
+    "duration_bin": 3300,
+    "games_played": 343,
+    "wins": 160
+  },
+  {
+    "duration_bin": 1800,
+    "games_played": 3662,
+    "wins": 1964
+  },
+  {
+    "duration_bin": 3900,
+    "games_played": 56,
+    "wins": 30
+  },
+  {
+    "duration_bin": 300,
+    "games_played": 44,
+    "wins": 24
+  },
+  {
+    "duration_bin": 3000,
+    "games_played": 634,
+    "wins": 304
+  },
+  {
+    "duration_bin": 4200,
+    "games_played": 39,
+    "wins": 20
+  },
+  {
+    "duration_bin": 4500,
+    "games_played": 12,
+    "wins": 3
+  },
+  {
+    "duration_bin": 1200,
+    "games_played": 2399,
+    "wins": 1415
+  },
+  {
+    "duration_bin": 2700,
+    "games_played": 1036,
+    "wins": 532
+  },
+  {
+    "duration_bin": 5100,
+    "games_played": 2,
+    "wins": 2
+  },
+  {
+    "duration_bin": 2100,
+    "games_played": 2591,
+    "wins": 1357
+  },
+  {
+    "duration_bin": 5400,
+    "games_played": 2,
+    "wins": 2
+  },
+  {
+    "duration_bin": 900,
+    "games_played": 957,
+    "wins": 609
+  },
+  {
+    "duration_bin": 600,
+    "games_played": 225,
+    "wins": 152
+  },
+  {
+    "duration_bin": 2400,
+    "games_played": 1708,
+    "wins": 831
+  },
+  {
+    "duration_bin": 3600,
+    "games_played": 137,
+    "wins": 60
+  },
+  {
+    "duration_bin": 1500,
+    "games_played": 3398,
+    "wins": 1894
+  },
+  {
+    "duration_bin": 4800,
+    "games_played": 5,
+    "wins": 2
+  }
+]

@@ -1,0 +1,3685 @@
+{
+  "1": {
+    "heroId": 1,
+    "name": "npc_dota_hero_antimage",
+    "overallWr": 0.5096,
+    "overallGames": 513324,
+    "pickRate": 0.5133,
+    "brackets": {
+      "6": {
+        "wins": 32342,
+        "games": 63487,
+        "wr": 0.5094
+      },
+      "7": {
+        "wins": 20450,
+        "games": 40253,
+        "wr": 0.508
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5096
+      },
+      "all": {
+        "wins": 261601,
+        "games": 513324,
+        "wr": 0.5096
+      }
+    }
+  },
+  "2": {
+    "heroId": 2,
+    "name": "npc_dota_hero_axe",
+    "overallWr": 0.5056,
+    "overallGames": 695570,
+    "pickRate": 0.6956,
+    "brackets": {
+      "6": {
+        "wins": 47960,
+        "games": 97408,
+        "wr": 0.4924
+      },
+      "7": {
+        "wins": 30061,
+        "games": 61260,
+        "wr": 0.4907
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5056
+      },
+      "all": {
+        "wins": 351669,
+        "games": 695570,
+        "wr": 0.5056
+      }
+    }
+  },
+  "3": {
+    "heroId": 3,
+    "name": "npc_dota_hero_bane",
+    "overallWr": 0.4861,
+    "overallGames": 134241,
+    "pickRate": 0.1342,
+    "brackets": {
+      "6": {
+        "wins": 9136,
+        "games": 18287,
+        "wr": 0.4996
+      },
+      "7": {
+        "wins": 7753,
+        "games": 15578,
+        "wr": 0.4977
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4861
+      },
+      "all": {
+        "wins": 65260,
+        "games": 134241,
+        "wr": 0.4861
+      }
+    }
+  },
+  "4": {
+    "heroId": 4,
+    "name": "npc_dota_hero_bloodseeker",
+    "overallWr": 0.5182,
+    "overallGames": 166751,
+    "pickRate": 0.1668,
+    "brackets": {
+      "6": {
+        "wins": 6994,
+        "games": 13224,
+        "wr": 0.5289
+      },
+      "7": {
+        "wins": 3521,
+        "games": 6804,
+        "wr": 0.5175
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5182
+      },
+      "all": {
+        "wins": 86413,
+        "games": 166751,
+        "wr": 0.5182
+      }
+    }
+  },
+  "5": {
+    "heroId": 5,
+    "name": "npc_dota_hero_crystal_maiden",
+    "overallWr": 0.5206,
+    "overallGames": 571178,
+    "pickRate": 0.5712,
+    "brackets": {
+      "6": {
+        "wins": 38437,
+        "games": 75543,
+        "wr": 0.5088
+      },
+      "7": {
+        "wins": 24302,
+        "games": 48287,
+        "wr": 0.5033
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5206
+      },
+      "all": {
+        "wins": 297337,
+        "games": 571178,
+        "wr": 0.5206
+      }
+    }
+  },
+  "6": {
+    "heroId": 6,
+    "name": "npc_dota_hero_drow_ranger",
+    "overallWr": 0.4629,
+    "overallGames": 384471,
+    "pickRate": 0.3845,
+    "brackets": {
+      "6": {
+        "wins": 18676,
+        "games": 40833,
+        "wr": 0.4574
+      },
+      "7": {
+        "wins": 9268,
+        "games": 20726,
+        "wr": 0.4472
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4629
+      },
+      "all": {
+        "wins": 177967,
+        "games": 384471,
+        "wr": 0.4629
+      }
+    }
+  },
+  "7": {
+    "heroId": 7,
+    "name": "npc_dota_hero_earthshaker",
+    "overallWr": 0.5057,
+    "overallGames": 620676,
+    "pickRate": 0.6207,
+    "brackets": {
+      "6": {
+        "wins": 45855,
+        "games": 89674,
+        "wr": 0.5114
+      },
+      "7": {
+        "wins": 31119,
+        "games": 60451,
+        "wr": 0.5148
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5057
+      },
+      "all": {
+        "wins": 313900,
+        "games": 620676,
+        "wr": 0.5057
+      }
+    }
+  },
+  "8": {
+    "heroId": 8,
+    "name": "npc_dota_hero_juggernaut",
+    "overallWr": 0.5231,
+    "overallGames": 754524,
+    "pickRate": 0.7545,
+    "brackets": {
+      "6": {
+        "wins": 56801,
+        "games": 106894,
+        "wr": 0.5314
+      },
+      "7": {
+        "wins": 36616,
+        "games": 69624,
+        "wr": 0.5259
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5231
+      },
+      "all": {
+        "wins": 394683,
+        "games": 754524,
+        "wr": 0.5231
+      }
+    }
+  },
+  "9": {
+    "heroId": 9,
+    "name": "npc_dota_hero_mirana",
+    "overallWr": 0.5139,
+    "overallGames": 479131,
+    "pickRate": 0.4791,
+    "brackets": {
+      "6": {
+        "wins": 42335,
+        "games": 82114,
+        "wr": 0.5156
+      },
+      "7": {
+        "wins": 33221,
+        "games": 65755,
+        "wr": 0.5052
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5139
+      },
+      "all": {
+        "wins": 246221,
+        "games": 479131,
+        "wr": 0.5139
+      }
+    }
+  },
+  "10": {
+    "heroId": 10,
+    "name": "npc_dota_hero_morphling",
+    "overallWr": 0.4781,
+    "overallGames": 157408,
+    "pickRate": 0.1574,
+    "brackets": {
+      "6": {
+        "wins": 11104,
+        "games": 23208,
+        "wr": 0.4785
+      },
+      "7": {
+        "wins": 8805,
+        "games": 18253,
+        "wr": 0.4824
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4781
+      },
+      "all": {
+        "wins": 75251,
+        "games": 157408,
+        "wr": 0.4781
+      }
+    }
+  },
+  "11": {
+    "heroId": 11,
+    "name": "npc_dota_hero_nevermore",
+    "overallWr": 0.4288,
+    "overallGames": 469351,
+    "pickRate": 0.4694,
+    "brackets": {
+      "6": {
+        "wins": 23244,
+        "games": 57088,
+        "wr": 0.4072
+      },
+      "7": {
+        "wins": 13662,
+        "games": 34140,
+        "wr": 0.4002
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4288
+      },
+      "all": {
+        "wins": 201268,
+        "games": 469351,
+        "wr": 0.4288
+      }
+    }
+  },
+  "12": {
+    "heroId": 12,
+    "name": "npc_dota_hero_phantom_lancer",
+    "overallWr": 0.5326,
+    "overallGames": 521612,
+    "pickRate": 0.5216,
+    "brackets": {
+      "6": {
+        "wins": 36427,
+        "games": 68280,
+        "wr": 0.5335
+      },
+      "7": {
+        "wins": 27315,
+        "games": 51596,
+        "wr": 0.5294
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5326
+      },
+      "all": {
+        "wins": 277811,
+        "games": 521612,
+        "wr": 0.5326
+      }
+    }
+  },
+  "13": {
+    "heroId": 13,
+    "name": "npc_dota_hero_puck",
+    "overallWr": 0.4697,
+    "overallGames": 119830,
+    "pickRate": 0.1198,
+    "brackets": {
+      "6": {
+        "wins": 8793,
+        "games": 18470,
+        "wr": 0.4761
+      },
+      "7": {
+        "wins": 8236,
+        "games": 16660,
+        "wr": 0.4944
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4697
+      },
+      "all": {
+        "wins": 56284,
+        "games": 119830,
+        "wr": 0.4697
+      }
+    }
+  },
+  "14": {
+    "heroId": 14,
+    "name": "npc_dota_hero_pudge",
+    "overallWr": 0.5141,
+    "overallGames": 1081523,
+    "pickRate": 1.0815,
+    "brackets": {
+      "6": {
+        "wins": 73835,
+        "games": 146997,
+        "wr": 0.5023
+      },
+      "7": {
+        "wins": 54876,
+        "games": 108995,
+        "wr": 0.5035
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5141
+      },
+      "all": {
+        "wins": 556018,
+        "games": 1081523,
+        "wr": 0.5141
+      }
+    }
+  },
+  "15": {
+    "heroId": 15,
+    "name": "npc_dota_hero_razor",
+    "overallWr": 0.5059,
+    "overallGames": 277814,
+    "pickRate": 0.2778,
+    "brackets": {
+      "6": {
+        "wins": 19300,
+        "games": 37884,
+        "wr": 0.5094
+      },
+      "7": {
+        "wins": 11916,
+        "games": 23896,
+        "wr": 0.4987
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5059
+      },
+      "all": {
+        "wins": 140533,
+        "games": 277814,
+        "wr": 0.5059
+      }
+    }
+  },
+  "16": {
+    "heroId": 16,
+    "name": "npc_dota_hero_sand_king",
+    "overallWr": 0.4935,
+    "overallGames": 160412,
+    "pickRate": 0.1604,
+    "brackets": {
+      "6": {
+        "wins": 8969,
+        "games": 18644,
+        "wr": 0.4811
+      },
+      "7": {
+        "wins": 5183,
+        "games": 11000,
+        "wr": 0.4712
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4935
+      },
+      "all": {
+        "wins": 79167,
+        "games": 160412,
+        "wr": 0.4935
+      }
+    }
+  },
+  "17": {
+    "heroId": 17,
+    "name": "npc_dota_hero_storm_spirit",
+    "overallWr": 0.4724,
+    "overallGames": 232892,
+    "pickRate": 0.2329,
+    "brackets": {
+      "6": {
+        "wins": 16873,
+        "games": 35500,
+        "wr": 0.4753
+      },
+      "7": {
+        "wins": 12582,
+        "games": 26423,
+        "wr": 0.4762
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4724
+      },
+      "all": {
+        "wins": 110012,
+        "games": 232892,
+        "wr": 0.4724
+      }
+    }
+  },
+  "18": {
+    "heroId": 18,
+    "name": "npc_dota_hero_sven",
+    "overallWr": 0.5138,
+    "overallGames": 433993,
+    "pickRate": 0.434,
+    "brackets": {
+      "6": {
+        "wins": 33347,
+        "games": 64369,
+        "wr": 0.5181
+      },
+      "7": {
+        "wins": 28283,
+        "games": 54383,
+        "wr": 0.5201
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5138
+      },
+      "all": {
+        "wins": 222972,
+        "games": 433993,
+        "wr": 0.5138
+      }
+    }
+  },
+  "19": {
+    "heroId": 19,
+    "name": "npc_dota_hero_tiny",
+    "overallWr": 0.4497,
+    "overallGames": 177304,
+    "pickRate": 0.1773,
+    "brackets": {
+      "6": {
+        "wins": 11094,
+        "games": 24685,
+        "wr": 0.4494
+      },
+      "7": {
+        "wins": 10151,
+        "games": 22159,
+        "wr": 0.4581
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4497
+      },
+      "all": {
+        "wins": 79731,
+        "games": 177304,
+        "wr": 0.4497
+      }
+    }
+  },
+  "20": {
+    "heroId": 20,
+    "name": "npc_dota_hero_vengefulspirit",
+    "overallWr": 0.5242,
+    "overallGames": 405649,
+    "pickRate": 0.4056,
+    "brackets": {
+      "6": {
+        "wins": 29587,
+        "games": 57248,
+        "wr": 0.5168
+      },
+      "7": {
+        "wins": 16451,
+        "games": 32437,
+        "wr": 0.5072
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5242
+      },
+      "all": {
+        "wins": 212652,
+        "games": 405649,
+        "wr": 0.5242
+      }
+    }
+  },
+  "21": {
+    "heroId": 21,
+    "name": "npc_dota_hero_windrunner",
+    "overallWr": 0.4874,
+    "overallGames": 693886,
+    "pickRate": 0.6939,
+    "brackets": {
+      "6": {
+        "wins": 50349,
+        "games": 103389,
+        "wr": 0.487
+      },
+      "7": {
+        "wins": 38199,
+        "games": 77542,
+        "wr": 0.4926
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4874
+      },
+      "all": {
+        "wins": 338223,
+        "games": 693886,
+        "wr": 0.4874
+      }
+    }
+  },
+  "22": {
+    "heroId": 22,
+    "name": "npc_dota_hero_zuus",
+    "overallWr": 0.5002,
+    "overallGames": 520721,
+    "pickRate": 0.5207,
+    "brackets": {
+      "6": {
+        "wins": 34377,
+        "games": 69063,
+        "wr": 0.4978
+      },
+      "7": {
+        "wins": 21857,
+        "games": 44286,
+        "wr": 0.4935
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5002
+      },
+      "all": {
+        "wins": 260455,
+        "games": 520721,
+        "wr": 0.5002
+      }
+    }
+  },
+  "23": {
+    "heroId": 23,
+    "name": "npc_dota_hero_kunkka",
+    "overallWr": 0.4938,
+    "overallGames": 179154,
+    "pickRate": 0.1792,
+    "brackets": {
+      "6": {
+        "wins": 12725,
+        "games": 25684,
+        "wr": 0.4954
+      },
+      "7": {
+        "wins": 8466,
+        "games": 16945,
+        "wr": 0.4996
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4938
+      },
+      "all": {
+        "wins": 88463,
+        "games": 179154,
+        "wr": 0.4938
+      }
+    }
+  },
+  "25": {
+    "heroId": 25,
+    "name": "npc_dota_hero_lina",
+    "overallWr": 0.4716,
+    "overallGames": 674906,
+    "pickRate": 0.6749,
+    "brackets": {
+      "6": {
+        "wins": 44337,
+        "games": 93539,
+        "wr": 0.474
+      },
+      "7": {
+        "wins": 29272,
+        "games": 61933,
+        "wr": 0.4726
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4716
+      },
+      "all": {
+        "wins": 318281,
+        "games": 674906,
+        "wr": 0.4716
+      }
+    }
+  },
+  "26": {
+    "heroId": 26,
+    "name": "npc_dota_hero_lion",
+    "overallWr": 0.4897,
+    "overallGames": 975898,
+    "pickRate": 0.9759,
+    "brackets": {
+      "6": {
+        "wins": 67788,
+        "games": 139274,
+        "wr": 0.4867
+      },
+      "7": {
+        "wins": 42710,
+        "games": 87777,
+        "wr": 0.4866
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4897
+      },
+      "all": {
+        "wins": 477883,
+        "games": 975898,
+        "wr": 0.4897
+      }
+    }
+  },
+  "27": {
+    "heroId": 27,
+    "name": "npc_dota_hero_shadow_shaman",
+    "overallWr": 0.5181,
+    "overallGames": 582307,
+    "pickRate": 0.5823,
+    "brackets": {
+      "6": {
+        "wins": 37465,
+        "games": 72401,
+        "wr": 0.5175
+      },
+      "7": {
+        "wins": 20913,
+        "games": 40569,
+        "wr": 0.5155
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5181
+      },
+      "all": {
+        "wins": 301665,
+        "games": 582307,
+        "wr": 0.5181
+      }
+    }
+  },
+  "28": {
+    "heroId": 28,
+    "name": "npc_dota_hero_slardar",
+    "overallWr": 0.4947,
+    "overallGames": 286030,
+    "pickRate": 0.286,
+    "brackets": {
+      "6": {
+        "wins": 17642,
+        "games": 36475,
+        "wr": 0.4837
+      },
+      "7": {
+        "wins": 10604,
+        "games": 22376,
+        "wr": 0.4739
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4947
+      },
+      "all": {
+        "wins": 141511,
+        "games": 286030,
+        "wr": 0.4947
+      }
+    }
+  },
+  "29": {
+    "heroId": 29,
+    "name": "npc_dota_hero_tidehunter",
+    "overallWr": 0.4933,
+    "overallGames": 266614,
+    "pickRate": 0.2666,
+    "brackets": {
+      "6": {
+        "wins": 18342,
+        "games": 37226,
+        "wr": 0.4927
+      },
+      "7": {
+        "wins": 11245,
+        "games": 23191,
+        "wr": 0.4849
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4933
+      },
+      "all": {
+        "wins": 131527,
+        "games": 266614,
+        "wr": 0.4933
+      }
+    }
+  },
+  "30": {
+    "heroId": 30,
+    "name": "npc_dota_hero_witch_doctor",
+    "overallWr": 0.5217,
+    "overallGames": 655465,
+    "pickRate": 0.6555,
+    "brackets": {
+      "6": {
+        "wins": 43748,
+        "games": 85185,
+        "wr": 0.5136
+      },
+      "7": {
+        "wins": 25464,
+        "games": 50257,
+        "wr": 0.5067
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5217
+      },
+      "all": {
+        "wins": 341980,
+        "games": 655465,
+        "wr": 0.5217
+      }
+    }
+  },
+  "31": {
+    "heroId": 31,
+    "name": "npc_dota_hero_lich",
+    "overallWr": 0.5254,
+    "overallGames": 429145,
+    "pickRate": 0.4291,
+    "brackets": {
+      "6": {
+        "wins": 36403,
+        "games": 69265,
+        "wr": 0.5256
+      },
+      "7": {
+        "wins": 25634,
+        "games": 49198,
+        "wr": 0.521
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5254
+      },
+      "all": {
+        "wins": 225473,
+        "games": 429145,
+        "wr": 0.5254
+      }
+    }
+  },
+  "32": {
+    "heroId": 32,
+    "name": "npc_dota_hero_riki",
+    "overallWr": 0.5291,
+    "overallGames": 238778,
+    "pickRate": 0.2388,
+    "brackets": {
+      "6": {
+        "wins": 14324,
+        "games": 26963,
+        "wr": 0.5312
+      },
+      "7": {
+        "wins": 8152,
+        "games": 15441,
+        "wr": 0.5279
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5291
+      },
+      "all": {
+        "wins": 126338,
+        "games": 238778,
+        "wr": 0.5291
+      }
+    }
+  },
+  "33": {
+    "heroId": 33,
+    "name": "npc_dota_hero_enigma",
+    "overallWr": 0.5067,
+    "overallGames": 166914,
+    "pickRate": 0.1669,
+    "brackets": {
+      "6": {
+        "wins": 11710,
+        "games": 22129,
+        "wr": 0.5292
+      },
+      "7": {
+        "wins": 11578,
+        "games": 20903,
+        "wr": 0.5539
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5067
+      },
+      "all": {
+        "wins": 84582,
+        "games": 166914,
+        "wr": 0.5067
+      }
+    }
+  },
+  "34": {
+    "heroId": 34,
+    "name": "npc_dota_hero_tinker",
+    "overallWr": 0.469,
+    "overallGames": 208869,
+    "pickRate": 0.2089,
+    "brackets": {
+      "6": {
+        "wins": 13725,
+        "games": 28271,
+        "wr": 0.4855
+      },
+      "7": {
+        "wins": 10392,
+        "games": 20754,
+        "wr": 0.5007
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.469
+      },
+      "all": {
+        "wins": 97959,
+        "games": 208869,
+        "wr": 0.469
+      }
+    }
+  },
+  "35": {
+    "heroId": 35,
+    "name": "npc_dota_hero_sniper",
+    "overallWr": 0.4969,
+    "overallGames": 807006,
+    "pickRate": 0.807,
+    "brackets": {
+      "6": {
+        "wins": 42385,
+        "games": 87891,
+        "wr": 0.4822
+      },
+      "7": {
+        "wins": 19031,
+        "games": 40690,
+        "wr": 0.4677
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4969
+      },
+      "all": {
+        "wins": 400968,
+        "games": 807006,
+        "wr": 0.4969
+      }
+    }
+  },
+  "36": {
+    "heroId": 36,
+    "name": "npc_dota_hero_necrolyte",
+    "overallWr": 0.5119,
+    "overallGames": 617468,
+    "pickRate": 0.6175,
+    "brackets": {
+      "6": {
+        "wins": 43377,
+        "games": 86522,
+        "wr": 0.5013
+      },
+      "7": {
+        "wins": 28427,
+        "games": 57979,
+        "wr": 0.4903
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5119
+      },
+      "all": {
+        "wins": 316104,
+        "games": 617468,
+        "wr": 0.5119
+      }
+    }
+  },
+  "37": {
+    "heroId": 37,
+    "name": "npc_dota_hero_warlock",
+    "overallWr": 0.5007,
+    "overallGames": 231942,
+    "pickRate": 0.2319,
+    "brackets": {
+      "6": {
+        "wins": 14167,
+        "games": 28807,
+        "wr": 0.4918
+      },
+      "7": {
+        "wins": 8065,
+        "games": 16861,
+        "wr": 0.4783
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5007
+      },
+      "all": {
+        "wins": 116140,
+        "games": 231942,
+        "wr": 0.5007
+      }
+    }
+  },
+  "38": {
+    "heroId": 38,
+    "name": "npc_dota_hero_beastmaster",
+    "overallWr": 0.4606,
+    "overallGames": 88806,
+    "pickRate": 0.0888,
+    "brackets": {
+      "6": {
+        "wins": 4722,
+        "games": 10281,
+        "wr": 0.4593
+      },
+      "7": {
+        "wins": 4187,
+        "games": 8885,
+        "wr": 0.4712
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4606
+      },
+      "all": {
+        "wins": 40907,
+        "games": 88806,
+        "wr": 0.4606
+      }
+    }
+  },
+  "39": {
+    "heroId": 39,
+    "name": "npc_dota_hero_queenofpain",
+    "overallWr": 0.4757,
+    "overallGames": 357819,
+    "pickRate": 0.3578,
+    "brackets": {
+      "6": {
+        "wins": 25888,
+        "games": 54349,
+        "wr": 0.4763
+      },
+      "7": {
+        "wins": 16852,
+        "games": 35419,
+        "wr": 0.4758
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4757
+      },
+      "all": {
+        "wins": 170215,
+        "games": 357819,
+        "wr": 0.4757
+      }
+    }
+  },
+  "40": {
+    "heroId": 40,
+    "name": "npc_dota_hero_venomancer",
+    "overallWr": 0.4753,
+    "overallGames": 276251,
+    "pickRate": 0.2763,
+    "brackets": {
+      "6": {
+        "wins": 15214,
+        "games": 32392,
+        "wr": 0.4697
+      },
+      "7": {
+        "wins": 7784,
+        "games": 16778,
+        "wr": 0.4639
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4753
+      },
+      "all": {
+        "wins": 131303,
+        "games": 276251,
+        "wr": 0.4753
+      }
+    }
+  },
+  "41": {
+    "heroId": 41,
+    "name": "npc_dota_hero_faceless_void",
+    "overallWr": 0.4872,
+    "overallGames": 345127,
+    "pickRate": 0.3451,
+    "brackets": {
+      "6": {
+        "wins": 21175,
+        "games": 43092,
+        "wr": 0.4914
+      },
+      "7": {
+        "wins": 12886,
+        "games": 26015,
+        "wr": 0.4953
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4872
+      },
+      "all": {
+        "wins": 168148,
+        "games": 345127,
+        "wr": 0.4872
+      }
+    }
+  },
+  "42": {
+    "heroId": 42,
+    "name": "npc_dota_hero_skeleton_king",
+    "overallWr": 0.549,
+    "overallGames": 523419,
+    "pickRate": 0.5234,
+    "brackets": {
+      "6": {
+        "wins": 37127,
+        "games": 68973,
+        "wr": 0.5383
+      },
+      "7": {
+        "wins": 18456,
+        "games": 35059,
+        "wr": 0.5264
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.549
+      },
+      "all": {
+        "wins": 287353,
+        "games": 523419,
+        "wr": 0.549
+      }
+    }
+  },
+  "43": {
+    "heroId": 43,
+    "name": "npc_dota_hero_death_prophet",
+    "overallWr": 0.4877,
+    "overallGames": 160458,
+    "pickRate": 0.1605,
+    "brackets": {
+      "6": {
+        "wins": 9552,
+        "games": 19486,
+        "wr": 0.4902
+      },
+      "7": {
+        "wins": 7738,
+        "games": 15496,
+        "wr": 0.4994
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4877
+      },
+      "all": {
+        "wins": 78262,
+        "games": 160458,
+        "wr": 0.4877
+      }
+    }
+  },
+  "44": {
+    "heroId": 44,
+    "name": "npc_dota_hero_phantom_assassin",
+    "overallWr": 0.5116,
+    "overallGames": 555633,
+    "pickRate": 0.5556,
+    "brackets": {
+      "6": {
+        "wins": 26781,
+        "games": 53857,
+        "wr": 0.4973
+      },
+      "7": {
+        "wins": 13344,
+        "games": 26807,
+        "wr": 0.4978
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5116
+      },
+      "all": {
+        "wins": 284258,
+        "games": 555633,
+        "wr": 0.5116
+      }
+    }
+  },
+  "45": {
+    "heroId": 45,
+    "name": "npc_dota_hero_pugna",
+    "overallWr": 0.5009,
+    "overallGames": 175507,
+    "pickRate": 0.1755,
+    "brackets": {
+      "6": {
+        "wins": 12173,
+        "games": 23542,
+        "wr": 0.5171
+      },
+      "7": {
+        "wins": 7861,
+        "games": 15159,
+        "wr": 0.5186
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5009
+      },
+      "all": {
+        "wins": 87905,
+        "games": 175507,
+        "wr": 0.5009
+      }
+    }
+  },
+  "46": {
+    "heroId": 46,
+    "name": "npc_dota_hero_templar_assassin",
+    "overallWr": 0.4597,
+    "overallGames": 203936,
+    "pickRate": 0.2039,
+    "brackets": {
+      "6": {
+        "wins": 12266,
+        "games": 26649,
+        "wr": 0.4603
+      },
+      "7": {
+        "wins": 8417,
+        "games": 18515,
+        "wr": 0.4546
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4597
+      },
+      "all": {
+        "wins": 93748,
+        "games": 203936,
+        "wr": 0.4597
+      }
+    }
+  },
+  "47": {
+    "heroId": 47,
+    "name": "npc_dota_hero_viper",
+    "overallWr": 0.4865,
+    "overallGames": 336195,
+    "pickRate": 0.3362,
+    "brackets": {
+      "6": {
+        "wins": 16501,
+        "games": 33773,
+        "wr": 0.4886
+      },
+      "7": {
+        "wins": 10653,
+        "games": 21564,
+        "wr": 0.494
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4865
+      },
+      "all": {
+        "wins": 163572,
+        "games": 336195,
+        "wr": 0.4865
+      }
+    }
+  },
+  "48": {
+    "heroId": 48,
+    "name": "npc_dota_hero_luna",
+    "overallWr": 0.5049,
+    "overallGames": 459402,
+    "pickRate": 0.4594,
+    "brackets": {
+      "6": {
+        "wins": 35093,
+        "games": 70499,
+        "wr": 0.4978
+      },
+      "7": {
+        "wins": 29170,
+        "games": 58950,
+        "wr": 0.4948
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5049
+      },
+      "all": {
+        "wins": 231945,
+        "games": 459402,
+        "wr": 0.5049
+      }
+    }
+  },
+  "49": {
+    "heroId": 49,
+    "name": "npc_dota_hero_dragon_knight",
+    "overallWr": 0.5273,
+    "overallGames": 508867,
+    "pickRate": 0.5089,
+    "brackets": {
+      "6": {
+        "wins": 43952,
+        "games": 83558,
+        "wr": 0.526
+      },
+      "7": {
+        "wins": 36608,
+        "games": 69835,
+        "wr": 0.5242
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5273
+      },
+      "all": {
+        "wins": 268343,
+        "games": 508867,
+        "wr": 0.5273
+      }
+    }
+  },
+  "50": {
+    "heroId": 50,
+    "name": "npc_dota_hero_dazzle",
+    "overallWr": 0.5063,
+    "overallGames": 203958,
+    "pickRate": 0.204,
+    "brackets": {
+      "6": {
+        "wins": 13480,
+        "games": 26048,
+        "wr": 0.5175
+      },
+      "7": {
+        "wins": 9998,
+        "games": 18965,
+        "wr": 0.5272
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5063
+      },
+      "all": {
+        "wins": 103256,
+        "games": 203958,
+        "wr": 0.5063
+      }
+    }
+  },
+  "51": {
+    "heroId": 51,
+    "name": "npc_dota_hero_rattletrap",
+    "overallWr": 0.4753,
+    "overallGames": 131996,
+    "pickRate": 0.132,
+    "brackets": {
+      "6": {
+        "wins": 9097,
+        "games": 19388,
+        "wr": 0.4692
+      },
+      "7": {
+        "wins": 7861,
+        "games": 15896,
+        "wr": 0.4945
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4753
+      },
+      "all": {
+        "wins": 62744,
+        "games": 131996,
+        "wr": 0.4753
+      }
+    }
+  },
+  "52": {
+    "heroId": 52,
+    "name": "npc_dota_hero_leshrac",
+    "overallWr": 0.515,
+    "overallGames": 94248,
+    "pickRate": 0.0942,
+    "brackets": {
+      "6": {
+        "wins": 6833,
+        "games": 13069,
+        "wr": 0.5228
+      },
+      "7": {
+        "wins": 6157,
+        "games": 11601,
+        "wr": 0.5307
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.515
+      },
+      "all": {
+        "wins": 48537,
+        "games": 94248,
+        "wr": 0.515
+      }
+    }
+  },
+  "53": {
+    "heroId": 53,
+    "name": "npc_dota_hero_furion",
+    "overallWr": 0.4364,
+    "overallGames": 384501,
+    "pickRate": 0.3845,
+    "brackets": {
+      "6": {
+        "wins": 21247,
+        "games": 48848,
+        "wr": 0.435
+      },
+      "7": {
+        "wins": 15636,
+        "games": 35371,
+        "wr": 0.4421
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4364
+      },
+      "all": {
+        "wins": 167800,
+        "games": 384501,
+        "wr": 0.4364
+      }
+    }
+  },
+  "54": {
+    "heroId": 54,
+    "name": "npc_dota_hero_life_stealer",
+    "overallWr": 0.5125,
+    "overallGames": 607399,
+    "pickRate": 0.6074,
+    "brackets": {
+      "6": {
+        "wins": 49882,
+        "games": 96720,
+        "wr": 0.5157
+      },
+      "7": {
+        "wins": 34366,
+        "games": 67603,
+        "wr": 0.5084
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5125
+      },
+      "all": {
+        "wins": 311286,
+        "games": 607399,
+        "wr": 0.5125
+      }
+    }
+  },
+  "55": {
+    "heroId": 55,
+    "name": "npc_dota_hero_dark_seer",
+    "overallWr": 0.4916,
+    "overallGames": 210458,
+    "pickRate": 0.2105,
+    "brackets": {
+      "6": {
+        "wins": 17276,
+        "games": 34755,
+        "wr": 0.4971
+      },
+      "7": {
+        "wins": 18489,
+        "games": 36272,
+        "wr": 0.5097
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4916
+      },
+      "all": {
+        "wins": 103454,
+        "games": 210458,
+        "wr": 0.4916
+      }
+    }
+  },
+  "56": {
+    "heroId": 56,
+    "name": "npc_dota_hero_clinkz",
+    "overallWr": 0.4964,
+    "overallGames": 205617,
+    "pickRate": 0.2056,
+    "brackets": {
+      "6": {
+        "wins": 11208,
+        "games": 22377,
+        "wr": 0.5009
+      },
+      "7": {
+        "wins": 8305,
+        "games": 16345,
+        "wr": 0.5081
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4964
+      },
+      "all": {
+        "wins": 102066,
+        "games": 205617,
+        "wr": 0.4964
+      }
+    }
+  },
+  "57": {
+    "heroId": 57,
+    "name": "npc_dota_hero_omniknight",
+    "overallWr": 0.5065,
+    "overallGames": 96928,
+    "pickRate": 0.0969,
+    "brackets": {
+      "6": {
+        "wins": 6263,
+        "games": 12086,
+        "wr": 0.5182
+      },
+      "7": {
+        "wins": 5070,
+        "games": 9506,
+        "wr": 0.5333
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5065
+      },
+      "all": {
+        "wins": 49092,
+        "games": 96928,
+        "wr": 0.5065
+      }
+    }
+  },
+  "58": {
+    "heroId": 58,
+    "name": "npc_dota_hero_enchantress",
+    "overallWr": 0.4768,
+    "overallGames": 119127,
+    "pickRate": 0.1191,
+    "brackets": {
+      "6": {
+        "wins": 6795,
+        "games": 14138,
+        "wr": 0.4806
+      },
+      "7": {
+        "wins": 5804,
+        "games": 12089,
+        "wr": 0.4801
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4768
+      },
+      "all": {
+        "wins": 56803,
+        "games": 119127,
+        "wr": 0.4768
+      }
+    }
+  },
+  "59": {
+    "heroId": 59,
+    "name": "npc_dota_hero_huskar",
+    "overallWr": 0.4569,
+    "overallGames": 190750,
+    "pickRate": 0.1908,
+    "brackets": {
+      "6": {
+        "wins": 9096,
+        "games": 19916,
+        "wr": 0.4567
+      },
+      "7": {
+        "wins": 7169,
+        "games": 15556,
+        "wr": 0.4609
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4569
+      },
+      "all": {
+        "wins": 87161,
+        "games": 190750,
+        "wr": 0.4569
+      }
+    }
+  },
+  "60": {
+    "heroId": 60,
+    "name": "npc_dota_hero_night_stalker",
+    "overallWr": 0.5159,
+    "overallGames": 293198,
+    "pickRate": 0.2932,
+    "brackets": {
+      "6": {
+        "wins": 28393,
+        "games": 53290,
+        "wr": 0.5328
+      },
+      "7": {
+        "wins": 21922,
+        "games": 41816,
+        "wr": 0.5242
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5159
+      },
+      "all": {
+        "wins": 151265,
+        "games": 293198,
+        "wr": 0.5159
+      }
+    }
+  },
+  "61": {
+    "heroId": 61,
+    "name": "npc_dota_hero_broodmother",
+    "overallWr": 0.5061,
+    "overallGames": 89056,
+    "pickRate": 0.0891,
+    "brackets": {
+      "6": {
+        "wins": 3789,
+        "games": 7617,
+        "wr": 0.4974
+      },
+      "7": {
+        "wins": 2824,
+        "games": 5480,
+        "wr": 0.5153
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5061
+      },
+      "all": {
+        "wins": 45072,
+        "games": 89056,
+        "wr": 0.5061
+      }
+    }
+  },
+  "62": {
+    "heroId": 62,
+    "name": "npc_dota_hero_bounty_hunter",
+    "overallWr": 0.5216,
+    "overallGames": 315817,
+    "pickRate": 0.3158,
+    "brackets": {
+      "6": {
+        "wins": 24729,
+        "games": 45955,
+        "wr": 0.5381
+      },
+      "7": {
+        "wins": 24662,
+        "games": 44622,
+        "wr": 0.5527
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5216
+      },
+      "all": {
+        "wins": 164743,
+        "games": 315817,
+        "wr": 0.5216
+      }
+    }
+  },
+  "63": {
+    "heroId": 63,
+    "name": "npc_dota_hero_weaver",
+    "overallWr": 0.4748,
+    "overallGames": 225868,
+    "pickRate": 0.2259,
+    "brackets": {
+      "6": {
+        "wins": 11707,
+        "games": 24919,
+        "wr": 0.4698
+      },
+      "7": {
+        "wins": 7723,
+        "games": 16122,
+        "wr": 0.479
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4748
+      },
+      "all": {
+        "wins": 107247,
+        "games": 225868,
+        "wr": 0.4748
+      }
+    }
+  },
+  "64": {
+    "heroId": 64,
+    "name": "npc_dota_hero_jakiro",
+    "overallWr": 0.4878,
+    "overallGames": 330691,
+    "pickRate": 0.3307,
+    "brackets": {
+      "6": {
+        "wins": 20123,
+        "games": 42511,
+        "wr": 0.4734
+      },
+      "7": {
+        "wins": 10922,
+        "games": 23419,
+        "wr": 0.4664
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4878
+      },
+      "all": {
+        "wins": 161297,
+        "games": 330691,
+        "wr": 0.4878
+      }
+    }
+  },
+  "65": {
+    "heroId": 65,
+    "name": "npc_dota_hero_batrider",
+    "overallWr": 0.4495,
+    "overallGames": 44762,
+    "pickRate": 0.0448,
+    "brackets": {
+      "6": {
+        "wins": 2235,
+        "games": 5067,
+        "wr": 0.4411
+      },
+      "7": {
+        "wins": 2050,
+        "games": 4375,
+        "wr": 0.4686
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4495
+      },
+      "all": {
+        "wins": 20121,
+        "games": 44762,
+        "wr": 0.4495
+      }
+    }
+  },
+  "66": {
+    "heroId": 66,
+    "name": "npc_dota_hero_chen",
+    "overallWr": 0.4521,
+    "overallGames": 19721,
+    "pickRate": 0.0197,
+    "brackets": {
+      "6": {
+        "wins": 986,
+        "games": 2084,
+        "wr": 0.4731
+      },
+      "7": {
+        "wins": 940,
+        "games": 1974,
+        "wr": 0.4762
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4521
+      },
+      "all": {
+        "wins": 8915,
+        "games": 19721,
+        "wr": 0.4521
+      }
+    }
+  },
+  "67": {
+    "heroId": 67,
+    "name": "npc_dota_hero_spectre",
+    "overallWr": 0.529,
+    "overallGames": 402995,
+    "pickRate": 0.403,
+    "brackets": {
+      "6": {
+        "wins": 27772,
+        "games": 52603,
+        "wr": 0.528
+      },
+      "7": {
+        "wins": 16587,
+        "games": 31678,
+        "wr": 0.5236
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.529
+      },
+      "all": {
+        "wins": 213180,
+        "games": 402995,
+        "wr": 0.529
+      }
+    }
+  },
+  "68": {
+    "heroId": 68,
+    "name": "npc_dota_hero_ancient_apparition",
+    "overallWr": 0.5155,
+    "overallGames": 270482,
+    "pickRate": 0.2705,
+    "brackets": {
+      "6": {
+        "wins": 18571,
+        "games": 36233,
+        "wr": 0.5125
+      },
+      "7": {
+        "wins": 10270,
+        "games": 20247,
+        "wr": 0.5072
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5155
+      },
+      "all": {
+        "wins": 139424,
+        "games": 270482,
+        "wr": 0.5155
+      }
+    }
+  },
+  "69": {
+    "heroId": 69,
+    "name": "npc_dota_hero_doom_bringer",
+    "overallWr": 0.4779,
+    "overallGames": 229878,
+    "pickRate": 0.2299,
+    "brackets": {
+      "6": {
+        "wins": 19223,
+        "games": 39799,
+        "wr": 0.483
+      },
+      "7": {
+        "wins": 17170,
+        "games": 34686,
+        "wr": 0.495
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4779
+      },
+      "all": {
+        "wins": 109869,
+        "games": 229878,
+        "wr": 0.4779
+      }
+    }
+  },
+  "70": {
+    "heroId": 70,
+    "name": "npc_dota_hero_ursa",
+    "overallWr": 0.4874,
+    "overallGames": 280019,
+    "pickRate": 0.28,
+    "brackets": {
+      "6": {
+        "wins": 19668,
+        "games": 39467,
+        "wr": 0.4983
+      },
+      "7": {
+        "wins": 13888,
+        "games": 27380,
+        "wr": 0.5072
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4874
+      },
+      "all": {
+        "wins": 136473,
+        "games": 280019,
+        "wr": 0.4874
+      }
+    }
+  },
+  "71": {
+    "heroId": 71,
+    "name": "npc_dota_hero_spirit_breaker",
+    "overallWr": 0.5216,
+    "overallGames": 675113,
+    "pickRate": 0.6751,
+    "brackets": {
+      "6": {
+        "wins": 49839,
+        "games": 95509,
+        "wr": 0.5218
+      },
+      "7": {
+        "wins": 35751,
+        "games": 68053,
+        "wr": 0.5253
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5216
+      },
+      "all": {
+        "wins": 352128,
+        "games": 675113,
+        "wr": 0.5216
+      }
+    }
+  },
+  "72": {
+    "heroId": 72,
+    "name": "npc_dota_hero_gyrocopter",
+    "overallWr": 0.4653,
+    "overallGames": 140351,
+    "pickRate": 0.1404,
+    "brackets": {
+      "6": {
+        "wins": 9940,
+        "games": 21198,
+        "wr": 0.4689
+      },
+      "7": {
+        "wins": 6664,
+        "games": 14186,
+        "wr": 0.4698
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4653
+      },
+      "all": {
+        "wins": 65301,
+        "games": 140351,
+        "wr": 0.4653
+      }
+    }
+  },
+  "73": {
+    "heroId": 73,
+    "name": "npc_dota_hero_alchemist",
+    "overallWr": 0.4728,
+    "overallGames": 126886,
+    "pickRate": 0.1269,
+    "brackets": {
+      "6": {
+        "wins": 6923,
+        "games": 14655,
+        "wr": 0.4724
+      },
+      "7": {
+        "wins": 3895,
+        "games": 8338,
+        "wr": 0.4671
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4728
+      },
+      "all": {
+        "wins": 59988,
+        "games": 126886,
+        "wr": 0.4728
+      }
+    }
+  },
+  "74": {
+    "heroId": 74,
+    "name": "npc_dota_hero_invoker",
+    "overallWr": 0.5032,
+    "overallGames": 726288,
+    "pickRate": 0.7263,
+    "brackets": {
+      "6": {
+        "wins": 59395,
+        "games": 116436,
+        "wr": 0.5101
+      },
+      "7": {
+        "wins": 42561,
+        "games": 82578,
+        "wr": 0.5154
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5032
+      },
+      "all": {
+        "wins": 365453,
+        "games": 726288,
+        "wr": 0.5032
+      }
+    }
+  },
+  "75": {
+    "heroId": 75,
+    "name": "npc_dota_hero_silencer",
+    "overallWr": 0.5065,
+    "overallGames": 401480,
+    "pickRate": 0.4015,
+    "brackets": {
+      "6": {
+        "wins": 26593,
+        "games": 53297,
+        "wr": 0.499
+      },
+      "7": {
+        "wins": 15573,
+        "games": 31342,
+        "wr": 0.4969
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5065
+      },
+      "all": {
+        "wins": 203337,
+        "games": 401480,
+        "wr": 0.5065
+      }
+    }
+  },
+  "76": {
+    "heroId": 76,
+    "name": "npc_dota_hero_obsidian_destroyer",
+    "overallWr": 0.534,
+    "overallGames": 467392,
+    "pickRate": 0.4674,
+    "brackets": {
+      "6": {
+        "wins": 42384,
+        "games": 77317,
+        "wr": 0.5482
+      },
+      "7": {
+        "wins": 33455,
+        "games": 61932,
+        "wr": 0.5402
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.534
+      },
+      "all": {
+        "wins": 249567,
+        "games": 467392,
+        "wr": 0.534
+      }
+    }
+  },
+  "77": {
+    "heroId": 77,
+    "name": "npc_dota_hero_lycan",
+    "overallWr": 0.4851,
+    "overallGames": 60883,
+    "pickRate": 0.0609,
+    "brackets": {
+      "6": {
+        "wins": 3823,
+        "games": 7592,
+        "wr": 0.5036
+      },
+      "7": {
+        "wins": 3520,
+        "games": 6918,
+        "wr": 0.5088
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4851
+      },
+      "all": {
+        "wins": 29537,
+        "games": 60883,
+        "wr": 0.4851
+      }
+    }
+  },
+  "78": {
+    "heroId": 78,
+    "name": "npc_dota_hero_brewmaster",
+    "overallWr": 0.5051,
+    "overallGames": 91976,
+    "pickRate": 0.092,
+    "brackets": {
+      "6": {
+        "wins": 8093,
+        "games": 15998,
+        "wr": 0.5059
+      },
+      "7": {
+        "wins": 8728,
+        "games": 17084,
+        "wr": 0.5109
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5051
+      },
+      "all": {
+        "wins": 46455,
+        "games": 91976,
+        "wr": 0.5051
+      }
+    }
+  },
+  "79": {
+    "heroId": 79,
+    "name": "npc_dota_hero_shadow_demon",
+    "overallWr": 0.4474,
+    "overallGames": 83484,
+    "pickRate": 0.0835,
+    "brackets": {
+      "6": {
+        "wins": 5685,
+        "games": 12379,
+        "wr": 0.4592
+      },
+      "7": {
+        "wins": 4575,
+        "games": 9958,
+        "wr": 0.4594
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4474
+      },
+      "all": {
+        "wins": 37352,
+        "games": 83484,
+        "wr": 0.4474
+      }
+    }
+  },
+  "80": {
+    "heroId": 80,
+    "name": "npc_dota_hero_lone_druid",
+    "overallWr": 0.4891,
+    "overallGames": 129040,
+    "pickRate": 0.129,
+    "brackets": {
+      "6": {
+        "wins": 8743,
+        "games": 17941,
+        "wr": 0.4873
+      },
+      "7": {
+        "wins": 7273,
+        "games": 14717,
+        "wr": 0.4942
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4891
+      },
+      "all": {
+        "wins": 63113,
+        "games": 129040,
+        "wr": 0.4891
+      }
+    }
+  },
+  "81": {
+    "heroId": 81,
+    "name": "npc_dota_hero_chaos_knight",
+    "overallWr": 0.5156,
+    "overallGames": 198628,
+    "pickRate": 0.1986,
+    "brackets": {
+      "6": {
+        "wins": 9293,
+        "games": 18607,
+        "wr": 0.4994
+      },
+      "7": {
+        "wins": 5564,
+        "games": 10816,
+        "wr": 0.5144
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5156
+      },
+      "all": {
+        "wins": 102416,
+        "games": 198628,
+        "wr": 0.5156
+      }
+    }
+  },
+  "82": {
+    "heroId": 82,
+    "name": "npc_dota_hero_meepo",
+    "overallWr": 0.525,
+    "overallGames": 76274,
+    "pickRate": 0.0763,
+    "brackets": {
+      "6": {
+        "wins": 4273,
+        "games": 8032,
+        "wr": 0.532
+      },
+      "7": {
+        "wins": 3311,
+        "games": 6067,
+        "wr": 0.5457
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.525
+      },
+      "all": {
+        "wins": 40045,
+        "games": 76274,
+        "wr": 0.525
+      }
+    }
+  },
+  "83": {
+    "heroId": 83,
+    "name": "npc_dota_hero_treant",
+    "overallWr": 0.4531,
+    "overallGames": 103984,
+    "pickRate": 0.104,
+    "brackets": {
+      "6": {
+        "wins": 5213,
+        "games": 11494,
+        "wr": 0.4535
+      },
+      "7": {
+        "wins": 3169,
+        "games": 7029,
+        "wr": 0.4508
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4531
+      },
+      "all": {
+        "wins": 47116,
+        "games": 103984,
+        "wr": 0.4531
+      }
+    }
+  },
+  "84": {
+    "heroId": 84,
+    "name": "npc_dota_hero_ogre_magi",
+    "overallWr": 0.5057,
+    "overallGames": 681570,
+    "pickRate": 0.6816,
+    "brackets": {
+      "6": {
+        "wins": 40133,
+        "games": 81094,
+        "wr": 0.4949
+      },
+      "7": {
+        "wins": 20518,
+        "games": 42263,
+        "wr": 0.4855
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5057
+      },
+      "all": {
+        "wins": 344662,
+        "games": 681570,
+        "wr": 0.5057
+      }
+    }
+  },
+  "85": {
+    "heroId": 85,
+    "name": "npc_dota_hero_undying",
+    "overallWr": 0.4971,
+    "overallGames": 463792,
+    "pickRate": 0.4638,
+    "brackets": {
+      "6": {
+        "wins": 32301,
+        "games": 64912,
+        "wr": 0.4976
+      },
+      "7": {
+        "wins": 21506,
+        "games": 44896,
+        "wr": 0.479
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4971
+      },
+      "all": {
+        "wins": 230561,
+        "games": 463792,
+        "wr": 0.4971
+      }
+    }
+  },
+  "86": {
+    "heroId": 86,
+    "name": "npc_dota_hero_rubick",
+    "overallWr": 0.4965,
+    "overallGames": 770819,
+    "pickRate": 0.7708,
+    "brackets": {
+      "6": {
+        "wins": 70252,
+        "games": 141014,
+        "wr": 0.4982
+      },
+      "7": {
+        "wins": 52390,
+        "games": 104735,
+        "wr": 0.5002
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4965
+      },
+      "all": {
+        "wins": 382680,
+        "games": 770819,
+        "wr": 0.4965
+      }
+    }
+  },
+  "87": {
+    "heroId": 87,
+    "name": "npc_dota_hero_disruptor",
+    "overallWr": 0.5052,
+    "overallGames": 321689,
+    "pickRate": 0.3217,
+    "brackets": {
+      "6": {
+        "wins": 28804,
+        "games": 56286,
+        "wr": 0.5117
+      },
+      "7": {
+        "wins": 23222,
+        "games": 45340,
+        "wr": 0.5122
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5052
+      },
+      "all": {
+        "wins": 162518,
+        "games": 321689,
+        "wr": 0.5052
+      }
+    }
+  },
+  "88": {
+    "heroId": 88,
+    "name": "npc_dota_hero_nyx_assassin",
+    "overallWr": 0.5298,
+    "overallGames": 288531,
+    "pickRate": 0.2885,
+    "brackets": {
+      "6": {
+        "wins": 25578,
+        "games": 48231,
+        "wr": 0.5303
+      },
+      "7": {
+        "wins": 19419,
+        "games": 36362,
+        "wr": 0.534
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5298
+      },
+      "all": {
+        "wins": 152872,
+        "games": 288531,
+        "wr": 0.5298
+      }
+    }
+  },
+  "89": {
+    "heroId": 89,
+    "name": "npc_dota_hero_naga_siren",
+    "overallWr": 0.4934,
+    "overallGames": 70686,
+    "pickRate": 0.0707,
+    "brackets": {
+      "6": {
+        "wins": 2611,
+        "games": 5354,
+        "wr": 0.4877
+      },
+      "7": {
+        "wins": 1795,
+        "games": 3641,
+        "wr": 0.493
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4934
+      },
+      "all": {
+        "wins": 34878,
+        "games": 70686,
+        "wr": 0.4934
+      }
+    }
+  },
+  "90": {
+    "heroId": 90,
+    "name": "npc_dota_hero_keeper_of_the_light",
+    "overallWr": 0.4879,
+    "overallGames": 205529,
+    "pickRate": 0.2055,
+    "brackets": {
+      "6": {
+        "wins": 12299,
+        "games": 24428,
+        "wr": 0.5035
+      },
+      "7": {
+        "wins": 10744,
+        "games": 20953,
+        "wr": 0.5128
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4879
+      },
+      "all": {
+        "wins": 100274,
+        "games": 205529,
+        "wr": 0.4879
+      }
+    }
+  },
+  "91": {
+    "heroId": 91,
+    "name": "npc_dota_hero_wisp",
+    "overallWr": 0.494,
+    "overallGames": 162713,
+    "pickRate": 0.1627,
+    "brackets": {
+      "6": {
+        "wins": 11610,
+        "games": 23280,
+        "wr": 0.4987
+      },
+      "7": {
+        "wins": 9898,
+        "games": 19324,
+        "wr": 0.5122
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.494
+      },
+      "all": {
+        "wins": 80384,
+        "games": 162713,
+        "wr": 0.494
+      }
+    }
+  },
+  "92": {
+    "heroId": 92,
+    "name": "npc_dota_hero_visage",
+    "overallWr": 0.5223,
+    "overallGames": 66824,
+    "pickRate": 0.0668,
+    "brackets": {
+      "6": {
+        "wins": 4969,
+        "games": 9023,
+        "wr": 0.5507
+      },
+      "7": {
+        "wins": 4365,
+        "games": 8025,
+        "wr": 0.5439
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5223
+      },
+      "all": {
+        "wins": 34904,
+        "games": 66824,
+        "wr": 0.5223
+      }
+    }
+  },
+  "93": {
+    "heroId": 93,
+    "name": "npc_dota_hero_slark",
+    "overallWr": 0.5018,
+    "overallGames": 500984,
+    "pickRate": 0.501,
+    "brackets": {
+      "6": {
+        "wins": 38405,
+        "games": 77690,
+        "wr": 0.4943
+      },
+      "7": {
+        "wins": 28706,
+        "games": 56970,
+        "wr": 0.5039
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5018
+      },
+      "all": {
+        "wins": 251389,
+        "games": 500984,
+        "wr": 0.5018
+      }
+    }
+  },
+  "94": {
+    "heroId": 94,
+    "name": "npc_dota_hero_medusa",
+    "overallWr": 0.4877,
+    "overallGames": 120192,
+    "pickRate": 0.1202,
+    "brackets": {
+      "6": {
+        "wins": 6901,
+        "games": 14391,
+        "wr": 0.4795
+      },
+      "7": {
+        "wins": 3442,
+        "games": 7340,
+        "wr": 0.4689
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4877
+      },
+      "all": {
+        "wins": 58620,
+        "games": 120192,
+        "wr": 0.4877
+      }
+    }
+  },
+  "95": {
+    "heroId": 95,
+    "name": "npc_dota_hero_troll_warlord",
+    "overallWr": 0.52,
+    "overallGames": 126219,
+    "pickRate": 0.1262,
+    "brackets": {
+      "6": {
+        "wins": 6075,
+        "games": 11892,
+        "wr": 0.5108
+      },
+      "7": {
+        "wins": 3780,
+        "games": 7450,
+        "wr": 0.5074
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.52
+      },
+      "all": {
+        "wins": 65631,
+        "games": 126219,
+        "wr": 0.52
+      }
+    }
+  },
+  "96": {
+    "heroId": 96,
+    "name": "npc_dota_hero_centaur",
+    "overallWr": 0.4962,
+    "overallGames": 270556,
+    "pickRate": 0.2706,
+    "brackets": {
+      "6": {
+        "wins": 19981,
+        "games": 40941,
+        "wr": 0.488
+      },
+      "7": {
+        "wins": 11896,
+        "games": 24733,
+        "wr": 0.481
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4962
+      },
+      "all": {
+        "wins": 134255,
+        "games": 270556,
+        "wr": 0.4962
+      }
+    }
+  },
+  "97": {
+    "heroId": 97,
+    "name": "npc_dota_hero_magnataur",
+    "overallWr": 0.4932,
+    "overallGames": 412787,
+    "pickRate": 0.4128,
+    "brackets": {
+      "6": {
+        "wins": 38298,
+        "games": 76418,
+        "wr": 0.5012
+      },
+      "7": {
+        "wins": 25380,
+        "games": 51271,
+        "wr": 0.495
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4932
+      },
+      "all": {
+        "wins": 203590,
+        "games": 412787,
+        "wr": 0.4932
+      }
+    }
+  },
+  "98": {
+    "heroId": 98,
+    "name": "npc_dota_hero_shredder",
+    "overallWr": 0.4566,
+    "overallGames": 190730,
+    "pickRate": 0.1907,
+    "brackets": {
+      "6": {
+        "wins": 13092,
+        "games": 28618,
+        "wr": 0.4575
+      },
+      "7": {
+        "wins": 11300,
+        "games": 24820,
+        "wr": 0.4553
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4566
+      },
+      "all": {
+        "wins": 87091,
+        "games": 190730,
+        "wr": 0.4566
+      }
+    }
+  },
+  "99": {
+    "heroId": 99,
+    "name": "npc_dota_hero_bristleback",
+    "overallWr": 0.492,
+    "overallGames": 283895,
+    "pickRate": 0.2839,
+    "brackets": {
+      "6": {
+        "wins": 10087,
+        "games": 21728,
+        "wr": 0.4642
+      },
+      "7": {
+        "wins": 4926,
+        "games": 10755,
+        "wr": 0.458
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.492
+      },
+      "all": {
+        "wins": 139669,
+        "games": 283895,
+        "wr": 0.492
+      }
+    }
+  },
+  "100": {
+    "heroId": 100,
+    "name": "npc_dota_hero_tusk",
+    "overallWr": 0.4793,
+    "overallGames": 216047,
+    "pickRate": 0.216,
+    "brackets": {
+      "6": {
+        "wins": 18909,
+        "games": 38351,
+        "wr": 0.4931
+      },
+      "7": {
+        "wins": 17203,
+        "games": 34850,
+        "wr": 0.4936
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4793
+      },
+      "all": {
+        "wins": 103545,
+        "games": 216047,
+        "wr": 0.4793
+      }
+    }
+  },
+  "101": {
+    "heroId": 101,
+    "name": "npc_dota_hero_skywrath_mage",
+    "overallWr": 0.5008,
+    "overallGames": 488632,
+    "pickRate": 0.4886,
+    "brackets": {
+      "6": {
+        "wins": 30505,
+        "games": 61532,
+        "wr": 0.4958
+      },
+      "7": {
+        "wins": 19805,
+        "games": 40132,
+        "wr": 0.4935
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5008
+      },
+      "all": {
+        "wins": 244701,
+        "games": 488632,
+        "wr": 0.5008
+      }
+    }
+  },
+  "102": {
+    "heroId": 102,
+    "name": "npc_dota_hero_abaddon",
+    "overallWr": 0.512,
+    "overallGames": 131180,
+    "pickRate": 0.1312,
+    "brackets": {
+      "6": {
+        "wins": 8472,
+        "games": 16372,
+        "wr": 0.5175
+      },
+      "7": {
+        "wins": 5067,
+        "games": 9954,
+        "wr": 0.509
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.512
+      },
+      "all": {
+        "wins": 67166,
+        "games": 131180,
+        "wr": 0.512
+      }
+    }
+  },
+  "103": {
+    "heroId": 103,
+    "name": "npc_dota_hero_elder_titan",
+    "overallWr": 0.4956,
+    "overallGames": 47830,
+    "pickRate": 0.0478,
+    "brackets": {
+      "6": {
+        "wins": 2878,
+        "games": 5292,
+        "wr": 0.5438
+      },
+      "7": {
+        "wins": 2351,
+        "games": 4437,
+        "wr": 0.5299
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4956
+      },
+      "all": {
+        "wins": 23703,
+        "games": 47830,
+        "wr": 0.4956
+      }
+    }
+  },
+  "104": {
+    "heroId": 104,
+    "name": "npc_dota_hero_legion_commander",
+    "overallWr": 0.5263,
+    "overallGames": 564651,
+    "pickRate": 0.5647,
+    "brackets": {
+      "6": {
+        "wins": 38971,
+        "games": 74321,
+        "wr": 0.5244
+      },
+      "7": {
+        "wins": 22259,
+        "games": 42902,
+        "wr": 0.5188
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5263
+      },
+      "all": {
+        "wins": 297193,
+        "games": 564651,
+        "wr": 0.5263
+      }
+    }
+  },
+  "105": {
+    "heroId": 105,
+    "name": "npc_dota_hero_techies",
+    "overallWr": 0.5112,
+    "overallGames": 502944,
+    "pickRate": 0.5029,
+    "brackets": {
+      "6": {
+        "wins": 34736,
+        "games": 68030,
+        "wr": 0.5106
+      },
+      "7": {
+        "wins": 24817,
+        "games": 49439,
+        "wr": 0.502
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5112
+      },
+      "all": {
+        "wins": 257124,
+        "games": 502944,
+        "wr": 0.5112
+      }
+    }
+  },
+  "106": {
+    "heroId": 106,
+    "name": "npc_dota_hero_ember_spirit",
+    "overallWr": 0.4913,
+    "overallGames": 275712,
+    "pickRate": 0.2757,
+    "brackets": {
+      "6": {
+        "wins": 24261,
+        "games": 48636,
+        "wr": 0.4988
+      },
+      "7": {
+        "wins": 22445,
+        "games": 44448,
+        "wr": 0.505
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4913
+      },
+      "all": {
+        "wins": 135464,
+        "games": 275712,
+        "wr": 0.4913
+      }
+    }
+  },
+  "107": {
+    "heroId": 107,
+    "name": "npc_dota_hero_earth_spirit",
+    "overallWr": 0.4934,
+    "overallGames": 173393,
+    "pickRate": 0.1734,
+    "brackets": {
+      "6": {
+        "wins": 16061,
+        "games": 32008,
+        "wr": 0.5018
+      },
+      "7": {
+        "wins": 14659,
+        "games": 28822,
+        "wr": 0.5086
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4934
+      },
+      "all": {
+        "wins": 85555,
+        "games": 173393,
+        "wr": 0.4934
+      }
+    }
+  },
+  "108": {
+    "heroId": 108,
+    "name": "npc_dota_hero_abyssal_underlord",
+    "overallWr": 0.4844,
+    "overallGames": 265297,
+    "pickRate": 0.2653,
+    "brackets": {
+      "6": {
+        "wins": 19151,
+        "games": 40507,
+        "wr": 0.4728
+      },
+      "7": {
+        "wins": 11367,
+        "games": 24746,
+        "wr": 0.4593
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4844
+      },
+      "all": {
+        "wins": 128514,
+        "games": 265297,
+        "wr": 0.4844
+      }
+    }
+  },
+  "109": {
+    "heroId": 109,
+    "name": "npc_dota_hero_terrorblade",
+    "overallWr": 0.4722,
+    "overallGames": 177683,
+    "pickRate": 0.1777,
+    "brackets": {
+      "6": {
+        "wins": 10852,
+        "games": 22860,
+        "wr": 0.4747
+      },
+      "7": {
+        "wins": 10404,
+        "games": 21825,
+        "wr": 0.4767
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4722
+      },
+      "all": {
+        "wins": 83897,
+        "games": 177683,
+        "wr": 0.4722
+      }
+    }
+  },
+  "110": {
+    "heroId": 110,
+    "name": "npc_dota_hero_phoenix",
+    "overallWr": 0.5155,
+    "overallGames": 197671,
+    "pickRate": 0.1977,
+    "brackets": {
+      "6": {
+        "wins": 17568,
+        "games": 33827,
+        "wr": 0.5193
+      },
+      "7": {
+        "wins": 15001,
+        "games": 28989,
+        "wr": 0.5175
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5155
+      },
+      "all": {
+        "wins": 101897,
+        "games": 197671,
+        "wr": 0.5155
+      }
+    }
+  },
+  "111": {
+    "heroId": 111,
+    "name": "npc_dota_hero_oracle",
+    "overallWr": 0.5,
+    "overallGames": 133335,
+    "pickRate": 0.1333,
+    "brackets": {
+      "6": {
+        "wins": 11356,
+        "games": 22037,
+        "wr": 0.5153
+      },
+      "7": {
+        "wins": 9816,
+        "games": 18853,
+        "wr": 0.5207
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5
+      },
+      "all": {
+        "wins": 66663,
+        "games": 133335,
+        "wr": 0.5
+      }
+    }
+  },
+  "112": {
+    "heroId": 112,
+    "name": "npc_dota_hero_winter_wyvern",
+    "overallWr": 0.4956,
+    "overallGames": 246972,
+    "pickRate": 0.247,
+    "brackets": {
+      "6": {
+        "wins": 19008,
+        "games": 37440,
+        "wr": 0.5077
+      },
+      "7": {
+        "wins": 20151,
+        "games": 39233,
+        "wr": 0.5136
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4956
+      },
+      "all": {
+        "wins": 122389,
+        "games": 246972,
+        "wr": 0.4956
+      }
+    }
+  },
+  "113": {
+    "heroId": 113,
+    "name": "npc_dota_hero_arc_warden",
+    "overallWr": 0.5177,
+    "overallGames": 193283,
+    "pickRate": 0.1933,
+    "brackets": {
+      "6": {
+        "wins": 12504,
+        "games": 24033,
+        "wr": 0.5203
+      },
+      "7": {
+        "wins": 9181,
+        "games": 17323,
+        "wr": 0.53
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5177
+      },
+      "all": {
+        "wins": 100060,
+        "games": 193283,
+        "wr": 0.5177
+      }
+    }
+  },
+  "114": {
+    "heroId": 114,
+    "name": "npc_dota_hero_monkey_king",
+    "overallWr": 0.4557,
+    "overallGames": 227404,
+    "pickRate": 0.2274,
+    "brackets": {
+      "6": {
+        "wins": 14051,
+        "games": 30513,
+        "wr": 0.4605
+      },
+      "7": {
+        "wins": 10035,
+        "games": 21723,
+        "wr": 0.462
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4557
+      },
+      "all": {
+        "wins": 103637,
+        "games": 227404,
+        "wr": 0.4557
+      }
+    }
+  },
+  "119": {
+    "heroId": 119,
+    "name": "npc_dota_hero_dark_willow",
+    "overallWr": 0.4916,
+    "overallGames": 274103,
+    "pickRate": 0.2741,
+    "brackets": {
+      "6": {
+        "wins": 21449,
+        "games": 42947,
+        "wr": 0.4994
+      },
+      "7": {
+        "wins": 19042,
+        "games": 37394,
+        "wr": 0.5092
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4916
+      },
+      "all": {
+        "wins": 134746,
+        "games": 274103,
+        "wr": 0.4916
+      }
+    }
+  },
+  "120": {
+    "heroId": 120,
+    "name": "npc_dota_hero_pangolier",
+    "overallWr": 0.4635,
+    "overallGames": 129851,
+    "pickRate": 0.1299,
+    "brackets": {
+      "6": {
+        "wins": 10845,
+        "games": 23158,
+        "wr": 0.4683
+      },
+      "7": {
+        "wins": 10885,
+        "games": 22956,
+        "wr": 0.4742
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4635
+      },
+      "all": {
+        "wins": 60181,
+        "games": 129851,
+        "wr": 0.4635
+      }
+    }
+  },
+  "121": {
+    "heroId": 121,
+    "name": "npc_dota_hero_grimstroke",
+    "overallWr": 0.5193,
+    "overallGames": 265049,
+    "pickRate": 0.265,
+    "brackets": {
+      "6": {
+        "wins": 23652,
+        "games": 45287,
+        "wr": 0.5223
+      },
+      "7": {
+        "wins": 18291,
+        "games": 35124,
+        "wr": 0.5208
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5193
+      },
+      "all": {
+        "wins": 137647,
+        "games": 265049,
+        "wr": 0.5193
+      }
+    }
+  },
+  "123": {
+    "heroId": 123,
+    "name": "npc_dota_hero_hoodwink",
+    "overallWr": 0.4717,
+    "overallGames": 465565,
+    "pickRate": 0.4656,
+    "brackets": {
+      "6": {
+        "wins": 32343,
+        "games": 68355,
+        "wr": 0.4732
+      },
+      "7": {
+        "wins": 25438,
+        "games": 53741,
+        "wr": 0.4733
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4717
+      },
+      "all": {
+        "wins": 219613,
+        "games": 465565,
+        "wr": 0.4717
+      }
+    }
+  },
+  "126": {
+    "heroId": 126,
+    "name": "npc_dota_hero_void_spirit",
+    "overallWr": 0.4974,
+    "overallGames": 180254,
+    "pickRate": 0.1803,
+    "brackets": {
+      "6": {
+        "wins": 15116,
+        "games": 30049,
+        "wr": 0.503
+      },
+      "7": {
+        "wins": 13221,
+        "games": 26596,
+        "wr": 0.4971
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4974
+      },
+      "all": {
+        "wins": 89656,
+        "games": 180254,
+        "wr": 0.4974
+      }
+    }
+  },
+  "128": {
+    "heroId": 128,
+    "name": "npc_dota_hero_snapfire",
+    "overallWr": 0.4916,
+    "overallGames": 400760,
+    "pickRate": 0.4008,
+    "brackets": {
+      "6": {
+        "wins": 34878,
+        "games": 70698,
+        "wr": 0.4933
+      },
+      "7": {
+        "wins": 25791,
+        "games": 52661,
+        "wr": 0.4898
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4916
+      },
+      "all": {
+        "wins": 197023,
+        "games": 400760,
+        "wr": 0.4916
+      }
+    }
+  },
+  "129": {
+    "heroId": 129,
+    "name": "npc_dota_hero_mars",
+    "overallWr": 0.4757,
+    "overallGames": 166083,
+    "pickRate": 0.1661,
+    "brackets": {
+      "6": {
+        "wins": 14074,
+        "games": 29766,
+        "wr": 0.4728
+      },
+      "7": {
+        "wins": 10856,
+        "games": 22868,
+        "wr": 0.4747
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4757
+      },
+      "all": {
+        "wins": 79009,
+        "games": 166083,
+        "wr": 0.4757
+      }
+    }
+  },
+  "131": {
+    "heroId": 131,
+    "name": "npc_dota_hero_ringmaster",
+    "overallWr": 0.4843,
+    "overallGames": 194576,
+    "pickRate": 0.1946,
+    "brackets": {
+      "6": {
+        "wins": 16417,
+        "games": 33571,
+        "wr": 0.489
+      },
+      "7": {
+        "wins": 15235,
+        "games": 30800,
+        "wr": 0.4946
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4843
+      },
+      "all": {
+        "wins": 94235,
+        "games": 194576,
+        "wr": 0.4843
+      }
+    }
+  },
+  "135": {
+    "heroId": 135,
+    "name": "npc_dota_hero_dawnbreaker",
+    "overallWr": 0.5213,
+    "overallGames": 364829,
+    "pickRate": 0.3648,
+    "brackets": {
+      "6": {
+        "wins": 33767,
+        "games": 64554,
+        "wr": 0.5231
+      },
+      "7": {
+        "wins": 26730,
+        "games": 51704,
+        "wr": 0.517
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.5213
+      },
+      "all": {
+        "wins": 190186,
+        "games": 364829,
+        "wr": 0.5213
+      }
+    }
+  },
+  "136": {
+    "heroId": 136,
+    "name": "npc_dota_hero_marci",
+    "overallWr": 0.4967,
+    "overallGames": 174974,
+    "pickRate": 0.175,
+    "brackets": {
+      "6": {
+        "wins": 10923,
+        "games": 21497,
+        "wr": 0.5081
+      },
+      "7": {
+        "wins": 8423,
+        "games": 16401,
+        "wr": 0.5136
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4967
+      },
+      "all": {
+        "wins": 86905,
+        "games": 174974,
+        "wr": 0.4967
+      }
+    }
+  },
+  "137": {
+    "heroId": 137,
+    "name": "npc_dota_hero_primal_beast",
+    "overallWr": 0.4915,
+    "overallGames": 121832,
+    "pickRate": 0.1218,
+    "brackets": {
+      "6": {
+        "wins": 8180,
+        "games": 16561,
+        "wr": 0.4939
+      },
+      "7": {
+        "wins": 7407,
+        "games": 14387,
+        "wr": 0.5148
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4915
+      },
+      "all": {
+        "wins": 59881,
+        "games": 121832,
+        "wr": 0.4915
+      }
+    }
+  },
+  "138": {
+    "heroId": 138,
+    "name": "npc_dota_hero_muerta",
+    "overallWr": 0.4797,
+    "overallGames": 115824,
+    "pickRate": 0.1158,
+    "brackets": {
+      "6": {
+        "wins": 6798,
+        "games": 14419,
+        "wr": 0.4715
+      },
+      "7": {
+        "wins": 5003,
+        "games": 10494,
+        "wr": 0.4767
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4797
+      },
+      "all": {
+        "wins": 55559,
+        "games": 115824,
+        "wr": 0.4797
+      }
+    }
+  },
+  "145": {
+    "heroId": 145,
+    "name": "npc_dota_hero_kez",
+    "overallWr": 0.4554,
+    "overallGames": 163086,
+    "pickRate": 0.1631,
+    "brackets": {
+      "6": {
+        "wins": 10644,
+        "games": 23590,
+        "wr": 0.4512
+      },
+      "7": {
+        "wins": 8617,
+        "games": 19010,
+        "wr": 0.4533
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4554
+      },
+      "all": {
+        "wins": 74276,
+        "games": 163086,
+        "wr": 0.4554
+      }
+    }
+  },
+  "155": {
+    "heroId": 155,
+    "name": "npc_dota_hero_largo",
+    "overallWr": 0.4799,
+    "overallGames": 69107,
+    "pickRate": 0.0691,
+    "brackets": {
+      "6": {
+        "wins": 5231,
+        "games": 10733,
+        "wr": 0.4874
+      },
+      "7": {
+        "wins": 5326,
+        "games": 10824,
+        "wr": 0.4921
+      },
+      "8": {
+        "wins": 0,
+        "games": 0,
+        "wr": 0.4799
+      },
+      "all": {
+        "wins": 33161,
+        "games": 69107,
+        "wr": 0.4799
+      }
+    }
+  }
+}

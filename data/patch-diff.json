@@ -1,0 +1,60 @@
+{
+  "comparedRange": {
+    "oldDateOrPatch": "2026-09-01_patch7.37",
+    "newDateOrPatch": "Current Live / 7.37e+"
+  },
+  "generatedAt": 1791294307265,
+  "matchupDiffs": [
+    {
+      "myHeroId": 17,
+      "enemyHeroId": 11,
+      "oldDelta": -0.0361,
+      "newDelta": -0.0011,
+      "deltaShift": 0.035,
+      "oldAdjWr": 0.4363,
+      "newAdjWr": 0.4713,
+      "oldGames": 329,
+      "newGames": 329
+    },
+    {
+      "myHeroId": 106,
+      "enemyHeroId": 59,
+      "oldDelta": 0.0152,
+      "newDelta": -0.0128,
+      "deltaShift": -0.028,
+      "oldAdjWr": 0.5065,
+      "newAdjWr": 0.4785,
+      "oldGames": 110,
+      "newGames": 110
+    },
+    {
+      "myHeroId": 13,
+      "enemyHeroId": 39,
+      "oldDelta": 0.0064,
+      "newDelta": 0.0284,
+      "deltaShift": 0.022000000000000002,
+      "oldAdjWr": 0.4761,
+      "newAdjWr": 0.4981,
+      "oldGames": 222,
+      "newGames": 222
+    }
+  ],
+  "heroStatDiffs": [],
+  "roleFitDiffs": [
+    {
+      "heroId": 106,
+      "role": 1,
+      "oldFit": 0.45,
+      "newFit": 0.9,
+      "shift": 0.45
+    },
+    {
+      "heroId": 106,
+      "role": 2,
+      "oldFit": 0.55,
+      "newFit": 0.95,
+      "shift": 0.3999999999999999
+    }
+  ],
+  "itemShifts": []
+}

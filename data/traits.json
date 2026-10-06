@@ -1,0 +1,2477 @@
+{
+  "1": {
+    "heroId": 1,
+    "heroName": "npc_dota_hero_antimage",
+    "localized_name": "Anti-Mage",
+    "tags": [
+      "burst_magic",
+      "phys_carry",
+      "passive_heavy",
+      "blink_initiator",
+      "mid_late_scaler"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "2": {
+    "heroId": 2,
+    "heroName": "npc_dota_hero_axe",
+    "localized_name": "Axe",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "phys_carry",
+      "sustain",
+      "aoe_disable",
+      "passive_heavy"
+    ],
+    "dmgType": "pure",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "3": {
+    "heroId": 3,
+    "heroName": "npc_dota_hero_bane",
+    "localized_name": "Bane",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "sustain",
+      "ranged_harass",
+      "save"
+    ],
+    "dmgType": "pure",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "4": {
+    "heroId": 4,
+    "heroName": "npc_dota_hero_bloodseeker",
+    "localized_name": "Bloodseeker",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "phys_carry",
+      "silence",
+      "sustain",
+      "mid_tempo"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "5": {
+    "heroId": 5,
+    "heroName": "npc_dota_hero_crystal_maiden",
+    "localized_name": "Crystal Maiden",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "ranged_harass",
+      "aoe_disable"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "6": {
+    "heroId": 6,
+    "heroName": "npc_dota_hero_drow_ranger",
+    "localized_name": "Drow Ranger",
+    "tags": [
+      "hard_cc",
+      "phys_carry",
+      "push",
+      "ranged_harass",
+      "silence",
+      "mid_late_scaler"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "7": {
+    "heroId": 7,
+    "heroName": "npc_dota_hero_earthshaker",
+    "localized_name": "Earthshaker",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "aoe_disable"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "8": {
+    "heroId": 8,
+    "heroName": "npc_dota_hero_juggernaut",
+    "localized_name": "Juggernaut",
+    "tags": [
+      "phys_carry",
+      "push",
+      "dispel",
+      "heal",
+      "burst_magic"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "9": {
+    "heroId": 9,
+    "heroName": "npc_dota_hero_mirana",
+    "localized_name": "Mirana",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "phys_carry",
+      "ranged_harass",
+      "invis",
+      "mid_roamer",
+      "global"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "10": {
+    "heroId": 10,
+    "heroName": "npc_dota_hero_morphling",
+    "localized_name": "Morphling",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "phys_carry",
+      "sustain",
+      "ranged_harass",
+      "mid_late_scaler"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "11": {
+    "heroId": 11,
+    "heroName": "npc_dota_hero_nevermore",
+    "localized_name": "Shadow Fiend",
+    "tags": [
+      "burst_magic",
+      "phys_carry",
+      "ranged_harass",
+      "mid_waveclear",
+      "mid_late_scaler"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "12": {
+    "heroId": 12,
+    "heroName": "npc_dota_hero_phantom_lancer",
+    "localized_name": "Phantom Lancer",
+    "tags": [
+      "burst_magic",
+      "phys_carry",
+      "push",
+      "illusions",
+      "mid_late_scaler",
+      "dispel"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "13": {
+    "heroId": 13,
+    "heroName": "npc_dota_hero_puck",
+    "localized_name": "Puck",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "ranged_harass",
+      "mid_waveclear",
+      "aoe_disable",
+      "silence",
+      "dispel",
+      "mid_roamer",
+      "mid_tempo"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "14": {
+    "heroId": 14,
+    "heroName": "npc_dota_hero_pudge",
+    "localized_name": "Pudge",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "sustain",
+      "mid_roamer"
+    ],
+    "dmgType": "pure",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "15": {
+    "heroId": 15,
+    "heroName": "npc_dota_hero_razor",
+    "localized_name": "Razor",
+    "tags": [
+      "burst_magic",
+      "phys_carry",
+      "push",
+      "sustain",
+      "ranged_harass",
+      "passive_heavy",
+      "mid_tempo"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "16": {
+    "heroId": 16,
+    "heroName": "npc_dota_hero_sand_king",
+    "localized_name": "Sand King",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "aoe_disable",
+      "invis",
+      "mid_waveclear"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "17": {
+    "heroId": 17,
+    "heroName": "npc_dota_hero_storm_spirit",
+    "localized_name": "Storm Spirit",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "phys_carry",
+      "ranged_harass",
+      "mid_waveclear",
+      "mid_roamer",
+      "mid_tempo",
+      "mid_late_scaler"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "18": {
+    "heroId": 18,
+    "heroName": "npc_dota_hero_sven",
+    "localized_name": "Sven",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "phys_carry",
+      "sustain",
+      "aoe_disable",
+      "mid_waveclear"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "19": {
+    "heroId": 19,
+    "heroName": "npc_dota_hero_tiny",
+    "localized_name": "Tiny",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "phys_carry",
+      "push",
+      "sustain",
+      "mid_waveclear",
+      "mid_tempo"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "20": {
+    "heroId": 20,
+    "heroName": "npc_dota_hero_vengefulspirit",
+    "localized_name": "Vengeful Spirit",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "ranged_harass",
+      "save"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "21": {
+    "heroId": 21,
+    "heroName": "npc_dota_hero_windrunner",
+    "localized_name": "Windranger",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "phys_carry",
+      "ranged_harass",
+      "evasion",
+      "mid_tempo"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "22": {
+    "heroId": 22,
+    "heroName": "npc_dota_hero_zuus",
+    "localized_name": "Zeus",
+    "tags": [
+      "burst_magic",
+      "phys_carry",
+      "ranged_harass",
+      "global",
+      "mid_waveclear"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "23": {
+    "heroId": 23,
+    "heroName": "npc_dota_hero_kunkka",
+    "localized_name": "Kunkka",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "phys_carry",
+      "sustain",
+      "aoe_disable",
+      "mid_waveclear",
+      "mid_tempo",
+      "mid_roamer"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "25": {
+    "heroId": 25,
+    "heroName": "npc_dota_hero_lina",
+    "localized_name": "Lina",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "phys_carry",
+      "ranged_harass",
+      "mid_waveclear",
+      "mid_late_scaler"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "26": {
+    "heroId": 26,
+    "heroName": "npc_dota_hero_lion",
+    "localized_name": "Lion",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "ranged_harass",
+      "aoe_disable"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "27": {
+    "heroId": 27,
+    "heroName": "npc_dota_hero_shadow_shaman",
+    "localized_name": "Shadow Shaman",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "push",
+      "ranged_harass",
+      "summons"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "28": {
+    "heroId": 28,
+    "heroName": "npc_dota_hero_slardar",
+    "localized_name": "Slardar",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "phys_carry",
+      "sustain",
+      "passive_heavy",
+      "smoke_gank"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "29": {
+    "heroId": 29,
+    "heroName": "npc_dota_hero_tidehunter",
+    "localized_name": "Tidehunter",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "phys_carry",
+      "sustain",
+      "aoe_disable",
+      "dispel"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "30": {
+    "heroId": 30,
+    "heroName": "npc_dota_hero_witch_doctor",
+    "localized_name": "Witch Doctor",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "ranged_harass",
+      "heal"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "31": {
+    "heroId": 31,
+    "heroName": "npc_dota_hero_lich",
+    "localized_name": "Lich",
+    "tags": [
+      "burst_magic",
+      "ranged_harass",
+      "hard_cc",
+      "aoe_disable",
+      "save"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "32": {
+    "heroId": 32,
+    "heroName": "npc_dota_hero_riki",
+    "localized_name": "Riki",
+    "tags": [
+      "hard_cc",
+      "phys_carry",
+      "invis",
+      "silence",
+      "smoke_gank"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "33": {
+    "heroId": 33,
+    "heroName": "npc_dota_hero_enigma",
+    "localized_name": "Enigma",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "push",
+      "ranged_harass",
+      "aoe_disable",
+      "summons"
+    ],
+    "dmgType": "pure",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "34": {
+    "heroId": 34,
+    "heroName": "npc_dota_hero_tinker",
+    "localized_name": "Tinker",
+    "tags": [
+      "burst_magic",
+      "phys_carry",
+      "push",
+      "ranged_harass",
+      "global",
+      "mid_waveclear",
+      "mid_tempo"
+    ],
+    "dmgType": "pure",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "35": {
+    "heroId": 35,
+    "heroName": "npc_dota_hero_sniper",
+    "localized_name": "Sniper",
+    "tags": [
+      "burst_magic",
+      "phys_carry",
+      "ranged_harass",
+      "mid_waveclear",
+      "mid_late_scaler"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "36": {
+    "heroId": 36,
+    "heroName": "npc_dota_hero_necrolyte",
+    "localized_name": "Necrophos",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "phys_carry",
+      "sustain",
+      "ranged_harass",
+      "heal",
+      "mid_tempo"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "37": {
+    "heroId": 37,
+    "heroName": "npc_dota_hero_warlock",
+    "localized_name": "Warlock",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "ranged_harass",
+      "aoe_disable",
+      "heal",
+      "summons"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "38": {
+    "heroId": 38,
+    "heroName": "npc_dota_hero_beastmaster",
+    "localized_name": "Beastmaster",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "sustain"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "39": {
+    "heroId": 39,
+    "heroName": "npc_dota_hero_queenofpain",
+    "localized_name": "Queen of Pain",
+    "tags": [
+      "burst_magic",
+      "phys_carry",
+      "ranged_harass",
+      "mid_waveclear",
+      "mid_roamer",
+      "mid_tempo"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "40": {
+    "heroId": 40,
+    "heroName": "npc_dota_hero_venomancer",
+    "localized_name": "Venomancer",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "push",
+      "ranged_harass",
+      "summons",
+      "sustain"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "41": {
+    "heroId": 41,
+    "heroName": "npc_dota_hero_faceless_void",
+    "localized_name": "Faceless Void",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "phys_carry",
+      "sustain",
+      "aoe_disable",
+      "mid_late_scaler",
+      "passive_heavy"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "42": {
+    "heroId": 42,
+    "heroName": "npc_dota_hero_skeleton_king",
+    "localized_name": "Wraith King",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "phys_carry",
+      "sustain",
+      "summons"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "43": {
+    "heroId": 43,
+    "heroName": "npc_dota_hero_death_prophet",
+    "localized_name": "Death Prophet",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "phys_carry",
+      "push",
+      "ranged_harass",
+      "silence",
+      "mid_waveclear",
+      "sustain",
+      "mid_tempo"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "44": {
+    "heroId": 44,
+    "heroName": "npc_dota_hero_phantom_assassin",
+    "localized_name": "Phantom Assassin",
+    "tags": [
+      "phys_carry",
+      "evasion",
+      "passive_heavy",
+      "mid_late_scaler"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Power spike enables accelerated farming or objective push rather than solo burst.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "45": {
+    "heroId": 45,
+    "heroName": "npc_dota_hero_pugna",
+    "localized_name": "Pugna",
+    "tags": [
+      "burst_magic",
+      "push",
+      "ranged_harass",
+      "mid_waveclear",
+      "heal"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "46": {
+    "heroId": 46,
+    "heroName": "npc_dota_hero_templar_assassin",
+    "localized_name": "Templar Assassin",
+    "tags": [
+      "phys_carry",
+      "ranged_harass",
+      "burst_magic",
+      "mid_waveclear",
+      "passive_heavy",
+      "mid_tempo"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "47": {
+    "heroId": 47,
+    "heroName": "npc_dota_hero_viper",
+    "localized_name": "Viper",
+    "tags": [
+      "hard_cc",
+      "phys_carry",
+      "sustain",
+      "ranged_harass",
+      "break",
+      "passive_heavy",
+      "mid_tempo"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "48": {
+    "heroId": 48,
+    "heroName": "npc_dota_hero_luna",
+    "localized_name": "Luna",
+    "tags": [
+      "burst_magic",
+      "phys_carry",
+      "push",
+      "ranged_harass",
+      "mid_waveclear",
+      "mid_late_scaler"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "49": {
+    "heroId": 49,
+    "heroName": "npc_dota_hero_dragon_knight",
+    "localized_name": "Dragon Knight",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "phys_carry",
+      "push",
+      "sustain",
+      "mid_waveclear",
+      "mid_tempo"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "50": {
+    "heroId": 50,
+    "heroName": "npc_dota_hero_dazzle",
+    "localized_name": "Dazzle",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "ranged_harass",
+      "save",
+      "heal",
+      "sustain"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "51": {
+    "heroId": 51,
+    "heroName": "npc_dota_hero_rattletrap",
+    "localized_name": "Clockwerk",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "sustain"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "52": {
+    "heroId": 52,
+    "heroName": "npc_dota_hero_leshrac",
+    "localized_name": "Leshrac",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "phys_carry",
+      "push",
+      "ranged_harass",
+      "mid_waveclear",
+      "sustain",
+      "mid_tempo"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "53": {
+    "heroId": 53,
+    "heroName": "npc_dota_hero_furion",
+    "localized_name": "Nature's Prophet",
+    "tags": [
+      "burst_magic",
+      "phys_carry",
+      "push",
+      "ranged_harass",
+      "global",
+      "summons",
+      "mid_tempo"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "54": {
+    "heroId": 54,
+    "heroName": "npc_dota_hero_life_stealer",
+    "localized_name": "Lifestealer",
+    "tags": [
+      "hard_cc",
+      "phys_carry",
+      "sustain"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "55": {
+    "heroId": 55,
+    "heroName": "npc_dota_hero_dark_seer",
+    "localized_name": "Dark Seer",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "mid_waveclear",
+      "aoe_disable",
+      "sustain"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "56": {
+    "heroId": 56,
+    "heroName": "npc_dota_hero_clinkz",
+    "localized_name": "Clinkz",
+    "tags": [
+      "phys_carry",
+      "push",
+      "ranged_harass",
+      "invis"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Power spike enables accelerated farming or objective push rather than solo burst.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "57": {
+    "heroId": 57,
+    "heroName": "npc_dota_hero_omniknight",
+    "localized_name": "Omniknight",
+    "tags": [
+      "burst_magic",
+      "sustain",
+      "heal",
+      "save",
+      "dispel"
+    ],
+    "dmgType": "pure",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "58": {
+    "heroId": 58,
+    "heroName": "npc_dota_hero_enchantress",
+    "localized_name": "Enchantress",
+    "tags": [
+      "hard_cc",
+      "push",
+      "sustain",
+      "ranged_harass",
+      "summons",
+      "heal",
+      "passive_heavy"
+    ],
+    "dmgType": "pure",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "59": {
+    "heroId": 59,
+    "heroName": "npc_dota_hero_huskar",
+    "localized_name": "Huskar",
+    "tags": [
+      "blink_initiator",
+      "phys_carry",
+      "sustain",
+      "ranged_harass",
+      "passive_heavy",
+      "burst_magic",
+      "mid_tempo"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "60": {
+    "heroId": 60,
+    "heroName": "npc_dota_hero_night_stalker",
+    "localized_name": "Night Stalker",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "phys_carry",
+      "sustain",
+      "silence",
+      "mid_roamer",
+      "mid_tempo",
+      "smoke_gank"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "61": {
+    "heroId": 61,
+    "heroName": "npc_dota_hero_broodmother",
+    "localized_name": "Broodmother",
+    "tags": [
+      "burst_magic",
+      "phys_carry",
+      "push",
+      "summons",
+      "mid_waveclear",
+      "sustain"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "62": {
+    "heroId": 62,
+    "heroName": "npc_dota_hero_bounty_hunter",
+    "localized_name": "Bounty Hunter",
+    "tags": [
+      "burst_magic",
+      "invis",
+      "smoke_gank",
+      "mid_roamer"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "63": {
+    "heroId": 63,
+    "heroName": "npc_dota_hero_weaver",
+    "localized_name": "Weaver",
+    "tags": [
+      "phys_carry",
+      "ranged_harass",
+      "invis",
+      "save",
+      "dispel"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Power spike enables accelerated farming or objective push rather than solo burst.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "64": {
+    "heroId": 64,
+    "heroName": "npc_dota_hero_jakiro",
+    "localized_name": "Jakiro",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "push",
+      "ranged_harass",
+      "aoe_disable"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "65": {
+    "heroId": 65,
+    "heroName": "npc_dota_hero_batrider",
+    "localized_name": "Batrider",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "ranged_harass"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "66": {
+    "heroId": 66,
+    "heroName": "npc_dota_hero_chen",
+    "localized_name": "Chen",
+    "tags": [
+      "push",
+      "ranged_harass",
+      "summons",
+      "heal",
+      "save",
+      "global"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Power spike enables accelerated farming or objective push rather than solo burst.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "67": {
+    "heroId": 67,
+    "heroName": "npc_dota_hero_spectre",
+    "localized_name": "Spectre",
+    "tags": [
+      "phys_carry",
+      "sustain",
+      "global",
+      "illusions",
+      "mid_late_scaler",
+      "passive_heavy"
+    ],
+    "dmgType": "pure",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Power spike enables accelerated farming or objective push rather than solo burst.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "68": {
+    "heroId": 68,
+    "heroName": "npc_dota_hero_ancient_apparition",
+    "localized_name": "Ancient Apparition",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "ranged_harass"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "69": {
+    "heroId": 69,
+    "heroName": "npc_dota_hero_doom_bringer",
+    "localized_name": "Doom",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "phys_carry",
+      "sustain",
+      "silence",
+      "break",
+      "mid_tempo"
+    ],
+    "dmgType": "pure",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "70": {
+    "heroId": 70,
+    "heroName": "npc_dota_hero_ursa",
+    "localized_name": "Ursa",
+    "tags": [
+      "hard_cc",
+      "phys_carry",
+      "sustain",
+      "passive_heavy",
+      "mid_tempo"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "71": {
+    "heroId": 71,
+    "heroName": "npc_dota_hero_spirit_breaker",
+    "localized_name": "Spirit Breaker",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "phys_carry",
+      "sustain",
+      "global",
+      "smoke_gank",
+      "mid_roamer"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "72": {
+    "heroId": 72,
+    "heroName": "npc_dota_hero_gyrocopter",
+    "localized_name": "Gyrocopter",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "phys_carry",
+      "ranged_harass"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "73": {
+    "heroId": 73,
+    "heroName": "npc_dota_hero_alchemist",
+    "localized_name": "Alchemist",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "phys_carry",
+      "sustain"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "74": {
+    "heroId": 74,
+    "heroName": "npc_dota_hero_invoker",
+    "localized_name": "Invoker",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "phys_carry",
+      "push",
+      "ranged_harass",
+      "mid_waveclear",
+      "aoe_disable",
+      "mid_tempo",
+      "mid_late_scaler",
+      "dispel"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "75": {
+    "heroId": 75,
+    "heroName": "npc_dota_hero_silencer",
+    "localized_name": "Silencer",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "phys_carry",
+      "ranged_harass",
+      "silence",
+      "global"
+    ],
+    "dmgType": "pure",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "76": {
+    "heroId": 76,
+    "heroName": "npc_dota_hero_obsidian_destroyer",
+    "localized_name": "Outworld Devourer",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "phys_carry",
+      "ranged_harass",
+      "save",
+      "mid_tempo"
+    ],
+    "dmgType": "pure",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "77": {
+    "heroId": 77,
+    "heroName": "npc_dota_hero_lycan",
+    "localized_name": "Lycan",
+    "tags": [
+      "phys_carry",
+      "push",
+      "sustain"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Power spike enables accelerated farming or objective push rather than solo burst.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "78": {
+    "heroId": 78,
+    "heroName": "npc_dota_hero_brewmaster",
+    "localized_name": "Brewmaster",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "phys_carry",
+      "sustain"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "79": {
+    "heroId": 79,
+    "heroName": "npc_dota_hero_shadow_demon",
+    "localized_name": "Shadow Demon",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "ranged_harass",
+      "save",
+      "dispel",
+      "break"
+    ],
+    "dmgType": "pure",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "80": {
+    "heroId": 80,
+    "heroName": "npc_dota_hero_lone_druid",
+    "localized_name": "Lone Druid",
+    "tags": [
+      "phys_carry",
+      "push",
+      "sustain",
+      "ranged_harass",
+      "summons",
+      "mid_tempo"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Power spike enables accelerated farming or objective push rather than solo burst.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "81": {
+    "heroId": 81,
+    "heroName": "npc_dota_hero_chaos_knight",
+    "localized_name": "Chaos Knight",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "phys_carry",
+      "push",
+      "sustain",
+      "illusions"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "82": {
+    "heroId": 82,
+    "heroName": "npc_dota_hero_meepo",
+    "localized_name": "Meepo",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "phys_carry",
+      "push",
+      "summons",
+      "mid_waveclear",
+      "mid_tempo"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "83": {
+    "heroId": 83,
+    "heroName": "npc_dota_hero_treant",
+    "localized_name": "Treant Protector",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "sustain"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "84": {
+    "heroId": 84,
+    "heroName": "npc_dota_hero_ogre_magi",
+    "localized_name": "Ogre Magi",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "sustain"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "85": {
+    "heroId": 85,
+    "heroName": "npc_dota_hero_undying",
+    "localized_name": "Undying",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "sustain",
+      "heal",
+      "summons"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "86": {
+    "heroId": 86,
+    "heroName": "npc_dota_hero_rubick",
+    "localized_name": "Rubick",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "ranged_harass"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "87": {
+    "heroId": 87,
+    "heroName": "npc_dota_hero_disruptor",
+    "localized_name": "Disruptor",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "ranged_harass",
+      "silence",
+      "aoe_disable"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "88": {
+    "heroId": 88,
+    "heroName": "npc_dota_hero_nyx_assassin",
+    "localized_name": "Nyx Assassin",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "invis",
+      "smoke_gank",
+      "break"
+    ],
+    "dmgType": "pure",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "89": {
+    "heroId": 89,
+    "heroName": "npc_dota_hero_naga_siren",
+    "localized_name": "Naga Siren",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "phys_carry",
+      "push",
+      "illusions",
+      "aoe_disable",
+      "mid_late_scaler"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "90": {
+    "heroId": 90,
+    "heroName": "npc_dota_hero_keeper_of_the_light",
+    "localized_name": "Keeper of the Light",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "ranged_harass",
+      "mid_waveclear",
+      "mid_roamer",
+      "heal"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "91": {
+    "heroId": 91,
+    "heroName": "npc_dota_hero_wisp",
+    "localized_name": "Io",
+    "tags": [
+      "burst_magic",
+      "ranged_harass"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "92": {
+    "heroId": 92,
+    "heroName": "npc_dota_hero_visage",
+    "localized_name": "Visage",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "push",
+      "sustain",
+      "ranged_harass",
+      "summons",
+      "passive_heavy"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "93": {
+    "heroId": 93,
+    "heroName": "npc_dota_hero_slark",
+    "localized_name": "Slark",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "phys_carry",
+      "dispel",
+      "invis",
+      "sustain",
+      "mid_late_scaler"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "94": {
+    "heroId": 94,
+    "heroName": "npc_dota_hero_medusa",
+    "localized_name": "Medusa",
+    "tags": [
+      "hard_cc",
+      "phys_carry",
+      "sustain",
+      "ranged_harass",
+      "illusions",
+      "aoe_disable",
+      "mid_waveclear",
+      "mid_late_scaler",
+      "passive_heavy"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "95": {
+    "heroId": 95,
+    "heroName": "npc_dota_hero_troll_warlord",
+    "localized_name": "Troll Warlord",
+    "tags": [
+      "hard_cc",
+      "phys_carry",
+      "push",
+      "sustain",
+      "ranged_harass",
+      "passive_heavy"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "96": {
+    "heroId": 96,
+    "heroName": "npc_dota_hero_centaur",
+    "localized_name": "Centaur Warrunner",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "sustain"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "97": {
+    "heroId": 97,
+    "heroName": "npc_dota_hero_magnataur",
+    "localized_name": "Magnus",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "aoe_disable",
+      "mid_waveclear"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "98": {
+    "heroId": 98,
+    "heroName": "npc_dota_hero_shredder",
+    "localized_name": "Timbersaw",
+    "tags": [
+      "burst_magic",
+      "sustain"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "99": {
+    "heroId": 99,
+    "heroName": "npc_dota_hero_bristleback",
+    "localized_name": "Bristleback",
+    "tags": [
+      "burst_magic",
+      "phys_carry",
+      "sustain",
+      "passive_heavy"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "100": {
+    "heroId": 100,
+    "heroName": "npc_dota_hero_tusk",
+    "localized_name": "Tusk",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "save",
+      "mid_roamer"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "101": {
+    "heroId": 101,
+    "heroName": "npc_dota_hero_skywrath_mage",
+    "localized_name": "Skywrath Mage",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "ranged_harass",
+      "silence"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "102": {
+    "heroId": 102,
+    "heroName": "npc_dota_hero_abaddon",
+    "localized_name": "Abaddon",
+    "tags": [
+      "phys_carry",
+      "sustain"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Power spike enables accelerated farming or objective push rather than solo burst.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "103": {
+    "heroId": 103,
+    "heroName": "npc_dota_hero_elder_titan",
+    "localized_name": "Elder Titan",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "sustain"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "104": {
+    "heroId": 104,
+    "heroName": "npc_dota_hero_legion_commander",
+    "localized_name": "Legion Commander",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "phys_carry",
+      "sustain",
+      "dispel",
+      "heal"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "105": {
+    "heroId": 105,
+    "heroName": "npc_dota_hero_techies",
+    "localized_name": "Techies",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "ranged_harass",
+      "silence"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "106": {
+    "heroId": 106,
+    "heroName": "npc_dota_hero_ember_spirit",
+    "localized_name": "Ember Spirit",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "phys_carry",
+      "mid_waveclear",
+      "dispel",
+      "mid_tempo",
+      "mid_roamer"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "107": {
+    "heroId": 107,
+    "heroName": "npc_dota_hero_earth_spirit",
+    "localized_name": "Earth Spirit",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "sustain",
+      "silence",
+      "mid_roamer",
+      "mid_tempo"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "108": {
+    "heroId": 108,
+    "heroName": "npc_dota_hero_abyssal_underlord",
+    "localized_name": "Underlord",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "sustain"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "109": {
+    "heroId": 109,
+    "heroName": "npc_dota_hero_terrorblade",
+    "localized_name": "Terrorblade",
+    "tags": [
+      "burst_magic",
+      "phys_carry",
+      "push",
+      "illusions",
+      "mid_late_scaler"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "110": {
+    "heroId": 110,
+    "heroName": "npc_dota_hero_phoenix",
+    "localized_name": "Phoenix",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "ranged_harass",
+      "heal",
+      "aoe_disable",
+      "sustain"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "111": {
+    "heroId": 111,
+    "heroName": "npc_dota_hero_oracle",
+    "localized_name": "Oracle",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "ranged_harass",
+      "save",
+      "heal",
+      "dispel"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "112": {
+    "heroId": 112,
+    "heroName": "npc_dota_hero_winter_wyvern",
+    "localized_name": "Winter Wyvern",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "ranged_harass",
+      "aoe_disable",
+      "heal",
+      "save"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "113": {
+    "heroId": 113,
+    "heroName": "npc_dota_hero_arc_warden",
+    "localized_name": "Arc Warden",
+    "tags": [
+      "burst_magic",
+      "phys_carry",
+      "ranged_harass"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "114": {
+    "heroId": 114,
+    "heroName": "npc_dota_hero_monkey_king",
+    "localized_name": "Monkey King",
+    "tags": [
+      "hard_cc",
+      "phys_carry",
+      "aoe_disable",
+      "sustain",
+      "mid_tempo"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "119": {
+    "heroId": 119,
+    "heroName": "npc_dota_hero_dark_willow",
+    "localized_name": "Dark Willow",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "ranged_harass"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "120": {
+    "heroId": 120,
+    "heroName": "npc_dota_hero_pangolier",
+    "localized_name": "Pangolier",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "burst_magic",
+      "phys_carry",
+      "sustain",
+      "mid_waveclear",
+      "dispel",
+      "aoe_disable",
+      "mid_roamer",
+      "mid_tempo"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "121": {
+    "heroId": 121,
+    "heroName": "npc_dota_hero_grimstroke",
+    "localized_name": "Grimstroke",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "ranged_harass"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "123": {
+    "heroId": 123,
+    "heroName": "npc_dota_hero_hoodwink",
+    "localized_name": "Hoodwink",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "ranged_harass",
+      "break"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "126": {
+    "heroId": 126,
+    "heroName": "npc_dota_hero_void_spirit",
+    "localized_name": "Void Spirit",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "phys_carry",
+      "mid_waveclear",
+      "dispel",
+      "mid_roamer",
+      "mid_tempo"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "128": {
+    "heroId": 128,
+    "heroName": "npc_dota_hero_snapfire",
+    "localized_name": "Snapfire",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "ranged_harass"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "129": {
+    "heroId": 129,
+    "heroName": "npc_dota_hero_mars",
+    "localized_name": "Mars",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "phys_carry",
+      "sustain"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "131": {
+    "heroId": 131,
+    "heroName": "npc_dota_hero_ringmaster",
+    "localized_name": "Ring Master",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "ranged_harass"
+    ],
+    "dmgType": "magical",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "135": {
+    "heroId": 135,
+    "heroName": "npc_dota_hero_dawnbreaker",
+    "localized_name": "Dawnbreaker",
+    "tags": [
+      "phys_carry",
+      "sustain"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Power spike enables accelerated farming or objective push rather than solo burst.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "136": {
+    "heroId": 136,
+    "heroName": "npc_dota_hero_marci",
+    "localized_name": "Marci",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "phys_carry"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "137": {
+    "heroId": 137,
+    "heroName": "npc_dota_hero_primal_beast",
+    "localized_name": "Primal Beast",
+    "tags": [
+      "hard_cc",
+      "blink_initiator",
+      "sustain"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "138": {
+    "heroId": 138,
+    "heroName": "npc_dota_hero_muerta",
+    "localized_name": "Muerta",
+    "tags": [
+      "hard_cc",
+      "burst_magic",
+      "phys_carry",
+      "ranged_harass"
+    ],
+    "dmgType": "mixed",
+    "lanePlan": {
+      "harass": "Abuse superior attack range and spells to contest every enemy last hit.",
+      "waveclear": "Use AoE abilities at :45 seconds to clear wave and rotate to rune spots.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Strong rune contest potential with mobility and wave shove."
+    }
+  },
+  "145": {
+    "heroId": 145,
+    "heroName": "npc_dota_hero_kez",
+    "localized_name": "Kez",
+    "tags": [
+      "hard_cc",
+      "phys_carry"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  },
+  "155": {
+    "heroId": 155,
+    "heroName": "npc_dota_hero_largo",
+    "localized_name": "Largo",
+    "tags": [
+      "hard_cc",
+      "sustain"
+    ],
+    "dmgType": "physical",
+    "lanePlan": {
+      "harass": "Draw creep aggro toward your high ground and trade only with creep advantage.",
+      "waveclear": "Manage creep equilibrium near your tower; avoid pushing without vision.",
+      "level6": "Significant kill pressure at level 6. Look for solo kill or gank side lanes.",
+      "runeControl": "Secure vision on high ground and prioritize bottle refilling."
+    }
+  }
+}

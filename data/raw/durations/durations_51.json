@@ -1,0 +1,137 @@
+[
+  {
+    "duration_bin": 5700,
+    "games_played": 6,
+    "wins": 2
+  },
+  {
+    "duration_bin": 3300,
+    "games_played": 866,
+    "wins": 457
+  },
+  {
+    "duration_bin": 7500,
+    "games_played": 2,
+    "wins": 0
+  },
+  {
+    "duration_bin": 1800,
+    "games_played": 7039,
+    "wins": 3585
+  },
+  {
+    "duration_bin": 3900,
+    "games_played": 238,
+    "wins": 115
+  },
+  {
+    "duration_bin": 300,
+    "games_played": 60,
+    "wins": 35
+  },
+  {
+    "duration_bin": 6000,
+    "games_played": 4,
+    "wins": 1
+  },
+  {
+    "duration_bin": 3000,
+    "games_played": 1532,
+    "wins": 779
+  },
+  {
+    "duration_bin": 4200,
+    "games_played": 128,
+    "wins": 59
+  },
+  {
+    "duration_bin": 6600,
+    "games_played": 4,
+    "wins": 2
+  },
+  {
+    "duration_bin": 7800,
+    "games_played": 1,
+    "wins": 1
+  },
+  {
+    "duration_bin": 4500,
+    "games_played": 59,
+    "wins": 32
+  },
+  {
+    "duration_bin": 1200,
+    "games_played": 3542,
+    "wins": 1812
+  },
+  {
+    "duration_bin": 2700,
+    "games_played": 2434,
+    "wins": 1188
+  },
+  {
+    "duration_bin": 5100,
+    "games_played": 18,
+    "wins": 7
+  },
+  {
+    "duration_bin": 6900,
+    "games_played": 2,
+    "wins": 2
+  },
+  {
+    "duration_bin": 2100,
+    "games_played": 5220,
+    "wins": 2653
+  },
+  {
+    "duration_bin": 5400,
+    "games_played": 5,
+    "wins": 4
+  },
+  {
+    "duration_bin": 900,
+    "games_played": 1253,
+    "wins": 676
+  },
+  {
+    "duration_bin": 6300,
+    "games_played": 3,
+    "wins": 2
+  },
+  {
+    "duration_bin": 12000,
+    "games_played": 1,
+    "wins": 0
+  },
+  {
+    "duration_bin": 600,
+    "games_played": 295,
+    "wins": 164
+  },
+  {
+    "duration_bin": 2400,
+    "games_played": 4040,
+    "wins": 2022
+  },
+  {
+    "duration_bin": 8400,
+    "games_played": 1,
+    "wins": 1
+  },
+  {
+    "duration_bin": 3600,
+    "games_played": 455,
+    "wins": 249
+  },
+  {
+    "duration_bin": 1500,
+    "games_played": 6007,
+    "wins": 3102
+  },
+  {
+    "duration_bin": 4800,
+    "games_played": 32,
+    "wins": 18
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "17_11": {
+    "myHeroId": 17,
+    "enemyHeroId": 11,
+    "notes": "Abuse SF before level 3. Look to dodge razes using Ball Lightning after 6. Pull wave onto high ground.",
+    "skipTake": "Bottle first, rush Orchid / Eul's.",
+    "runePlan": "Shove wave at :45 with Remnant to secure 2/4/6 min power runes.",
+    "keyItems": "orchid_malevolence, euls_scepter, bkb",
+    "mistakeToAvoid": "Getting hit by double or triple raze at level 5 without creep advantage."
+  },
+  "13_39": {
+    "myHeroId": 13,
+    "enemyHeroId": 39,
+    "notes": "Phase Shift Shadow Strike projectile reliably. Do not commit Illusory Orb forward unless Scream is on cooldown.",
+    "skipTake": "Stick is mandatory. Max Illusory Orb and Phase Shift.",
+    "runePlan": "Orb through creeps to contest water and power runes.",
+    "keyItems": "witch_blade, blink, euls_scepter",
+    "mistakeToAvoid": "Failing to Phase Shift Shadow Strike early."
+  }
+}
