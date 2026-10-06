@@ -264,7 +264,7 @@ export function HeroPicker({
     }
 
     const width = 380;
-    const height = 480;
+    const height = 580;
     const padding = 16;
 
     if (typeof window === "undefined" || (mousePos.x === 0 && mousePos.y === 0)) {
@@ -595,31 +595,45 @@ export function HeroPicker({
           style={popupStyle}
           className="fixed z-50 pointer-events-none w-[380px] max-w-[90vw] rounded-2xl bg-[#0c0f14]/95 backdrop-blur-2xl border border-white/20 shadow-[0_24px_60px_rgba(0,0,0,0.9)] overflow-hidden transition-all duration-150 animate-in fade-in zoom-in-95"
         >
-          {/* Large Hero Portrait & High-Res Video Render Banner */}
-          <div className="relative w-full aspect-[16/9] min-h-[210px] bg-black overflow-hidden border-b border-white/10">
-            {/* High-res Image Poster */}
-            <Image
-              src={`https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${previewCleanName}.png`}
-              alt={previewHero.localized_name}
-              fill
-              sizes="380px"
-              className="object-cover"
-              priority
-            />
-
-            {/* High-res WebM Animated Render */}
-            {activeVideoHeroId === previewHero.id && (
-              <video
-                key={previewHero.id}
-                src={`https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/${previewCleanName}.webm`}
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="none"
-                className="absolute inset-0 w-full h-full object-cover z-10 pointer-events-none"
+          {/* Large Hero Portrait & High-Res Video Render Banner with Expanded Height for Standing Heroes */}
+          <div className="relative w-full h-[300px] min-h-[300px] bg-[#07090c] overflow-hidden border-b border-white/10">
+            {/* Ambient Blurred Background Poster */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <Image
+                src={`https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${previewCleanName}.png`}
+                alt=""
+                fill
+                sizes="380px"
+                className="object-cover blur-xl opacity-35 scale-125"
+                priority
               />
-            )}
+            </div>
+
+            {/* High-res Image Poster & WebM Video fitted cleanly to frame */}
+            <div className="relative w-full h-full z-10 flex items-center justify-center">
+              <Image
+                src={`https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${previewCleanName}.png`}
+                alt={previewHero.localized_name}
+                fill
+                sizes="380px"
+                className="object-contain object-bottom drop-shadow-[0_12px_24px_rgba(0,0,0,0.85)]"
+                priority
+              />
+
+              {/* High-res WebM Animated Render - 1440x1440 fitted cleanly without clipping head/feet */}
+              {activeVideoHeroId === previewHero.id && (
+                <video
+                  key={previewHero.id}
+                  src={`https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/${previewCleanName}.webm`}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="none"
+                  className="absolute inset-0 w-full h-full object-contain object-bottom z-15 pointer-events-none drop-shadow-[0_14px_28px_rgba(0,0,0,0.95)]"
+                />
+              )}
+            </div>
 
             {/* Atmospheric Attribute Gradient Lighting */}
             <div
@@ -627,15 +641,15 @@ export function HeroPicker({
               style={{
                 background:
                   previewHero.primary_attr === "str"
-                    ? "radial-gradient(circle at 70% 30%, rgba(236,61,6,0.7) 0%, transparent 70%)"
+                    ? "radial-gradient(circle at 50% 35%, rgba(236,61,6,0.65) 0%, transparent 70%)"
                     : previewHero.primary_attr === "agi"
-                    ? "radial-gradient(circle at 70% 30%, rgba(38,224,48,0.7) 0%, transparent 70%)"
+                    ? "radial-gradient(circle at 50% 35%, rgba(38,224,48,0.65) 0%, transparent 70%)"
                     : previewHero.primary_attr === "int"
-                    ? "radial-gradient(circle at 70% 30%, rgba(0,217,255,0.7) 0%, transparent 70%)"
-                    : "radial-gradient(circle at 70% 30%, rgba(216,181,122,0.7) 0%, transparent 70%)",
+                    ? "radial-gradient(circle at 50% 35%, rgba(0,217,255,0.65) 0%, transparent 70%)"
+                    : "radial-gradient(circle at 50% 35%, rgba(216,181,122,0.65) 0%, transparent 70%)",
               }}
             />
-            <div className="absolute inset-0 z-20 bg-gradient-to-t from-[#0c0f14] via-[#0c0f14]/20 to-black/30 pointer-events-none" />
+            <div className="absolute inset-0 z-20 bg-gradient-to-t from-[#0c0f14] via-transparent to-black/35 pointer-events-none" />
 
             {/* Top Badges: Attribute & Attack Type */}
             <div className="absolute top-3 left-3 z-30 flex items-center gap-2">
