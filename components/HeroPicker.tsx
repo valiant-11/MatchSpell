@@ -522,19 +522,6 @@ export function HeroPicker({
                         loading="lazy"
                       />
 
-                      {/* Video Render Preview (created on hover after 150ms delay) */}
-                      {isVideoPlaying && !isPicked && (
-                        <video
-                          src={`https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/${cleanName}.webm`}
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                          preload="none"
-                          className="absolute inset-0 w-full h-full object-cover z-10 pointer-events-none"
-                        />
-                      )}
-
                       {/* Picked Overlay Badge */}
                       {isPicked && (
                         <div className="absolute inset-0 flex items-center justify-center bg-black/60 z-20">
@@ -607,17 +594,21 @@ export function HeroPicker({
                 alt={previewHero.localized_name}
                 fill
                 sizes="420px"
-                className="object-cover object-center scale-105"
+                className={`object-cover object-center transition-all duration-300 ${
+                  activeVideoHeroId === previewHero.id
+                    ? "blur-2xl opacity-30 scale-125"
+                    : "scale-105 opacity-100"
+                }`}
                 priority
               />
               {/* Darkening & Atmospheric Gradient Overlay so text and badges pop */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#0c0f14] via-[#0c0f14]/40 to-black/50" />
-              <div className="absolute inset-0 bg-black/25 backdrop-brightness-95" />
+              <div className="absolute inset-0 bg-black/20 backdrop-brightness-95" />
             </div>
 
             {/* High-res WebM Animated Render - 1440x1440 fitted cleanly in foreground without clipping head/feet */}
             {activeVideoHeroId === previewHero.id && (
-              <div className="relative w-full h-full z-15 flex items-center justify-center pointer-events-none">
+              <div className="relative w-full h-full z-15 flex items-center justify-center pointer-events-none animate-in fade-in duration-200">
                 <video
                   key={previewHero.id}
                   src={`https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/${previewCleanName}.webm`}
