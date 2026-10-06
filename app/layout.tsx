@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Rajdhani, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AppShell } from "@/components/AppShell";
@@ -23,6 +23,18 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "MatchSpell | Esports Draft & Lane Matchup Trainer",
   description: "Personal tactical draft assistant, itemization priority engine, and spaced-repetition lane trainer for competitive Dota 2.",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "MatchSpell",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#0a0c0f",
 };
 
 export default function RootLayout({

@@ -239,6 +239,71 @@ export default function LaneMatrixClient({ roleParam }: { roleParam: string }) {
         </div>
       </div>
 
+      {/* Mobile Quick Matchup Jump Card */}
+      <div className="md:hidden p-4 rounded-xl bg-[#12151a] border border-white/10 space-y-3">
+        <div className="flex items-center justify-between">
+          <span className="text-xs font-bold text-white uppercase tracking-wider font-dota flex items-center gap-1.5">
+            <RoleIcon role={role} size={14} active />
+            Mobile Matchup Quick Jump
+          </span>
+          <span className="text-[10px] text-slate-400 font-mono">Pos {role} vs Pos {oppRole}</span>
+        </div>
+
+        <div className="grid grid-cols-2 gap-2">
+          <div>
+            <label className="block text-[10px] font-bold text-slate-400 uppercase mb-1">My Hero:</label>
+            <select
+              value={rowHeroes[0]?.id ? undefined : ""}
+              id="mobile-quick-my-hero"
+              className="w-full bg-[#0a0c0f] text-white border border-white/15 rounded-lg p-2 text-xs font-semibold focus:outline-none focus:border-[#d8b57a]"
+              onChange={(e) => {
+                const myId = e.target.value;
+                const enemySelect = document.getElementById("mobile-quick-enemy-hero") as HTMLSelectElement;
+                const enemyId = enemySelect?.value || colHeroes[0]?.id || 1;
+                if (myId) {
+                  window.location.href = `/lane/matchup?role=${role}&me=${myId}&enemy=${enemyId}`;
+                }
+              }}
+            >
+              <option value="">Select My Hero...</option>
+              {rowHeroes.map((h) => (
+                <option key={h.id} value={h.id}>
+                  {h.localized_name} {userRolePoolIds.includes(h.id) ? "★" : ""}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <label className="block text-[10px] font-bold text-slate-400 uppercase mb-1">Enemy Hero:</label>
+            <select
+              id="mobile-quick-enemy-hero"
+              className="w-full bg-[#0a0c0f] text-white border border-white/15 rounded-lg p-2 text-xs font-semibold focus:outline-none focus:border-rose-500"
+              onChange={(e) => {
+                const enemyId = e.target.value;
+                const mySelect = document.getElementById("mobile-quick-my-hero") as HTMLSelectElement;
+                const myId = mySelect?.value || rowHeroes[0]?.id || 1;
+                if (enemyId && myId) {
+                  window.location.href = `/lane/matchup?role=${role}&me=${myId}&enemy=${enemyId}`;
+                }
+              }}
+            >
+              <option value="">Select Enemy...</option>
+              {colHeroes.map((h) => (
+                <option key={h.id} value={h.id}>
+                  {h.localized_name}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+      </div>
+
+      {/* Swipe instruction hint on mobile */}
+      <div className="md:hidden flex items-center justify-center gap-1.5 text-[11px] text-slate-400 font-mono py-0.5">
+        <span>↔ Swipe heatmap horizontally to view all {colHeroes.length} matchups</span>
+      </div>
+
       {/* Matchup Matrix Heatmap Table Container */}
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-canvas)] overflow-hidden shadow-xl">
         <div className="overflow-x-auto max-h-[70vh] custom-scrollbar">

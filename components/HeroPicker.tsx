@@ -73,6 +73,7 @@ export function HeroPicker({
   const [onlyViableInRole, setOnlyViableInRole] = useState(false);
   const [onlyInPool, setOnlyInPool] = useState(false);
   const [sortBy, setSortBy] = useState<"name" | "role_fit" | "delta">("name");
+  const [attrFilter, setAttrFilter] = useState<PrimaryAttr | "all">("all");
 
   // Hover preview state
   const [hoveredHero, setHoveredHero] = useState<Hero | null>(null);
@@ -473,11 +474,42 @@ export function HeroPicker({
             {filteredHeroes.length} / {ALL_HEROES.length} Heroes
           </div>
         </div>
+
+        {/* Primary Attribute Mobile Filter Tabs */}
+        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar pt-1 border-t border-white/5">
+          <button
+            type="button"
+            onClick={() => setAttrFilter("all")}
+            className={`px-3 py-1 rounded-lg font-mono font-bold text-xs transition-all cursor-pointer shrink-0 ${
+              attrFilter === "all"
+                ? "bg-[#1a1e25] text-[#d8b57a] border border-[#d8b57a]/50 shadow-xs"
+                : "bg-black/30 text-slate-400 hover:text-white border border-white/5"
+            }`}
+          >
+            All Attr ({filteredHeroes.length})
+          </button>
+          {ATTR_SECTIONS.map(({ attr, label, color }) => (
+            <button
+              key={attr}
+              type="button"
+              onClick={() => setAttrFilter(attr)}
+              className={`px-3 py-1 rounded-lg font-dota font-bold text-xs flex items-center gap-1.5 transition-all cursor-pointer shrink-0 ${
+                attrFilter === attr
+                  ? "bg-[#1a1e25] text-white border border-[#d8b57a]/50 shadow-xs"
+                  : "bg-black/30 text-slate-400 hover:text-white border border-white/5"
+              }`}
+            >
+              <AttributeIcon attr={attr} size={14} />
+              <span className={attrFilter === attr ? color : undefined}>{label}</span>
+              <span className="text-[10px] opacity-60 font-mono">({groupedHeroes[attr].length})</span>
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* 2. Main Attribute Grid Columns (Replicating Dota Heroes Tab) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3.5">
-        {ATTR_SECTIONS.map(({ attr, label, color, border, glow }) => {
+      <div className={`grid gap-3.5 ${attrFilter === "all" ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-4" : "grid-cols-1"}`}>
+        {ATTR_SECTIONS.filter((s) => attrFilter === "all" || s.attr === attrFilter).map(({ attr, label, color, border, glow }) => {
           const heroes = groupedHeroes[attr];
 
           return (
@@ -579,8 +611,8 @@ export function HeroPicker({
                         </button>
                       )}
 
-                      {/* Hover Sliding Nameplate */}
-                      <div className="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/75 to-transparent p-1 translate-y-full group-hover:translate-y-0 transition-transform duration-150 pointer-events-none">
+                      {/* Sliding Nameplate (Always visible on mobile touch for legibility, hover on desktop) */}
+                      <div className="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/80 to-transparent p-1 translate-y-0 md:translate-y-full md:group-hover:translate-y-0 transition-transform duration-150 pointer-events-none">
                         <span className="block text-[10px] font-bold text-white truncate leading-tight">
                           {hero.localized_name}
                         </span>
@@ -603,11 +635,11 @@ export function HeroPicker({
         })}
       </div>
 
-      {/* 3. Big Pop-Up Window for Hovered Hero (Cinematic Dota 2 Inspect Card) */}
+      {/* 3. Big Pop-Up Window for Hovered Hero (Cinematic Dota 2 Inspect Card on desktop) */}
       {previewHero && (
         <div
           style={popupStyle}
-          className="fixed z-50 pointer-events-none w-[400px] max-w-[92vw] rounded-2xl bg-[#0c0f14]/95 backdrop-blur-2xl border border-white/20 shadow-[0_24px_60px_rgba(0,0,0,0.9)] overflow-hidden transition-all duration-150 animate-in fade-in zoom-in-95"
+          className="hidden md:block fixed z-50 pointer-events-none w-[400px] max-w-[92vw] rounded-2xl bg-[#0c0f14]/95 backdrop-blur-2xl border border-white/20 shadow-[0_24px_60px_rgba(0,0,0,0.9)] overflow-hidden transition-all duration-150 animate-in fade-in zoom-in-95"
         >
           {/* Large Hero Portrait & High-Res Video Render Banner with Expanded Height for Standing Heroes */}
           <div className="relative w-full h-[300px] min-h-[300px] bg-[#07090c] overflow-hidden border-b border-white/10">

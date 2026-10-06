@@ -692,31 +692,31 @@ export default function LaneDrillClient({ roleParam }: { roleParam: string }) {
                   )}
                 </div>
 
-                {/* Bottom Actions with Keyboard Hint Chips */}
-                <div className="flex items-center justify-between pt-4 border-t border-white/10">
-                  <span className="text-[11px] text-slate-400">Rate your recall:</span>
+                {/* Bottom Actions with Mobile and Keyboard Hint Chips */}
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pt-4 border-t border-white/10">
+                  <span className="text-[11px] text-slate-400 text-center sm:text-left">Rate your recall:</span>
 
-                  <div className="flex items-center gap-3">
+                  <div className="grid grid-cols-2 gap-2 sm:flex sm:items-center sm:gap-3">
                     <Button
                       variant="danger"
                       size="md"
                       onClick={() => handleRateCard(false)}
-                      className="font-bold flex items-center gap-2"
+                      className="font-bold flex items-center justify-center gap-1.5 py-3 active:scale-95 transition-transform"
                     >
-                      <XCircle className="w-4 h-4" />
-                      <span>Forgot (Box 1)</span>
-                      <Kbd size="xs">1</Kbd>
+                      <XCircle className="w-4 h-4 shrink-0" />
+                      <span className="text-xs">Forgot</span>
+                      <Kbd size="xs" className="hidden sm:inline-flex">1</Kbd>
                     </Button>
 
                     <Button
                       variant="primary"
                       size="md"
                       onClick={() => handleRateCard(true)}
-                      className="font-bold flex items-center gap-2"
+                      className="font-bold flex items-center justify-center gap-1.5 py-3 active:scale-95 transition-transform"
                     >
-                      <CheckCircle2 className="w-4 h-4" />
-                      <span>Mastered (+1 Box)</span>
-                      <Kbd size="xs">2</Kbd>
+                      <CheckCircle2 className="w-4 h-4 shrink-0" />
+                      <span className="text-xs">Mastered</span>
+                      <Kbd size="xs" className="hidden sm:inline-flex">2</Kbd>
                     </Button>
                   </div>
                 </div>

@@ -58,6 +58,7 @@ export default function DraftPage() {
   const [mode, setMode] = useState<DraftMode>("balanced");
   const [targetRole, setTargetRole] = useState<RolePosition>(2);
   const [activePickerTarget, setActivePickerTarget] = useState<"enemy" | "ally">("enemy");
+  const [mobileSlotHero, setMobileSlotHero] = useState<{ type: "ally" | "enemy"; heroId: number; pos: RolePosition } | null>(null);
 
   // Sync targetRole with global selectedRole on initial load
   useEffect(() => {
@@ -249,17 +250,21 @@ export default function DraftPage() {
               )}
             </div>
 
-            {/* 4 Compact Slots: Just Hero Icon + Role, Name on Hover */}
-            <div className="flex items-center gap-2">
+            {/* 4 Compact Slots: Just Hero Icon + Role, Name on Hover / Tap on Mobile */}
+            <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
               {[0, 1, 2, 3].map((slotIdx) => {
                 const pick = allyPicks[slotIdx];
                 const hero = pick ? getHeroById(pick.heroId) : null;
 
                 return (
-                  <div key={slotIdx} className="group/slot relative">
+                  <div key={slotIdx} className="group/slot relative shrink-0">
                     <div
                       onClick={() => {
-                        if (!hero) setActivePickerTarget("ally");
+                        if (hero && pick) {
+                          setMobileSlotHero({ type: "ally", heroId: pick.heroId, pos: pick.position || 1 });
+                        } else {
+                          setActivePickerTarget("ally");
+                        }
                       }}
                       className={`relative w-15 h-11 sm:w-16 sm:h-12 rounded-xl overflow-hidden border transition-all duration-150 cursor-pointer select-none ${
                         hero
@@ -425,17 +430,21 @@ export default function DraftPage() {
               )}
             </div>
 
-            {/* 5 Compact Slots: Just Hero Icon + Role, Name on Hover */}
-            <div className="flex items-center gap-2">
+            {/* 5 Compact Slots: Just Hero Icon + Role, Name on Hover / Tap on Mobile */}
+            <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
               {[0, 1, 2, 3, 4].map((slotIdx) => {
                 const pick = effectiveEnemyPicks[slotIdx];
                 const hero = pick ? getHeroById(pick.heroId) : null;
 
                 return (
-                  <div key={slotIdx} className="group/slot relative">
+                  <div key={slotIdx} className="group/slot relative shrink-0">
                     <div
                       onClick={() => {
-                        if (!hero) setActivePickerTarget("enemy");
+                        if (hero && pick) {
+                          setMobileSlotHero({ type: "enemy", heroId: pick.heroId, pos: pick.position || 2 });
+                        } else {
+                          setActivePickerTarget("enemy");
+                        }
                       }}
                       className={`relative w-15 h-11 sm:w-16 sm:h-12 rounded-xl overflow-hidden border transition-all duration-150 cursor-pointer select-none ${
                         hero
@@ -764,7 +773,6 @@ export default function DraftPage() {
                   <ItemPriorityPanel
                     candidateHero={activeHero}
                     enemyHeroIds={effectiveEnemyPicks.map((e) => e.heroId)}
-                    targetRole={targetRole}
                   />
                 </div>
               ) : null}
@@ -772,6 +780,91 @@ export default function DraftPage() {
           </div>
         )}
       </div>
+
+      {/* Mobile Slot Bottom Action Sheet */}
+      {mobileSlotHero && (() => {
+        const hero = getHeroById(mobileSlotHero.heroId);
+        if (!hero) return null;
+        return (
+          <div className="md:hidden fixed inset-0 z-50 flex flex-col justify-end">
+            <div
+              className="absolute inset-0 bg-black/75 backdrop-blur-sm"
+              onClick={() => setMobileSlotHero(null)}
+            />
+            <div className="relative bg-[#12151a] border-t border-white/15 rounded-t-3xl p-5 space-y-4 pb-[calc(1.75rem+env(safe-area-inset-bottom,0px))] animate-in slide-in-from-bottom duration-200">
+              <div className="flex items-center justify-between pb-3 border-b border-white/10">
+                <div className="flex items-center gap-3">
+                  <HeroPortrait src={hero.img} alt={hero.localized_name} size="md" />
+                  <div>
+                    <h3 className="font-dota font-bold text-white text-base leading-tight">
+                      {hero.localized_name}
+                    </h3>
+                    <span className="text-xs text-slate-400 capitalize">
+                      {mobileSlotHero.type === "ally" ? "Allied" : "Enemy"} Team Slot
+                    </span>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setMobileSlotHero(null)}
+                  className="p-2 rounded-full bg-white/5 text-slate-400 hover:text-white"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+
+              {/* Position selector */}
+              <div className="space-y-2">
+                <span className="text-[11px] font-bold uppercase text-slate-400 font-mono">
+                  Assigned Position:
+                </span>
+                <div className="grid grid-cols-5 gap-1.5">
+                  {ALL_ROLES.map((r) => (
+                    <button
+                      key={r}
+                      type="button"
+                      onClick={() => {
+                        if (mobileSlotHero.type === "ally") {
+                          handleUpdateAllyPosition(mobileSlotHero.heroId, r);
+                        } else {
+                          handleUpdatePosition(mobileSlotHero.heroId, r);
+                        }
+                        setMobileSlotHero(null);
+                      }}
+                      className={`py-2 rounded-lg font-mono font-bold text-xs border text-center transition-all ${
+                        mobileSlotHero.pos === r
+                          ? mobileSlotHero.type === "ally"
+                            ? "bg-emerald-500 text-slate-950 border-emerald-400 shadow-sm"
+                            : "bg-rose-500 text-white border-rose-400 shadow-sm"
+                          : "bg-[#0a0c0f] text-slate-300 border-white/10"
+                      }`}
+                    >
+                      Pos {r}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Remove button */}
+              <Button
+                variant="danger"
+                size="md"
+                className="w-full"
+                onClick={() => {
+                  if (mobileSlotHero.type === "ally") {
+                    handleRemoveAlly(mobileSlotHero.heroId);
+                  } else {
+                    handleRemoveEnemy(mobileSlotHero.heroId);
+                  }
+                  setMobileSlotHero(null);
+                }}
+              >
+                Remove {hero.localized_name} from {mobileSlotHero.type === "ally" ? "Allied" : "Enemy"} Lineup
+              </Button>
+            </div>
+          </div>
+        );
+      })()}
     </div>
   );
 }
