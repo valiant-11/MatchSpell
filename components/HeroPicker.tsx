@@ -76,6 +76,7 @@ export function HeroPicker({
   // Hover preview state
   const [hoveredHero, setHoveredHero] = useState<Hero | null>(null);
   const [activeVideoHeroId, setActiveVideoHeroId] = useState<number | null>(null);
+  const [mousePos, setMousePos] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const hoverIntentTimer = useRef<NodeJS.Timeout | null>(null);
 
   // Keyboard navigation index across visible heroes
@@ -205,21 +206,25 @@ export function HeroPicker({
     };
   }, [filteredHeroes]);
 
-  // Mouse hover handlers with 150ms hover-intent delay
-  const handleMouseEnter = useCallback((hero: Hero) => {
+  // Mouse hover handlers with 120ms hover-intent delay
+  const handleMouseEnter = useCallback((hero: Hero, e?: React.MouseEvent) => {
+    if (e) {
+      setMousePos({ x: e.clientX, y: e.clientY });
+    }
     setHoveredHero(hero);
     if (hoverIntentTimer.current) clearTimeout(hoverIntentTimer.current);
 
-    // Only load video if not on touch and not reduced motion
+    // Load full-size video in the inspect popup window
     if (!prefersReducedMotion()) {
       hoverIntentTimer.current = setTimeout(() => {
         setActiveVideoHeroId(hero.id);
-      }, 150);
+      }, 120);
     }
   }, []);
 
   const handleMouseLeave = useCallback(() => {
     if (hoverIntentTimer.current) clearTimeout(hoverIntentTimer.current);
+    setHoveredHero(null);
     setActiveVideoHeroId(null);
   }, []);
 
@@ -248,6 +253,57 @@ export function HeroPicker({
   );
 
   const previewHero = hoveredHero || (focusedHeroId ? ALL_HEROES.find((h) => h.id === focusedHeroId) : null);
+  const previewTraits = previewHero ? traitsMap[String(previewHero.id)] : null;
+  const previewFit = previewHero ? getHeroRoleFit(previewHero.id) : null;
+  const previewCleanName = previewHero ? previewHero.name.replace("npc_dota_hero_", "") : "";
+
+  // Dynamic viewport-clamped popup coordinates
+  const popupStyle = useMemo<React.CSSProperties>(() => {
+    if (!previewHero) {
+      return { display: "none" };
+    }
+
+    const width = 380;
+    const height = 480;
+    const padding = 16;
+
+    if (typeof window === "undefined" || (mousePos.x === 0 && mousePos.y === 0)) {
+      return {
+        position: "fixed",
+        right: "24px",
+        bottom: "24px",
+        zIndex: 100,
+        pointerEvents: "none",
+      };
+    }
+
+    let left = mousePos.x + 24;
+    let top = mousePos.y - 120;
+
+    // Flip to left if overflowing viewport right edge
+    if (left + width > window.innerWidth - padding) {
+      left = mousePos.x - width - 24;
+    }
+    if (left < padding) {
+      left = padding;
+    }
+
+    // Clamp top to viewport
+    if (top + height > window.innerHeight - padding) {
+      top = window.innerHeight - height - padding;
+    }
+    if (top < padding) {
+      top = padding;
+    }
+
+    return {
+      position: "fixed",
+      left: `${left}px`,
+      top: `${top}px`,
+      zIndex: 100,
+      pointerEvents: "none",
+    };
+  }, [mousePos, previewHero]);
 
   const ATTR_SECTIONS: { attr: PrimaryAttr; label: string; color: string; border: string; glow: string }[] = [
     {
@@ -281,7 +337,10 @@ export function HeroPicker({
   ];
 
   return (
-    <div className={`space-y-3.5 select-none ${className}`}>
+    <div
+      onMouseMove={(e) => setMousePos({ x: e.clientX, y: e.clientY })}
+      className={`space-y-3.5 select-none relative ${className}`}
+    >
       {/* 1. Sticky Dota-style Filter Toolbar */}
       <div className="sticky top-0 z-40 bg-[#0a0c0f]/95 backdrop-blur-md p-2.5 rounded-xl border border-white/10 shadow-lg space-y-2.5">
         <div className="flex flex-wrap items-center justify-between gap-2.5">
@@ -428,7 +487,8 @@ export function HeroPicker({
                       key={hero.id}
                       tabIndex={0}
                       onClick={() => handleTileClick(hero)}
-                      onMouseEnter={() => handleMouseEnter(hero)}
+                      onMouseEnter={(e) => handleMouseEnter(hero, e)}
+                      onMouseMove={(e) => setMousePos({ x: e.clientX, y: e.clientY })}
                       onMouseLeave={handleMouseLeave}
                       onFocus={() => {
                         setFocusedHeroId(hero.id);
@@ -529,57 +589,228 @@ export function HeroPicker({
         })}
       </div>
 
-      {/* 3. Floating / Inspect Preview Strip (Tactical Dota Card) */}
+      {/* 3. Big Pop-Up Window for Hovered Hero (Cinematic Dota 2 Inspect Card) */}
       {previewHero && (
-        <div className="rounded-xl bg-[#12151a] border border-white/10 p-3 shadow-2xl flex flex-wrap items-center justify-between gap-4 animate-in fade-in duration-150">
-          <div className="flex items-center gap-3">
-            <div className="relative w-14 h-9 rounded overflow-hidden border border-white/20 shrink-0 shadow-md">
-              <Image
-                src={`https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${previewHero.name.replace("npc_dota_hero_", "")}.png`}
-                alt={previewHero.localized_name}
-                fill
-                className="object-cover"
+        <div
+          style={popupStyle}
+          className="fixed z-50 pointer-events-none w-[380px] max-w-[90vw] rounded-2xl bg-[#0c0f14]/95 backdrop-blur-2xl border border-white/20 shadow-[0_24px_60px_rgba(0,0,0,0.9)] overflow-hidden transition-all duration-150 animate-in fade-in zoom-in-95"
+        >
+          {/* Large Hero Portrait & High-Res Video Render Banner */}
+          <div className="relative w-full aspect-[16/9] min-h-[210px] bg-black overflow-hidden border-b border-white/10">
+            {/* High-res Image Poster */}
+            <Image
+              src={`https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${previewCleanName}.png`}
+              alt={previewHero.localized_name}
+              fill
+              sizes="380px"
+              className="object-cover"
+              priority
+            />
+
+            {/* High-res WebM Animated Render */}
+            {activeVideoHeroId === previewHero.id && (
+              <video
+                key={previewHero.id}
+                src={`https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/${previewCleanName}.webm`}
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="none"
+                className="absolute inset-0 w-full h-full object-cover z-10 pointer-events-none"
               />
+            )}
+
+            {/* Atmospheric Attribute Gradient Lighting */}
+            <div
+              className="absolute inset-0 z-20 pointer-events-none opacity-50 mix-blend-screen"
+              style={{
+                background:
+                  previewHero.primary_attr === "str"
+                    ? "radial-gradient(circle at 70% 30%, rgba(236,61,6,0.7) 0%, transparent 70%)"
+                    : previewHero.primary_attr === "agi"
+                    ? "radial-gradient(circle at 70% 30%, rgba(38,224,48,0.7) 0%, transparent 70%)"
+                    : previewHero.primary_attr === "int"
+                    ? "radial-gradient(circle at 70% 30%, rgba(0,217,255,0.7) 0%, transparent 70%)"
+                    : "radial-gradient(circle at 70% 30%, rgba(216,181,122,0.7) 0%, transparent 70%)",
+              }}
+            />
+            <div className="absolute inset-0 z-20 bg-gradient-to-t from-[#0c0f14] via-[#0c0f14]/20 to-black/30 pointer-events-none" />
+
+            {/* Top Badges: Attribute & Attack Type */}
+            <div className="absolute top-3 left-3 z-30 flex items-center gap-2">
+              <span
+                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-bold uppercase tracking-wider bg-black/80 backdrop-blur-md border font-dota shadow-lg ${
+                  previewHero.primary_attr === "str"
+                    ? "text-[#ec3d06] border-[#ec3d06]/50 shadow-[0_0_12px_rgba(236,61,6,0.35)]"
+                    : previewHero.primary_attr === "agi"
+                    ? "text-[#26e030] border-[#26e030]/50 shadow-[0_0_12px_rgba(38,224,48,0.35)]"
+                    : previewHero.primary_attr === "int"
+                    ? "text-[#00d9ff] border-[#00d9ff]/50 shadow-[0_0_12px_rgba(0,217,255,0.35)]"
+                    : "text-[#d8b57a] border-[#d8b57a]/50 shadow-[0_0_12px_rgba(216,181,122,0.35)]"
+                }`}
+              >
+                <AttributeIcon attr={previewHero.primary_attr} size={15} />
+                <span>
+                  {previewHero.primary_attr === "str"
+                    ? "Strength"
+                    : previewHero.primary_attr === "agi"
+                    ? "Agility"
+                    : previewHero.primary_attr === "int"
+                    ? "Intelligence"
+                    : "Universal"}
+                </span>
+              </span>
+
+              <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold bg-black/80 backdrop-blur-md border border-white/10 text-slate-200">
+                {previewHero.attack_type === "Melee" ? (
+                  <Sword className="w-3.5 h-3.5 text-amber-400" />
+                ) : (
+                  <Target className="w-3.5 h-3.5 text-sky-400" />
+                )}
+                <span>{previewHero.attack_type}</span>
+              </span>
             </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <h4 className="text-sm font-bold text-white font-dota">
+
+            {/* Top-Right Complexity Diamonds */}
+            <div className="absolute top-3 right-3 z-30 flex items-center gap-1 px-2.5 py-1 rounded-lg bg-black/80 backdrop-blur-md border border-white/10 text-xs">
+              <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider mr-0.5">COMPLEXITY</span>
+              {[1, 2, 3].map((star) => (
+                <span
+                  key={star}
+                  className={`text-sm ${
+                    star <= getHeroComplexity(previewHero.name) ? "text-[#d8b57a]" : "text-slate-600"
+                  }`}
+                >
+                  ◆
+                </span>
+              ))}
+            </div>
+
+            {/* Bottom Overlay: Big Hero Name and Roles */}
+            <div className="absolute bottom-2.5 left-3.5 right-3.5 z-30 flex items-end justify-between">
+              <div>
+                <h3 className="text-2xl font-black text-white font-dota tracking-wide drop-shadow-md">
                   {previewHero.localized_name}
-                </h4>
-                <Badge variant="neutral" size="xs">
-                  {previewHero.attack_type}
-                </Badge>
-                <span className="text-[10px] font-mono font-bold text-[#d8b57a]">
-                  {"◆".repeat(getHeroComplexity(previewHero.name))}
+                </h3>
+                <span className="text-xs text-slate-300 font-semibold tracking-wide">
+                  {previewHero.roles.slice(0, 3).join(" • ")}
                 </span>
               </div>
-              <div className="flex items-center gap-1 mt-0.5 text-[11px] text-slate-400">
-                <span>{previewHero.roles.join(", ")}</span>
-              </div>
+
+              {previewTraits?.dmgType && (
+                <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-black/80 border border-white/15 text-slate-300">
+                  {previewTraits.dmgType} dmg
+                </span>
+              )}
             </div>
           </div>
 
-          {/* Traits & Delta */}
-          <div className="flex items-center gap-2 flex-wrap">
-            {traitsMap[String(previewHero.id)]?.tags?.slice(0, 4).map((tag) => (
-              <span
-                key={tag}
-                className="px-1.5 py-0.5 rounded text-[10px] font-mono bg-[#1a1e25] text-slate-300 border border-white/5"
-              >
-                #{tag}
-              </span>
-            ))}
+          {/* Details Body */}
+          <div className="p-3.5 space-y-3 bg-[#0c0f14]">
+            {/* Live Draft Advantage / Disadvantage Delta Bar */}
             {typeof heroDeltas[previewHero.id] === "number" && (
-              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#0a0c0f] border border-white/10">
-                <span className="text-[10px] uppercase font-bold text-slate-400">Enemy Delta:</span>
-                <span
-                  className={`text-xs font-mono font-bold ${
-                    heroDeltas[previewHero.id] >= 0 ? "text-[#4fbf6b]" : "text-[#e05050]"
-                  }`}
-                >
+              <div
+                className={`p-2.5 rounded-xl border flex items-center justify-between ${
+                  heroDeltas[previewHero.id] >= 0
+                    ? "bg-emerald-950/50 border-emerald-500/50 text-emerald-300"
+                    : "bg-rose-950/50 border-rose-500/50 text-rose-300"
+                }`}
+              >
+                <div className="flex items-center gap-2">
+                  <Sparkles className="w-4 h-4 shrink-0" />
+                  <div>
+                    <span className="text-xs font-black uppercase tracking-wider block font-dota">
+                      {heroDeltas[previewHero.id] >= 0
+                        ? "Advantage vs Enemy Picks"
+                        : "Disadvantage vs Enemy Picks"}
+                    </span>
+                    <span className="text-[10px] opacity-80">
+                      Mean head-to-head matchup delta
+                    </span>
+                  </div>
+                </div>
+                <span className="text-lg font-mono font-black">
                   {heroDeltas[previewHero.id] >= 0
                     ? `+${(heroDeltas[previewHero.id] * 100).toFixed(1)}%`
                     : `${(heroDeltas[previewHero.id] * 100).toFixed(1)}%`}
+                </span>
+              </div>
+            )}
+
+            {/* Tactical Trait Tags */}
+            {previewTraits?.tags && previewTraits.tags.length > 0 && (
+              <div>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-1">
+                  Tactical Traits:
+                </span>
+                <div className="flex flex-wrap gap-1.5">
+                  {previewTraits.tags.slice(0, 6).map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-2 py-0.5 rounded-md text-[11px] font-mono font-medium bg-[#1a1e25] text-slate-200 border border-white/10"
+                    >
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Pos 1-5 Suitability Grid */}
+            {previewFit && (
+              <div className="pt-2 border-t border-white/10">
+                <div className="flex items-center justify-between text-[11px] text-slate-400 mb-1">
+                  <span className="font-bold uppercase tracking-wider text-[10px]">Pos 1-5 Lane Viability:</span>
+                  <span className="text-slate-300 font-mono text-[10px]">
+                    Primary: Pos {previewFit.primaryRole} ({((previewFit.roles[previewFit.primaryRole] || 0) * 100).toFixed(0)}%)
+                  </span>
+                </div>
+                <div className="grid grid-cols-5 gap-1.5">
+                  {([1, 2, 3, 4, 5] as const).map((pos) => {
+                    const score = previewFit.roles[pos] || 0;
+                    const isCurrent = pos === role;
+                    return (
+                      <div
+                        key={pos}
+                        className={`p-1 rounded text-center border ${
+                          isCurrent
+                            ? "border-[#d8b57a] bg-[#1a1e25]"
+                            : "border-white/5 bg-black/40"
+                        }`}
+                      >
+                        <span className="text-[9px] text-slate-400 block font-bold">Pos {pos}</span>
+                        <span
+                          className={`text-[11px] font-mono font-bold ${
+                            score >= 0.4
+                              ? "text-[#4fbf6b]"
+                              : score >= 0.15
+                              ? "text-amber-400"
+                              : "text-slate-600"
+                          }`}
+                        >
+                          {(score * 100).toFixed(0)}%
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Pool Status / Comfort hint if in pool mode */}
+            {mode === "pool" && (
+              <div className="pt-2 border-t border-white/10 flex items-center justify-between text-xs">
+                <span className="text-slate-400">
+                  Pool Status:{" "}
+                  {rolePool[previewHero.id]?.inPool ? (
+                    <span className="text-[#d8b57a] font-bold">In Your Pool</span>
+                  ) : (
+                    <span className="text-slate-500">Not in pool</span>
+                  )}
+                </span>
+                <span className="text-[11px] text-[#d8b57a] font-mono">
+                  Comfort: {"★".repeat(rolePool[previewHero.id]?.comfort || 2)}
                 </span>
               </div>
             )}
