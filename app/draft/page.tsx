@@ -226,254 +226,359 @@ export default function DraftPage() {
         </div>
       </div>
 
-      {/* 2. Three-Zone Drafting Amphitheater */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
-        {/* Left Column: Allies (2.5 cols on lg) */}
-        <div className="lg:col-span-3 space-y-3">
-          <div className="flex items-center justify-between pb-1 border-b border-white/5">
-            <div className="flex items-center gap-1.5">
-              <Users className="w-4 h-4 text-emerald-400" />
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-400 font-dota">
-                Allied Team ({allyPicks.length}/4)
-              </span>
-            </div>
-            {allyPicks.length > 0 && (
-              <Button
-                variant="ghost"
-                size="xs"
-                onClick={() => setAllyPicks([])}
-                className="text-slate-400 hover:text-rose-400 text-[10px]"
-              >
-                Clear
-              </Button>
-            )}
-          </div>
-
-          <div className="space-y-2">
-            {[0, 1, 2, 3].map((slotIdx) => {
-              const pick = allyPicks[slotIdx];
-              const hero = pick ? getHeroById(pick.heroId) : null;
-
-              if (hero && pick) {
-                return (
-                  <div
-                    key={pick.heroId}
-                    className="relative rounded-xl border border-emerald-500/30 bg-[#12151a] p-2 flex items-center gap-2.5 shadow-sm"
-                  >
-                    <HeroPortrait src={hero.img} alt={hero.localized_name} size="sm" />
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center justify-between">
-                        <span className="text-xs font-bold text-white truncate">
-                          {hero.localized_name}
-                        </span>
-                        <IconButton
-                          icon={<X className="w-3 h-3" />}
-                          label="Remove ally"
-                          size="xs"
-                          variant="ghost"
-                          onClick={() => handleRemoveAlly(pick.heroId)}
-                          className="text-slate-400 hover:text-rose-400"
-                        />
-                      </div>
-                      <div className="flex items-center gap-1.5 mt-1">
-                        <RoleIcon role={pick.position || 1} size={13} active />
-                        <Select
-                          value={String(pick.position || 1)}
-                          onChange={(e) =>
-                            handleUpdateAllyPosition(
-                              pick.heroId,
-                              parseInt(e.target.value, 10) as RolePosition
-                            )
-                          }
-                          aria-label={`Position for ${hero.localized_name}`}
-                          className="py-0.5 text-[10px] font-mono"
-                        >
-                          {ALL_ROLES.map((r) => (
-                            <option key={r} value={r}>
-                              {ROLE_DEFINITIONS[r].shortName}
-                            </option>
-                          ))}
-                        </Select>
-                      </div>
-                    </div>
-                  </div>
-                );
-              }
-
-              return (
+      {/* 2. Panoramic Drafting Arena Deck: Compact Lineups (Hero Icon + Role, Name on Hover) */}
+      <div className="p-4 rounded-2xl bg-[#0e1117]/95 border border-white/10 shadow-xl space-y-3.5">
+        <div className="flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-4">
+          {/* Allied Team Lineup Slots (4 Slots) */}
+          <div className="flex flex-col space-y-1.5 shrink-0">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-1.5">
+                <Users className="w-3.5 h-3.5 text-emerald-400" />
+                <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-400 font-dota">
+                  Allied Team ({allyPicks.length}/4)
+                </span>
+              </div>
+              {allyPicks.length > 0 && (
                 <button
-                  key={slotIdx}
                   type="button"
-                  onClick={() => setActivePickerTarget("ally")}
-                  className={`w-full h-12 rounded-xl border border-dashed flex items-center justify-center gap-2 text-xs font-medium transition-all cursor-pointer ${
-                    activePickerTarget === "ally"
-                      ? "border-emerald-500/60 bg-emerald-950/20 text-emerald-300"
-                      : "border-white/10 hover:border-emerald-500/40 bg-[#12151a]/40 text-slate-500 hover:text-emerald-400"
-                  }`}
+                  onClick={() => setAllyPicks([])}
+                  className="text-[10px] text-slate-500 hover:text-rose-400 transition-colors cursor-pointer"
                 >
-                  <Plus className="w-3.5 h-3.5" />
-                  <span>Add Ally Hero</span>
+                  Clear
                 </button>
-              );
-            })}
-          </div>
+              )}
+            </div>
 
-          <div className="p-2.5 rounded-xl bg-[#12151a] border border-white/5 text-[11px] text-slate-400 leading-relaxed">
-            <span className="text-emerald-400 font-semibold">Synergy:</span> Lane partner synergy awards 2x weight in scoring.
-          </div>
-        </div>
-
-        {/* Center Column: The Integrated HeroPicker Stage (6 cols on lg) */}
-        <div className="lg:col-span-6 space-y-3">
-          <div className="flex items-center justify-between pb-1 border-b border-white/5">
+            {/* 4 Compact Slots: Just Hero Icon + Role, Name on Hover */}
             <div className="flex items-center gap-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-white font-dota">
-                Draft Selection:
-              </span>
-              <div className="inline-flex rounded-lg bg-[#0a0c0f] p-0.5 border border-white/10 text-xs">
-                <button
-                  type="button"
-                  onClick={() => setActivePickerTarget("enemy")}
-                  className={`px-2.5 py-0.5 rounded font-bold text-[11px] transition-colors cursor-pointer ${
-                    activePickerTarget === "enemy"
-                      ? "bg-rose-950/50 text-rose-300 border border-rose-500/40"
-                      : "text-slate-400 hover:text-white"
-                  }`}
-                >
-                  Pick Enemy ({enemyPicks.length}/5)
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setActivePickerTarget("ally")}
-                  className={`px-2.5 py-0.5 rounded font-bold text-[11px] transition-colors cursor-pointer ${
-                    activePickerTarget === "ally"
-                      ? "bg-emerald-950/50 text-emerald-300 border border-emerald-500/40"
-                      : "text-slate-400 hover:text-white"
-                  }`}
-                >
-                  Pick Ally ({allyPicks.length}/4)
-                </button>
-              </div>
-            </div>
-          </div>
+              {[0, 1, 2, 3].map((slotIdx) => {
+                const pick = allyPicks[slotIdx];
+                const hero = pick ? getHeroById(pick.heroId) : null;
 
-          <HeroPicker
-            mode={activePickerTarget}
-            role={targetRole}
-            onPickHero={handlePickHero}
-            selectedHeroIds={allPickedIds}
-            enemyHeroIds={enemyPicks.map((e) => e.heroId)}
-          />
-        </div>
-
-        {/* Right Column: Enemies (3.5 cols on lg) */}
-        <div className="lg:col-span-3 space-y-3">
-          <div className="flex items-center justify-between pb-1 border-b border-white/5">
-            <div className="flex items-center gap-1.5">
-              <Swords className="w-4 h-4 text-rose-400" />
-              <span className="text-xs font-bold uppercase tracking-wider text-rose-400 font-dota">
-                Enemy Team ({enemyPicks.length}/5)
-              </span>
-            </div>
-            {enemyPicks.length > 0 && (
-              <Button
-                variant="ghost"
-                size="xs"
-                onClick={() => setEnemyPicks([])}
-                className="text-slate-400 hover:text-rose-400 text-[10px]"
-              >
-                Clear
-              </Button>
-            )}
-          </div>
-
-          <div className="space-y-2">
-            {[0, 1, 2, 3, 4].map((slotIdx) => {
-              const pick = effectiveEnemyPicks[slotIdx];
-              const hero = pick ? getHeroById(pick.heroId) : null;
-
-              if (hero && pick) {
                 return (
-                  <div
-                    key={pick.heroId}
-                    className="relative rounded-xl border border-rose-500/30 bg-[#12151a] p-2 flex items-center gap-2.5 shadow-sm"
-                  >
-                    <HeroPortrait src={hero.img} alt={hero.localized_name} size="sm" />
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center justify-between">
-                        <span className="text-xs font-bold text-white truncate">
-                          {hero.localized_name}
-                        </span>
-                        <IconButton
-                          icon={<X className="w-3 h-3" />}
-                          label="Remove enemy"
-                          size="xs"
-                          variant="ghost"
-                          onClick={() => handleRemoveEnemy(pick.heroId)}
-                          className="text-slate-400 hover:text-rose-400"
-                        />
-                      </div>
-                      <div className="flex items-center gap-1.5 mt-1">
-                        <RoleIcon role={pick.position || 2} size={13} active />
-                        <Select
-                          value={String(pick.position || 2)}
-                          onChange={(e) =>
-                            handleUpdatePosition(
-                              pick.heroId,
-                              parseInt(e.target.value, 10) as RolePosition
-                            )
-                          }
-                          aria-label={`Position for ${hero.localized_name}`}
-                          className="py-0.5 text-[10px] font-mono"
-                        >
-                          {ALL_ROLES.map((r) => (
-                            <option key={r} value={r}>
-                              {ROLE_DEFINITIONS[r].shortName}
-                            </option>
-                          ))}
-                        </Select>
-                      </div>
+                  <div key={slotIdx} className="group/slot relative">
+                    <div
+                      onClick={() => {
+                        if (!hero) setActivePickerTarget("ally");
+                      }}
+                      className={`relative w-15 h-11 sm:w-16 sm:h-12 rounded-xl overflow-hidden border transition-all duration-150 cursor-pointer select-none ${
+                        hero
+                          ? "border-emerald-500/70 bg-[#0a0c0f] shadow-[0_0_12px_rgba(16,185,129,0.35)] hover:border-emerald-400 hover:scale-105"
+                          : activePickerTarget === "ally"
+                          ? "border-dashed border-emerald-500/60 bg-emerald-950/25 text-emerald-400 shadow-[0_0_8px_rgba(16,185,129,0.2)]"
+                          : "border-dashed border-white/15 bg-black/40 text-slate-500 hover:border-emerald-500/40 hover:text-emerald-400"
+                      }`}
+                    >
+                      {hero && pick ? (
+                        <>
+                          <Image
+                            src={hero.img}
+                            alt={hero.localized_name}
+                            fill
+                            sizes="64px"
+                            className="object-cover pointer-events-none"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+
+                          {/* Role Position Pip / Badge */}
+                          <div className="absolute bottom-0.5 right-0.5 z-10 flex items-center gap-0.5 px-1 py-0.2 rounded bg-black/85 border border-emerald-500/40 text-[9px] font-mono font-bold text-emerald-300 pointer-events-none">
+                            <RoleIcon role={pick.position || 1} size={10} active />
+                            <span>Pos {pick.position || 1}</span>
+                          </div>
+
+                          {/* Quick remove button */}
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleRemoveAlly(pick.heroId);
+                            }}
+                            title={`Remove ${hero.localized_name}`}
+                            className="absolute top-0.5 right-0.5 z-20 w-4 h-4 rounded-full bg-black/80 text-slate-400 hover:text-rose-400 hover:bg-rose-950 flex items-center justify-center opacity-0 group-hover/slot:opacity-100 transition-opacity cursor-pointer"
+                          >
+                            <X className="w-2.5 h-2.5" />
+                          </button>
+                        </>
+                      ) : (
+                        <div className="w-full h-full flex flex-col items-center justify-center gap-0.5">
+                          <Plus className="w-3.5 h-3.5" />
+                          <span className="text-[9px] font-mono font-semibold uppercase text-slate-400">
+                            Ally {slotIdx + 1}
+                          </span>
+                        </div>
+                      )}
                     </div>
+
+                    {/* Hover Tooltip: Hero localized name + Role selector */}
+                    {hero && pick && (
+                      <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 hidden group-hover/slot:flex flex-col items-center z-50 pointer-events-auto animate-in fade-in zoom-in-95 duration-100">
+                        <div className="w-2 h-2 bg-[#0c0f14] border-t border-l border-white/20 rotate-45 -mb-1 z-10" />
+                        <div className="p-2.5 rounded-xl bg-[#0c0f14]/98 border border-white/20 shadow-2xl min-w-[150px] text-center space-y-2">
+                          <div>
+                            <span className="text-xs font-bold text-white block font-dota leading-tight">
+                              {hero.localized_name}
+                            </span>
+                            <span className="text-[10px] text-emerald-400 font-semibold block mt-0.5">
+                              {ROLE_DEFINITIONS[pick.position || 1].name}
+                            </span>
+                          </div>
+                          <div className="flex items-center justify-center gap-1.5 pt-1.5 border-t border-white/10">
+                            <span className="text-[10px] text-slate-400 font-bold uppercase">Role:</span>
+                            <select
+                              value={String(pick.position || 1)}
+                              onChange={(e) =>
+                                handleUpdateAllyPosition(
+                                  pick.heroId,
+                                  parseInt(e.target.value, 10) as RolePosition
+                                )
+                              }
+                              className="bg-[#1a1e25] text-emerald-300 text-[10px] font-mono font-bold rounded px-1.5 py-0.5 border border-white/15 focus:outline-none focus:border-emerald-500 cursor-pointer"
+                            >
+                              {ALL_ROLES.map((r) => (
+                                <option key={r} value={r}>
+                                  Pos {r} ({ROLE_DEFINITIONS[r].shortName})
+                                </option>
+                              ))}
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 );
-              }
-
-              return (
-                <button
-                  key={slotIdx}
-                  type="button"
-                  onClick={() => setActivePickerTarget("enemy")}
-                  className={`w-full h-12 rounded-xl border border-dashed flex items-center justify-center gap-2 text-xs font-medium transition-all cursor-pointer ${
-                    activePickerTarget === "enemy"
-                      ? "border-rose-500/60 bg-rose-950/20 text-rose-300"
-                      : "border-white/10 hover:border-rose-500/40 bg-[#12151a]/40 text-slate-500 hover:text-rose-400"
-                  }`}
-                >
-                  <Plus className="w-3.5 h-3.5" />
-                  <span>Add Enemy Hero</span>
-                </button>
-              );
-            })}
+              })}
+            </div>
           </div>
 
-          {/* Enemy Threat Analysis Card */}
-          <div className="bg-[#12151a] border border-white/10 rounded-xl p-3 space-y-2">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-rose-400 flex items-center gap-1.5 font-dota">
-              <AlertTriangle className="w-3.5 h-3.5 text-rose-400" />
-              Enemy Threat Summary
-            </h3>
-            <div className="space-y-1.5 text-xs">
-              <div className="p-2 rounded-lg bg-[#0a0c0f] border border-white/5 space-y-0.5">
-                <span className="text-[10px] font-bold text-sky-400 block">{midThreat.laneTitle}</span>
-                <p className="text-[11px] text-slate-400 leading-snug">{midThreat.summary}</p>
-              </div>
-              <div className="p-2 rounded-lg bg-[#0a0c0f] border border-white/5 space-y-0.5">
-                <span className="text-[10px] font-bold text-rose-400 block">{offlaneThreat.laneTitle}</span>
-                <p className="text-[11px] text-slate-400 leading-snug">{offlaneThreat.summary}</p>
+          {/* Center Arena Controls: Active Target & Role Focus */}
+          <div className="flex flex-col items-center justify-center gap-2.5 py-1 px-4 border-y xl:border-y-0 xl:border-x border-white/10">
+            {/* Active Draft Picker Target Toggle */}
+            <div className="inline-flex rounded-xl bg-[#07090c] p-0.5 border border-white/10 text-xs shadow-inner">
+              <button
+                type="button"
+                onClick={() => setActivePickerTarget("enemy")}
+                className={`px-3.5 py-1.5 rounded-lg font-bold text-xs transition-all cursor-pointer flex items-center gap-1.5 ${
+                  activePickerTarget === "enemy"
+                    ? "bg-rose-950/70 text-rose-300 border border-rose-500/50 shadow-[0_0_12px_rgba(244,63,94,0.35)]"
+                    : "text-slate-400 hover:text-white"
+                }`}
+              >
+                <Swords className="w-3.5 h-3.5" />
+                <span>Pick Enemy ({enemyPicks.length}/5)</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setActivePickerTarget("ally")}
+                className={`px-3.5 py-1.5 rounded-lg font-bold text-xs transition-all cursor-pointer flex items-center gap-1.5 ${
+                  activePickerTarget === "ally"
+                    ? "bg-emerald-950/70 text-emerald-300 border border-emerald-500/50 shadow-[0_0_12px_rgba(16,185,129,0.35)]"
+                    : "text-slate-400 hover:text-white"
+                }`}
+              >
+                <Users className="w-3.5 h-3.5" />
+                <span>Pick Ally ({allyPicks.length}/4)</span>
+              </button>
+            </div>
+
+            {/* Target Role Pips */}
+            <div className="flex items-center gap-2 text-xs text-slate-400">
+              <span className="text-[10px] uppercase font-bold text-slate-500">Draft For Role:</span>
+              <div className="flex items-center gap-1">
+                {ALL_ROLES.map((r) => (
+                  <button
+                    key={r}
+                    type="button"
+                    onClick={() => {
+                      setTargetRole(r);
+                      selectRole(r);
+                    }}
+                    className={`px-2 py-0.5 rounded text-[11px] font-mono font-bold transition-all cursor-pointer ${
+                      targetRole === r
+                        ? "bg-[#d8b57a] text-slate-950 shadow-xs"
+                        : "bg-black/40 text-slate-400 hover:text-white border border-white/5"
+                    }`}
+                  >
+                    Pos {r}
+                  </button>
+                ))}
               </div>
             </div>
           </div>
+
+          {/* Enemy Team Lineup Slots (5 Slots) */}
+          <div className="flex flex-col space-y-1.5 shrink-0">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-1.5">
+                <Swords className="w-3.5 h-3.5 text-rose-400" />
+                <span className="text-[11px] font-bold uppercase tracking-wider text-rose-400 font-dota">
+                  Enemy Team ({enemyPicks.length}/5)
+                </span>
+              </div>
+              {enemyPicks.length > 0 && (
+                <button
+                  type="button"
+                  onClick={() => setEnemyPicks([])}
+                  className="text-[10px] text-slate-500 hover:text-rose-400 transition-colors cursor-pointer"
+                >
+                  Clear
+                </button>
+              )}
+            </div>
+
+            {/* 5 Compact Slots: Just Hero Icon + Role, Name on Hover */}
+            <div className="flex items-center gap-2">
+              {[0, 1, 2, 3, 4].map((slotIdx) => {
+                const pick = effectiveEnemyPicks[slotIdx];
+                const hero = pick ? getHeroById(pick.heroId) : null;
+
+                return (
+                  <div key={slotIdx} className="group/slot relative">
+                    <div
+                      onClick={() => {
+                        if (!hero) setActivePickerTarget("enemy");
+                      }}
+                      className={`relative w-15 h-11 sm:w-16 sm:h-12 rounded-xl overflow-hidden border transition-all duration-150 cursor-pointer select-none ${
+                        hero
+                          ? "border-rose-500/70 bg-[#0a0c0f] shadow-[0_0_12px_rgba(244,63,94,0.35)] hover:border-rose-400 hover:scale-105"
+                          : activePickerTarget === "enemy"
+                          ? "border-dashed border-rose-500/60 bg-rose-950/25 text-rose-400 shadow-[0_0_8px_rgba(244,63,94,0.2)]"
+                          : "border-dashed border-white/15 bg-black/40 text-slate-500 hover:border-rose-500/40 hover:text-rose-400"
+                      }`}
+                    >
+                      {hero && pick ? (
+                        <>
+                          <Image
+                            src={hero.img}
+                            alt={hero.localized_name}
+                            fill
+                            sizes="64px"
+                            className="object-cover pointer-events-none"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+
+                          {/* Role Position Pip / Badge */}
+                          <div className="absolute bottom-0.5 right-0.5 z-10 flex items-center gap-0.5 px-1 py-0.2 rounded bg-black/85 border border-rose-500/40 text-[9px] font-mono font-bold text-rose-300 pointer-events-none">
+                            <RoleIcon role={pick.position || 2} size={10} active />
+                            <span>Pos {pick.position || 2}</span>
+                          </div>
+
+                          {/* Quick remove button */}
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleRemoveEnemy(pick.heroId);
+                            }}
+                            title={`Remove ${hero.localized_name}`}
+                            className="absolute top-0.5 right-0.5 z-20 w-4 h-4 rounded-full bg-black/80 text-slate-400 hover:text-rose-400 hover:bg-rose-950 flex items-center justify-center opacity-0 group-hover/slot:opacity-100 transition-opacity cursor-pointer"
+                          >
+                            <X className="w-2.5 h-2.5" />
+                          </button>
+                        </>
+                      ) : (
+                        <div className="w-full h-full flex flex-col items-center justify-center gap-0.5">
+                          <Plus className="w-3.5 h-3.5" />
+                          <span className="text-[9px] font-mono font-semibold uppercase text-slate-400">
+                            Enemy {slotIdx + 1}
+                          </span>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Hover Tooltip: Hero localized name + Role selector */}
+                    {hero && pick && (
+                      <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 hidden group-hover/slot:flex flex-col items-center z-50 pointer-events-auto animate-in fade-in zoom-in-95 duration-100">
+                        <div className="w-2 h-2 bg-[#0c0f14] border-t border-l border-white/20 rotate-45 -mb-1 z-10" />
+                        <div className="p-2.5 rounded-xl bg-[#0c0f14]/98 border border-white/20 shadow-2xl min-w-[150px] text-center space-y-2">
+                          <div>
+                            <span className="text-xs font-bold text-white block font-dota leading-tight">
+                              {hero.localized_name}
+                            </span>
+                            <span className="text-[10px] text-rose-400 font-semibold block mt-0.5">
+                              Enemy {ROLE_DEFINITIONS[pick.position || 2].name}
+                            </span>
+                          </div>
+                          <div className="flex items-center justify-center gap-1.5 pt-1.5 border-t border-white/10">
+                            <span className="text-[10px] text-slate-400 font-bold uppercase">Role:</span>
+                            <select
+                              value={String(pick.position || 2)}
+                              onChange={(e) =>
+                                handleUpdatePosition(
+                                  pick.heroId,
+                                  parseInt(e.target.value, 10) as RolePosition
+                                )
+                              }
+                              className="bg-[#1a1e25] text-rose-300 text-[10px] font-mono font-bold rounded px-1.5 py-0.5 border border-white/15 focus:outline-none focus:border-rose-500 cursor-pointer"
+                            >
+                              {ALL_ROLES.map((r) => (
+                                <option key={r} value={r}>
+                                  Pos {r} ({ROLE_DEFINITIONS[r].shortName})
+                                </option>
+                              ))}
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
+
+        {/* Lane Threat Summary Ribbon (visible when enemies exist) */}
+        {enemyPicks.length > 0 && (
+          <div className="pt-2 border-t border-white/10 flex flex-wrap items-center gap-2 text-xs">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-rose-400 flex items-center gap-1 font-dota">
+              <AlertTriangle className="w-3 h-3" />
+              Lane Threats:
+            </span>
+            <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-black/50 border border-white/5 text-[11px]">
+              <span className="font-bold text-sky-400 font-dota">{midThreat.laneTitle}:</span>
+              <span className="text-slate-300">{midThreat.summary}</span>
+            </div>
+            <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-black/50 border border-white/5 text-[11px]">
+              <span className="font-bold text-rose-400 font-dota">{offlaneThreat.laneTitle}:</span>
+              <span className="text-slate-300">{offlaneThreat.summary}</span>
+            </div>
+            <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-black/50 border border-white/5 text-[11px]">
+              <span className="font-bold text-emerald-400 font-dota">{safeThreat.laneTitle}:</span>
+              <span className="text-slate-300">{safeThreat.summary}</span>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* 3. Massive Full-Width Hero Selection Stage */}
+      <div className="space-y-3">
+        <div className="flex items-center justify-between pb-1 border-b border-white/10">
+          <div className="flex items-center gap-2">
+            <span className="text-sm font-black uppercase tracking-wider text-white font-dota flex items-center gap-1.5">
+              <Sparkles className="w-4 h-4 text-[#d8b57a]" />
+              Hero Selection Stage
+            </span>
+            <Badge
+              variant={activePickerTarget === "enemy" ? "loss" : "win"}
+              size="sm"
+            >
+              {activePickerTarget === "enemy"
+                ? `Drafting for Enemy Team (${enemyPicks.length}/5)`
+                : `Drafting for Allied Team (${allyPicks.length}/4)`}
+            </Badge>
+          </div>
+          <span className="text-xs text-slate-400 hidden sm:inline">
+            Click heroes to draft. Hover for cinematic inspect & abilities.
+          </span>
+        </div>
+
+        <HeroPicker
+          mode={activePickerTarget}
+          role={targetRole}
+          onPickHero={handlePickHero}
+          selectedHeroIds={allPickedIds}
+          enemyHeroIds={enemyPicks.map((e) => e.heroId)}
+        />
       </div>
 
       {/* 3. Bottom Counter Recommendations Deck & Item Priorities */}

@@ -498,8 +498,8 @@ export function HeroPicker({
                 </span>
               </div>
 
-              {/* 16:9 Hero Tiles Tight Grid */}
-              <div className="grid grid-cols-3 xl:grid-cols-4 gap-1.5 pt-0.5">
+              {/* 16:9 Hero Tiles Sized for Clear Readability & UX */}
+              <div className="grid grid-cols-3 gap-2 pt-0.5">
                 {heroes.map((hero) => {
                   const isPicked = selectedHeroIds.includes(hero.id);
                   const isPoolSelected = mode === "pool" && !!rolePool[hero.id]?.inPool;
