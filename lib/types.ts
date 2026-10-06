@@ -12,6 +12,14 @@ export interface Hero {
   icon?: string;
 }
 
+export interface HeroAbility {
+  id: string;
+  name: string;
+  img: string;
+  desc?: string;
+  dmg_type?: string;
+}
+
 export type RolePosition = 1 | 2 | 3 | 4 | 5;
 
 export interface HeroRoleFit {

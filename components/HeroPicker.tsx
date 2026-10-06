@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo, useRef, useEffect, useCallback } from "react";
 import Image from "next/image";
-import { Hero, PrimaryAttr, AttackType, RolePosition, ComfortLevel } from "@/lib/types";
+import { Hero, PrimaryAttr, AttackType, RolePosition, ComfortLevel, HeroAbility } from "@/lib/types";
 import { ALL_HEROES } from "@/lib/heroes";
 import { getHeroRoleFit } from "@/lib/roles";
 import { AttributeIcon } from "./icons/AttributeIcon";
@@ -11,6 +11,7 @@ import { SearchInput, Button, Badge, Toggle, Kbd } from "./ui";
 import { prefersReducedMotion } from "@/lib/motion";
 import traitsData from "@/data/traits.json";
 import matchupsData from "@/data/matchups.json";
+import heroAbilitiesData from "@/data/hero-abilities.json";
 import {
   Sparkles,
   Sword,
@@ -85,6 +86,7 @@ export function HeroPicker({
 
   const traitsMap = traitsData as Record<string, { tags: string[]; dmgType: string }>;
   const matchups = matchupsData as Record<string, Record<string, { delta: number }>>;
+  const abilitiesMap = heroAbilitiesData as Record<string, HeroAbility[]>;
 
   // Hotkey: '/' focuses search, ESC clears
   useEffect(() => {
@@ -255,6 +257,7 @@ export function HeroPicker({
   const previewHero = hoveredHero || (focusedHeroId ? ALL_HEROES.find((h) => h.id === focusedHeroId) : null);
   const previewTraits = previewHero ? traitsMap[String(previewHero.id)] : null;
   const previewFit = previewHero ? getHeroRoleFit(previewHero.id) : null;
+  const previewAbilities = previewHero ? abilitiesMap[String(previewHero.id)] || [] : [];
   const previewCleanName = previewHero ? previewHero.name.replace("npc_dota_hero_", "") : "";
 
   // Dynamic viewport-clamped popup coordinates
@@ -263,8 +266,8 @@ export function HeroPicker({
       return { display: "none" };
     }
 
-    const width = 380;
-    const height = 580;
+    const width = 400;
+    const height = 660;
     const padding = 16;
 
     if (typeof window === "undefined" || (mousePos.x === 0 && mousePos.y === 0)) {
@@ -593,35 +596,28 @@ export function HeroPicker({
       {previewHero && (
         <div
           style={popupStyle}
-          className="fixed z-50 pointer-events-none w-[380px] max-w-[90vw] rounded-2xl bg-[#0c0f14]/95 backdrop-blur-2xl border border-white/20 shadow-[0_24px_60px_rgba(0,0,0,0.9)] overflow-hidden transition-all duration-150 animate-in fade-in zoom-in-95"
+          className="fixed z-50 pointer-events-none w-[400px] max-w-[92vw] rounded-2xl bg-[#0c0f14]/95 backdrop-blur-2xl border border-white/20 shadow-[0_24px_60px_rgba(0,0,0,0.9)] overflow-hidden transition-all duration-150 animate-in fade-in zoom-in-95"
         >
           {/* Large Hero Portrait & High-Res Video Render Banner with Expanded Height for Standing Heroes */}
           <div className="relative w-full h-[300px] min-h-[300px] bg-[#07090c] overflow-hidden border-b border-white/10">
-            {/* Ambient Blurred Background Poster */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <Image
-                src={`https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${previewCleanName}.png`}
-                alt=""
-                fill
-                sizes="380px"
-                className="object-cover blur-xl opacity-35 scale-125"
-                priority
-              />
-            </div>
-
-            {/* High-res Image Poster & WebM Video fitted cleanly to frame */}
-            <div className="relative w-full h-full z-10 flex items-center justify-center">
+            {/* Full-Bleed Hero Portrait Background - Filling the Whole Cinematic Showcase */}
+            <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
               <Image
                 src={`https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${previewCleanName}.png`}
                 alt={previewHero.localized_name}
                 fill
-                sizes="380px"
-                className="object-contain object-bottom drop-shadow-[0_12px_24px_rgba(0,0,0,0.85)]"
+                sizes="420px"
+                className="object-cover object-center scale-105"
                 priority
               />
+              {/* Darkening & Atmospheric Gradient Overlay so text and badges pop */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0c0f14] via-[#0c0f14]/40 to-black/50" />
+              <div className="absolute inset-0 bg-black/25 backdrop-brightness-95" />
+            </div>
 
-              {/* High-res WebM Animated Render - 1440x1440 fitted cleanly without clipping head/feet */}
-              {activeVideoHeroId === previewHero.id && (
+            {/* High-res WebM Animated Render - 1440x1440 fitted cleanly in foreground without clipping head/feet */}
+            {activeVideoHeroId === previewHero.id && (
+              <div className="relative w-full h-full z-15 flex items-center justify-center pointer-events-none">
                 <video
                   key={previewHero.id}
                   src={`https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/${previewCleanName}.webm`}
@@ -630,10 +626,10 @@ export function HeroPicker({
                   muted
                   playsInline
                   preload="none"
-                  className="absolute inset-0 w-full h-full object-contain object-bottom z-15 pointer-events-none drop-shadow-[0_14px_28px_rgba(0,0,0,0.95)]"
+                  className="absolute inset-0 w-full h-full object-contain object-bottom pointer-events-none drop-shadow-[0_16px_32px_rgba(0,0,0,0.95)]"
                 />
-              )}
-            </div>
+              </div>
+            )}
 
             {/* Atmospheric Attribute Gradient Lighting */}
             <div
@@ -722,6 +718,71 @@ export function HeroPicker({
 
           {/* Details Body */}
           <div className="p-3.5 space-y-3 bg-[#0c0f14]">
+            {/* Hero Abilities Kit */}
+            {previewAbilities.length > 0 && (
+              <div className="space-y-1.5">
+                <div className="flex items-center justify-between text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                  <span className="flex items-center gap-1.5 text-slate-200">
+                    <Zap className="w-3.5 h-3.5 text-[#d8b57a]" />
+                    Abilities ({previewAbilities.length})
+                  </span>
+                  <span className="text-[9px] text-[#d8b57a] font-mono">Hero Kit</span>
+                </div>
+                <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+                  {previewAbilities.map((ab) => (
+                    <div
+                      key={ab.id}
+                      className="group/ability relative shrink-0"
+                      title={`${ab.name}${ab.dmg_type ? ` (${ab.dmg_type} Damage)` : ""}${ab.desc ? `\n\n${ab.desc}` : ""}`}
+                    >
+                      <div className="relative w-10 h-10 rounded-lg overflow-hidden border border-white/20 bg-black/80 shadow-md transition-all duration-150 group-hover/ability:scale-110 group-hover/ability:border-[#d8b57a] group-hover/ability:shadow-[0_0_12px_rgba(216,181,122,0.5)]">
+                        <img
+                          src={ab.img}
+                          alt={ab.name}
+                          className="w-full h-full object-cover pointer-events-none"
+                          loading="lazy"
+                        />
+                        {ab.dmg_type && (
+                          <span
+                            className={`absolute top-0.5 right-0.5 w-2 h-2 rounded-full border border-black/80 shadow-xs ${
+                              ab.dmg_type === "Magical"
+                                ? "bg-sky-400"
+                                : ab.dmg_type === "Pure"
+                                ? "bg-amber-400"
+                                : "bg-rose-500"
+                            }`}
+                            title={`${ab.dmg_type} Damage`}
+                          />
+                        )}
+                      </div>
+
+                      {/* Tooltip */}
+                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover/ability:flex flex-col items-center z-50 pointer-events-none whitespace-nowrap animate-in fade-in zoom-in-95 duration-100">
+                        <div className="px-2.5 py-1.5 rounded-lg bg-[#07090c]/98 border border-white/25 shadow-2xl text-center max-w-[220px]">
+                          <span className="text-[11px] font-bold text-white block leading-tight">
+                            {ab.name}
+                          </span>
+                          {ab.dmg_type && (
+                            <span
+                              className={`text-[9px] font-mono font-bold uppercase block mt-0.5 ${
+                                ab.dmg_type === "Magical"
+                                  ? "text-sky-400"
+                                  : ab.dmg_type === "Pure"
+                                  ? "text-amber-300"
+                                  : "text-rose-400"
+                              }`}
+                            >
+                              {ab.dmg_type} Damage
+                            </span>
+                          )}
+                        </div>
+                        <div className="w-1.5 h-1.5 bg-[#07090c] border-r border-b border-white/25 rotate-45 -mt-1" />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
             {/* Live Draft Advantage / Disadvantage Delta Bar */}
             {typeof heroDeltas[previewHero.id] === "number" && (
               <div

@@ -54,6 +54,20 @@ describe("Phase 1: Heroes Data & Foundation", () => {
     expect(invoker?.localized_name).toBe("Invoker");
     expect(invoker?.primary_attr).toBe("int");
   });
+
+  it("loads hero abilities for heroes with valid names and image CDN URLs", async () => {
+    const heroAbilities = (await import("../data/hero-abilities.json")).default;
+    expect(Object.keys(heroAbilities).length).toBeGreaterThanOrEqual(120);
+
+    // Check Pudge (id: 14) has meat hook
+    const pudgeAbilities = (heroAbilities as Record<string, any[]>)[14];
+    expect(pudgeAbilities).toBeDefined();
+    expect(pudgeAbilities.length).toBeGreaterThanOrEqual(4);
+    const hook = pudgeAbilities.find((a) => a.id === "pudge_meat_hook");
+    expect(hook).toBeDefined();
+    expect(hook.name).toBe("Meat Hook");
+    expect(hook.img).toContain("cdn.cloudflare.steamstatic.com");
+  });
 });
 
 describe("Phase 1: Storage Wrapper & Hero Pool Persistence", () => {
