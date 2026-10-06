@@ -1,6 +1,7 @@
 "use client";
 
-import { use, useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { getHeroById, ATTR_LABELS } from "@/lib/heroes";
@@ -13,7 +14,7 @@ import {
   getMatchupNoteKey,
   getLaneMatchupNote,
 } from "@/lib/storage";
-import { LaneMatchupNote, SRSEntry, RolePosition, Hero } from "@/lib/types";
+import { LaneMatchupNote, SRSEntry, RolePosition, Hero, PersonalStatsSummary } from "@/lib/types";
 import {
   ROLE_DEFINITIONS,
   getPrimaryOpponentRole,
@@ -27,28 +28,19 @@ import { ItemPriorityPanel } from "@/components/ItemPriorityPanel";
 import { ItemTimingChart } from "@/components/ItemTimingChart";
 import {
   Button,
-  IconButton,
   Badge,
   Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
   Select,
   Input,
 } from "@/components/ui";
 import { loadSummaryFromIDB } from "@/lib/player-stats";
-import { PersonalStatsSummary } from "@/lib/types";
 import rawTraits from "@/data/traits.json";
 import rawSeedNotes from "@/data/mid-notes.seed.json";
 import {
   ArrowLeft,
-  Swords,
-  BrainCircuit,
   Save,
-  CheckCircle2,
   Sparkles,
   AlertTriangle,
-  Flame,
   BookmarkPlus,
   BookmarkCheck,
   Users,
@@ -68,16 +60,17 @@ interface SeedNote {
 const traitsMap = rawTraits as Record<string, any>;
 const seedNotesMap = rawSeedNotes as Record<string, SeedNote>;
 
-export default function LaneMatchupDetailPage({
-  params,
-}: {
-  params: Promise<{ role: string; myHero: string; enemyHero: string }>;
-}) {
-  const resolvedParams = use(params);
-  const roleNum = parseInt(resolvedParams.role, 10);
+function LaneMatchupDetailContent() {
+  const searchParams = useSearchParams();
+
+  const roleParam = searchParams.get("role");
+  const meParam = searchParams.get("me") || searchParams.get("myHero");
+  const enemyParam = searchParams.get("enemy") || searchParams.get("enemyHero");
+
+  const roleNum = parseInt(roleParam || "2", 10);
   const role: RolePosition = ([1, 2, 3, 4, 5].includes(roleNum) ? roleNum : 2) as RolePosition;
-  const myHeroId = parseInt(resolvedParams.myHero, 10);
-  const enemyHeroId = parseInt(resolvedParams.enemyHero, 10);
+  const myHeroId = parseInt(meParam || "0", 10);
+  const enemyHeroId = parseInt(enemyParam || "0", 10);
 
   const myHero = getHeroById(myHeroId);
   const enemyHero = getHeroById(enemyHeroId);
@@ -200,6 +193,9 @@ export default function LaneMatchupDetailPage({
     return (
       <div className="max-w-4xl mx-auto px-4 py-16 text-center space-y-4">
         <h1 className="text-xl font-bold text-rose-400">Matchup not found</h1>
+        <p className="text-xs text-slate-400">
+          Provide query params ?role=2&me=HERO_ID&enemy=ENEMY_ID
+        </p>
         <Link href={`/lane/${role}`} className="text-sm text-[var(--color-accent)] hover:underline">
           Return to {roleMeta.name} Matrix
         </Link>
@@ -634,5 +630,19 @@ export default function LaneMatchupDetailPage({
         </Card>
       </div>
     </div>
+  );
+}
+
+export default function LaneMatchupPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="max-w-6xl mx-auto px-4 py-16 text-center text-slate-400">
+          Loading matchup playbook...
+        </div>
+      }
+    >
+      <LaneMatchupDetailContent />
+    </Suspense>
   );
 }

@@ -1,7 +1,16 @@
 import type { NextConfig } from "next";
 
+const rawBasePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const basePath = rawBasePath
+  ? (rawBasePath.startsWith("/") ? rawBasePath : `/${rawBasePath}`).replace(/\/$/, "")
+  : undefined;
+
 const nextConfig: NextConfig = {
+  output: "export",
+  trailingSlash: true,
+  basePath,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -12,20 +21,6 @@ const nextConfig: NextConfig = {
         hostname: "raw.githubusercontent.com",
       },
     ],
-  },
-  async redirects() {
-    return [
-      {
-        source: "/mid",
-        destination: "/lane/2",
-        permanent: true,
-      },
-      {
-        source: "/mid/:path*",
-        destination: "/lane/2/:path*",
-        permanent: true,
-      },
-    ];
   },
 };
 

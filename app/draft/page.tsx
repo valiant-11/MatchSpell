@@ -753,7 +753,7 @@ export default function DraftPage() {
                       </div>
                     </div>
                     <Link
-                      href={`/lane/${targetRole}/${activeHero.id}/${effectiveEnemyPicks[0]?.heroId || 1}`}
+                      href={`/lane/matchup?role=${targetRole}&me=${activeHero.id}&enemy=${effectiveEnemyPicks[0]?.heroId || 1}`}
                       className="text-[11px] font-semibold text-[#d8b57a] hover:underline flex items-center gap-1"
                     >
                       <span>Matchup Drills</span>

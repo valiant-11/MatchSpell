@@ -296,7 +296,7 @@ export default function PatchChangesPage() {
                   <div className="flex items-center justify-between text-[11px] text-[var(--color-text-dim)]">
                     <span>Games: {m.newGames.toLocaleString()}</span>
                     <Link
-                      href={`/lane/${selectedRole}/${m.myHeroId}/${m.enemyHeroId}`}
+                      href={`/lane/matchup?role=${selectedRole}&me=${m.myHeroId}&enemy=${m.enemyHeroId}`}
                       className="text-[var(--color-accent)] hover:underline font-semibold"
                     >
                       View Playbook →
